@@ -25,7 +25,7 @@ export default function Contact() {
             href="#booking"
             className="bg-surface text-primary px-10 py-4 rounded-full font-label-md text-label-md hover:scale-95 transition-transform"
           >
-            Book a Consultation
+            Schedule a Call
           </a>
           <HireMeButton
             label="Hire Me"

@@ -1,8 +1,8 @@
 const socials = [
-  { label: "LinkedIn", href: "#" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/federico-molina-chavez/" },
   { label: "GitHub", href: "https://github.com/FedericoMolinaChavez" },
   { label: "Read.cv", href: "#" },
-  { label: "Email", href: "mailto:hello@example.com" },
+  { label: "Email", href: "mailto:federicomolinachavez@gmail.com" },
 ];
 
 export default function Footer() {
