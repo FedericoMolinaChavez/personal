@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Approach from "@/components/Approach";
 import Expertise from "@/components/Expertise";
+import Offer from "@/components/Offer";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -17,6 +18,7 @@ export default function Home() {
         <Projects />
         <Approach />
         <Expertise />
+        <Offer />
         <Contact />
       </main>
       <Footer />

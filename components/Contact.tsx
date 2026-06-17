@@ -1,5 +1,6 @@
 import BookingEmbed from "./BookingEmbed";
 import HireMeButton from "./HireMeButton";
+import ScheduleCallButton from "./ScheduleCallButton";
 
 export default function Contact() {
   return (
@@ -17,16 +18,14 @@ export default function Contact() {
           Ready to build the future of your industry?
         </h2>
         <p className="font-body-lg text-body-lg text-on-primary/80 max-w-xl relative z-10">
-          Let&apos;s set up a 15-minute call to understand your vision and see how
-          I can add real value to your project.
+          Book a free 15-minute call to talk through your vision — or kick off
+          the $500 build plan and we&apos;ll get straight to work.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 relative z-10">
-          <a
-            href="#booking"
+          <ScheduleCallButton
+            label="Schedule a Call"
             className="bg-surface text-primary px-10 py-4 rounded-full font-label-md text-label-md hover:scale-95 transition-transform"
-          >
-            Schedule a Call
-          </a>
+          />
           <HireMeButton
             label="Hire Me"
             className="bg-primary-container border border-on-primary/30 text-on-primary px-10 py-4 rounded-full font-label-md text-label-md hover:bg-on-primary/10 transition-colors cursor-pointer disabled:opacity-70"

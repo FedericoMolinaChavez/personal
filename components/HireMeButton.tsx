@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@vercel/analytics";
 
 type Props = {
   className?: string;
@@ -15,6 +16,7 @@ export default function HireMeButton({
   const [note, setNote] = useState<string | null>(null);
 
   async function handleClick() {
+    track("hire_me_click");
     setLoading(true);
     setNote(null);
     try {

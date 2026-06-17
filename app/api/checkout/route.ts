@@ -15,7 +15,7 @@ export async function POST() {
     );
   }
 
-  const serviceName = process.env.SERVICE_NAME || "Strategy Consultation";
+  const serviceName = process.env.SERVICE_NAME || "Build Plan & MVP Sprint";
   const priceUsd = Number(process.env.SERVICE_PRICE_USD || "500");
   const baseUrl =
     process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
@@ -39,7 +39,7 @@ export async function POST() {
             product_data: {
               name: serviceName,
               description:
-                "Fractional CTO & AI development engagement — initial booking.",
+                "A written build plan plus 3 working sessions (or a basic MVP if starting from scratch). Credited toward a full project or hourly rate if we continue.",
             },
           },
         },
