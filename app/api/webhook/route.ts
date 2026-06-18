@@ -44,7 +44,7 @@ export async function POST(request: Request) {
       const resend = new Resend(resendKey);
       await resend.emails.send({
         from: process.env.RESEND_FROM_EMAIL ?? "notifications@thenomadhub.xyz",
-        to: "federicomolinahcavez@gmail.com",
+        to: "federicomolinachavez@gmail.com",
         subject: `Payment received: ${amountPaid} from ${customerName}`,
         html: `
           <h2>New payment received!</h2>
