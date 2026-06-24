@@ -7,6 +7,7 @@ const links = [
   { href: "#offer", label: "Pricing" },
   { href: "#pitch", label: "Pitch Me" },
   { href: "#contact", label: "Contact" },
+  { href: "/tools", label: "Tools" },
 ];
 
 export default function Nav() {
