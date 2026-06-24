@@ -13,7 +13,10 @@ const envSchema = z.object({
   // LLM
   LLM_PROVIDER: z.string().optional(),
   LLM_API_KEY: z.string().optional(),
+  LLM_MODEL: z.string().optional(),
   EMBEDDING_MODEL: z.string().optional(),
+  // Temporary: bypass auth and act as this tenant until real sign-in ships.
+  DEMO_TENANT_ID: z.string().optional(),
   // P3 data sources
   SENTINELHUB_CLIENT_ID: z.string().optional(),
   SENTINELHUB_CLIENT_SECRET: z.string().optional(),

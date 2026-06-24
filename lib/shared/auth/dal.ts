@@ -24,6 +24,11 @@ export type Session = {
  * within a render). Returns null when there is no authenticated user.
  */
 export const verifySession = cache(async (): Promise<Session | null> => {
+  // Temporary demo bypass: act as DEMO_TENANT_ID without real sign-in. Remove
+  // once Supabase Auth sign-in ships. See requireTenant below.
+  if (process.env.DEMO_TENANT_ID) {
+    return { userId: "demo", email: null, isDev: true };
+  }
   const supabase = await getSupabaseServer();
   if (!supabase) {
     return { userId: "dev", email: null, isDev: true };
@@ -52,7 +57,9 @@ export async function requireTenant(): Promise<{
 }> {
   const session = await requireUser();
   if (session.isDev) {
-    return { session, tenantId: "dev-tenant" };
+    // Demo bypass resolves to a real tenant id so writes land under a real
+    // tenant; otherwise a synthetic stub for the unconfigured skeleton.
+    return { session, tenantId: process.env.DEMO_TENANT_ID ?? "dev-tenant" };
   }
   const supabase = await getSupabaseServer();
   // Loose cast: the generated Database types (lib/shared/supabase/types.ts) are
