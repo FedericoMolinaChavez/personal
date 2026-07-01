@@ -37,8 +37,20 @@ export type ExtractResult<T> = {
   usage: LLMUsage;
 };
 
+/**
+ * A streamed chat: an async iterable of text deltas, plus a promise that
+ * resolves to the final usage once the stream is exhausted. Iterate `textStream`
+ * to forward tokens to the client, then await `usage` to log cost.
+ */
+export type ChatStream = {
+  textStream: AsyncIterable<string>;
+  usage: Promise<LLMUsage>;
+};
+
 export interface LLMProvider {
   chat(messages: ChatMessage[], opts?: { model?: string }): Promise<string>;
+  /** Streamed chat for low-latency UIs (P1 RAG answers). */
+  stream(messages: ChatMessage[], opts?: { model?: string }): ChatStream;
   embed(input: string | string[]): Promise<number[][]>;
   /** Structured extraction from text and/or images against a Zod schema. */
   extract<T>(params: ExtractParams<T>): Promise<ExtractResult<T>>;
@@ -46,6 +58,11 @@ export interface LLMProvider {
 
 class UnconfiguredProvider implements LLMProvider {
   async chat(): Promise<string> {
+    throw new Error(
+      "LLM provider not configured. Set LLM_PROVIDER=anthropic and LLM_API_KEY.",
+    );
+  }
+  stream(): ChatStream {
     throw new Error(
       "LLM provider not configured. Set LLM_PROVIDER=anthropic and LLM_API_KEY.",
     );

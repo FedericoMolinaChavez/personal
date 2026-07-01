@@ -62,3 +62,47 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ============================================================================
+   "Command" theme — dark, field-ready. Scoped to the /tools app via the
+   .command-theme wrapper so the light marketing site is never affected.
+   ========================================================================== */
+.command-theme {
+  color-scheme: dark;
+}
+
+.command-theme ::selection {
+  background-color: rgba(163, 230, 53, 0.3); /* cmd-accent @ 30% */
+  color: #e6eedd;
+}
+
+/* Thin dark scrollbar inside the tools app */
+.command-theme *::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.command-theme *::-webkit-scrollbar-track {
+  background: transparent;
+}
+.command-theme *::-webkit-scrollbar-thumb {
+  background-color: #26301c; /* cmd-line */
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.command-theme *::-webkit-scrollbar-thumb:hover {
+  background-color: #3a4a2a; /* cmd-line-strong */
+  background-clip: padding-box;
+}
+
+/* Subtle lime ring + lift, used on interactive panels/cards */
+.glow-accent {
+  box-shadow:
+    0 0 0 1px rgba(163, 230, 53, 0.15),
+    0 10px 30px -14px rgba(163, 230, 53, 0.25);
+}
+
+/* Soft accent glow for hero numerals / focal stats */
+.text-glow-accent {
+  text-shadow: 0 0 18px rgba(163, 230, 53, 0.35);
+}

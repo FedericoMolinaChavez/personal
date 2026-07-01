@@ -1,0 +1,1225 @@
+
+
+2024 South Carolina Corn Production Guide
+Published by Clemson Cooperative Extension Service
+www.clemson.edu/extension
+Edited by:
+Michael Plumblee, Ph.D., Assistant Professor - Agronomist
+Department of Plant and Environmental Sciences
+Clemson University
+Edisto Research and Education Center
+64 Research Rd., Blackville, SC 29817
+E-mail: mplumbl@clemson.edu
+Clemson Cooperative Extension 
+Agronomic Crops Program Team website: clemson.edu/extension/agronomy/index.html
+The 2024 South Carolina Corn Production Guide is available as a PDF download at this link and can also be 
+accessed from the Agronomic Crops Program website .
+1
+Introduction..................................................................................................................................................4
+Marketing Corn Production........................................................................................................................5
+Corn Vegetative and Reproductive Growth Stages..................................................................................8
+Vegetative (V) Growth Stages....................................................................................................................8
+Reproductive (R) Growth Stages................................................................................................................9
+Planting Considerations ............................................................................................................................11
+Field Selection ..........................................................................................................................................11
+Rotation ....................................................................................................................................................11
+Tillage.......................................................................................................................................................11
+Conservation Tillage ................................................................................................................................12
+Planting Depth..........................................................................................................................................12
+Environmental Conditions Affecting Corn Growth ...............................................................................13
+Temperature..............................................................................................................................................13
+Growing Degree Days (GDD)..................................................................................................................13
+Moisture....................................................................................................................................................14
+Soil Sampling and Fertility Management................................................................................................15
+Soil Testing...............................................................................................................................................15
+Soil pH and Liming ..................................................................................................................................16
+Lime Application......................................................................................................................................16
+Starter Fertilizers......................................................................................................................................16
+Nutrient Deficiencies................................................................................................................................17
+Nitrogen (N) .............................................................................................................................................17
+Phosphorus (P)..........................................................................................................................................19
+Potassium (K)...........................................................................................................................................20
+Calcium (Ca) ............................................................................................................................................22
+Magnesium (Mg)......................................................................................................................................22
+Sulfur (S) ..................................................................................................................................................22
+Zinc (Zn)...................................................................................................................................................22
+Boron (B)..................................................................................................................................................23
+Manganese (Mn).......................................................................................................................................23
+Copper (Cu)..............................................................................................................................................23
+Selecting the Right Hybrid........................................................................................................................24
+Planting Dates.............................................................................................................................................25
+Plant Populations .......................................................................................................................................26
+Corn Irrigation...........................................................................................................................................27
+Weed Management in Corn ......................................................................................................................30
+Weed Biology and Lifecycles ..................................................................................................................30
+2
+Weed Scouting..........................................................................................................................................30
+Herbicide Tolerance Traits Available in Corn .........................................................................................31
+Precautions for Using Herbicides with other Pesticides in Corn .............................................................31
+Corn Hybrid Sensitivity to Herbicides.....................................................................................................32
+Guidelines for Using Triazine Herbicides in Corn...................................................................................32
+Application Rate Restrictions.............................................................................................................................................. 32
+Setbacks............................................................................................................................................................................... 32
+Mixing and Loading Guidelines for Use of Acetochlor Containing Herbicides in Corn.........................33
+Herbicides for Weed Management in Corn..............................................................................................33
+Preplant Burndown.............................................................................................................................................................. 33
+Preemergence ...................................................................................................................................................................... 34
+Postemergence..................................................................................................................................................................... 34
+Preharvest/Harvest Aids...................................................................................................................................................... 34
+Postharvest .......................................................................................................................................................................... 34
+Corn Nematode Control ............................................................................................................................35
+Field Distribution......................................................................................................................................36
+Symptoms.................................................................................................................................................36
+Management .............................................................................................................................................36
+Sampling for Nematodes..........................................................................................................................37
+Stubby Root Nematode.............................................................................................................................38
+Columbia Lance Nematode ......................................................................................................................39
+Sting Nematode ........................................................................................................................................39
+Southern Root-Knot Nematode ................................................................................................................39
+Ring Nematode.........................................................................................................................................40
+Other Nematode Species ..........................................................................................................................40
+Using Nematicides....................................................................................................................................40
+Cultural Practices for Nematode Management in Corn ...........................................................................41
+Disease Management..................................................................................................................................43
+Seedling Diseases and Seed Rots.............................................................................................................43
+Foliar Diseases..........................................................................................................................................43
+Physoderma Brown Spot..................................................................................................................................................... 43
+Northern Corn Leaf Blight .................................................................................................................................................. 44
+Common Rust...................................................................................................................................................................... 44
+Southern Rust...................................................................................................................................................................... 44
+Gray Leaf Spot .................................................................................................................................................................... 45
+Southern Corn Leaf Blight .................................................................................................................................................. 45
+Stalk Rots..................................................................................................................................................45
+Keys to Better Fungicide Applications.....................................................................................................46
+Management of Insects in Corn................................................................................................................50
+Most Common Insect Pests of Corn.........................................................................................................50
+3
+Stink Bugs........................................................................................................................................................................... 50
+Corn Earworm..................................................................................................................................................................... 50
+Fall Armyworm................................................................................................................................................................... 50
+Sugarcane Beetles ............................................................................................................................................................... 50
+Billbugs............................................................................................................................................................................... 51
+Transgenic Bt Corn...................................................................................................................................51
+At-Planting Use of Insecticides................................................................................................................54
+Chemical and Rate Selection....................................................................................................................54
+Insecticides at Planting........................................................................................................................................................ 55
+Post-Emergence Insecticides............................................................................................................................................... 59
+Corn Drying and Storage ..........................................................................................................................68
+Moisture Shrink........................................................................................................................................68
+Drying System Considerations.................................................................................................................69
+High Temperature Self Contained Dryers................................................................................................69
+Wet Holding ........................................................................................................................................................................ 70
+Bin Drying................................................................................................................................................70
+Equilibrium Moisture Content............................................................................................................................................. 70
+Natural Air and Low Temperature Bin Drying ................................................................................................................... 70
+Additional Tips.................................................................................................................................................................... 71
+Storage and Quality ..................................................................................................................................71
+Storage Conditions.............................................................................................................................................................. 71
+Aeration............................................................................................................................................................................... 72
+Monitoring........................................................................................................................................................................... 72
+Safety: ................................................................................................................................................................................. 72
+Corn Grading....................................................................................................................................................................... 72
+Corn Harvest ..............................................................................................................................................74
+Farm-Stored Corn Insect Management...................................................................................................75
+Contributing Authors................................................................................................................................79
+4
+Introduction
+Michael Plumblee, PhD
+Corn is one of the major row crops in the United States. According to the USDA National Agricultural Statistics 
+Service, the acreage of planted corn in the United States averaged 89.4 million acres from 2004 to 2024. Corn
+production has also increased from 11.81 to 15.15 billion bushels from 2004 to 2024 in the United States. In South 
+Carolina, the acreage of planted corn has been approximately 345,238 acres over the last 20 years. Table 1 shows 
+the South Carolina corn production by county in 2023.
+Table 1. 2023 county corn production in South Carolina. Bolded values represent top counties.
+County Planted (acres) Harvested (acres) Yield (bu/acre) Production (bushels)
+Bamberg 7,400 6,240 166.3 1,038,000
+Berkeley 3,400 3,230 123.2 398,000
+Calhoun 10,200 9,830 173.6 1,706,000
+Chester 1200 580 87.1 50,500
+Chesterfield 9,300 8,900 106.3 946,000
+Clarendon 40,700 40,000 173.4 6,935,000
+Darlington 20,100 19,300 147.0 2,837,000
+Dillon 24,000 23,700 162.1 3,842,000
+Dorchester 7,600 7,330 158.7 1,163,000
+Edgefield 800 770 77.0 59,300
+Florence 20,700 20,000 131.5 2,629,000
+Georgetown 2,000 1,890 151.3 286,000
+Greenville 800 770 103.8 79,900
+Hampton 7,500 7,210 155.3 1,120,000
+Horry 19,500 19,200 147.3 2,828,000
+Lee 25,900 25,500 156.5 3,991,000
+Marion 9,600 9,290 160.8 1,494,000
+Marlboro 16,800 16,400 169.9 2,787,000
+Newberry 3,400 2,700 112.2 303,000
+Oconee 800 730 108.8 79,400
+Orangeburg 35,400 34,700 155.0 5,378,000
+Sumter 28,400 27,200 159.8 4,347,000
+Williamsburg 22,400 21,600 123.5 2,668,000
+All Other 44,800 40,800 130.6 5,326,900
+State Total 365,000 350,000 137.5 52,500,000
+Counties with the highest estimated corn acreage (>20,000 acres) in 2023 were Clarendon, Darlington, Dillon, 
+Florence, Horry, Lee, Orangeburg, Sumter, and Williamsburg counties. These top counties accounted for about 
+65% of total planted corn in the State in 2023. The highest estimated corn yields in 2023 were for Bamberg, 
+Calhoun, Clarendon, Marlboro, Dillon, and Marion Counties and ranged from 160.8 to 173.6 bushels/acre. The 
+updated state average yield was 137.5 bushels/acre in 2023. 
+5
+Marketing Corn Production
+Scott Mickey 
+Profitable corn production is critical for the sustainability of the farm business. Profitable production requires the 
+producer to market their products at a price that covers the cost of production as well debt repayment, family living,
+and income tax needs, and equity growth. Corn prices are influenced by the supply of corn in the United States and 
+globally and the demand for corn by end-users. Successfully marketing corn requires several steps:
+Step 1: Calculate price targets that cover the cost of production and provide the earnings needed for
+• Family living and income taxes
+• Interest expense on operating and term debt
+• Equity growth
+Step 2: Identify pricing opportunities
+• Compare market price against the break-even price
+• Evaluate fundamental supply and demand trends
+• Review technical trends of the market
+Step 3: Execute the sale
+• Consider seasonality of corn prices
+• Choose the appropriate marketing tool - cash sale, futures, or options
+• Determine quantity to market
+Let’s see how these steps work using information available in December 2021.
+Step 1: Calculate price target
+This producer expects a 2022 corn yield of 125- bushels and operating costs of $635 per acre this year. This is 
+about $100 less than the Clemson enterprise budget for non-irrigated strip-tilled corn but reflects the producer’s
+management practices, tillage operations, labor efficiency, and soil type. Family living draws and debt service are 
+expected to be $46 and $104 per acre, respectively. The producer also expects to receive $57 an acre for non-crop 
+revenue such as government payments, refunds, and custom work. Their break-even corn price calculation is shown 
+below (table 1).
+Table 1. Break-even corn price calculation.
+Calculation Per Acre
+Operating Cost $635
+Family Living $ 46
+Principal and Interest $104
+Total Cash Need $785
+Less: Non-Crop Revenue -$57
+Crop Revenue Required $728
+Expected Yield 125
+Break-Even Price $5.82 
+Less: Harvest Basis $0.50
+Break-Even Futures Price $5.32
+6
+Remember your breakeven price will differ according to your actual cost of production, family living needs, and 
+debt repayment terms. 
+Step 2: Identify pricing opportunities
+On December 3, 2021, December 2022 corn futures closed at $5.52 per bushel. This producer needs a futures price 
+of $5.32 per bushel to pay operating expenses and expected family living and debt service needs. This pricing 
+opportunity of $5.52 would cover the producer’s Family Living needs, Operating expenses, Interest expenses, and 
+long-term Debt payments (FLOID) and leave $0.20 per bushel ($25/acre of corn) for equity Growth if the 125-
+bushel yield is achieved.
+Table 1 below is a recap of USDA’s World Agriculture Supply and Demand Estimates (WASDE), released in 
+November 2021. The 22/23 column are estimated numbers based on analysts’ expectations for the corn crop to be 
+planted in 2022. USDA will not release their 2022-23 S&D estimates until May 2022.
+Table 2. USDA World Agriculture Supply and Demand Estimates (WASDE), released in November 2021.
+- 19/20 20/21 21/22 22/23 23/24
+- WASDE-618 WASDE-618 Estimate Estimate Estimate
+Planted 89.7 90.7 93.3 92.0 91.7
+Harvested 81.3 82.3 85.1 84.3 84.0
+Yield 167.5 171.4 177.0 51.6 52.2
+Beg Stocks 2,221 1,919 120 137 185
+Production 13,620 14,111 15,062 15,075 15,189
+Imports 42 24 25 25 27
+Total Supply 15,882 16,055 16,323 16,593 16,869
+Feed 5,903 5,597 5,650 5,800 6,000
+Food/Seed 1,430 1,437 1,430 1,440 1,445
+Ethanol 4,852 5,032 5,250 5,200 5,200
+Exports 1,778 2,753 2,500 2,500 2,550
+Total Demand 13,963 14,819 14,830 14,940 15,195
+Ending Stocks 
+(ES)
+1,919 1,236 1,493 1,653 1,674
+Percent Use 14% 8% 10% 11% 11%
+USDA Price $3.56 $4.53 $5.45 - -
+Futures as of 
+12/3/21
+- - - $5.52 -
+7
+Figure 1. December corn futures price activity from August 31, 2021 through November 29, 2021.
+These three factors (current price versus break-even price, projected increased ending stocks, and futures price 
+direction) indicate that a pricing opportunity exists for this producer.
+Step 3: Execute the sale
+Commodity prices tend to follow a seasonal pattern of relatively higher prices around planting and lower prices at 
+harvest. Corn’s historical seasonality of prices shows that prices are highest in May and June and lowest in 
+November. Unfortunately, this pattern is not perfect, as we found out in 2020. Nevertheless, this producer should 
+consider pricing a portion of expected production soon while the price is profitable and because the 2022 price is 
+expected to decline from a supply and demand perspective.
+The method of pricing could be a cash forward contract which will require the producer to deliver the contracted 
+quantity as outlined in the forward contract. Producers should use cash forward contracts when they are 
+comfortable with the delivery requirements. Alternatively, the producer could hedge their corn using the futures 
+market. Futures contracts do not require delivery but will require the use of a commodities broker. Producers will 
+need to provide margin money to secure the trade and wire additional margin if prices rise. Put options allow 
+producers to set a minimum price for corn in exchange for the option premium. The premiums are paid at the time 
+of purchase and, like futures require the use of a commodity broker.
+Determining the quantity to market is one of the last decisions a producer needs to make. When using cash forward 
+contracts, the minimum quantity is often 1,000 bushels. Futures and options contracts are typically in 5,000-bushel 
+increments, although mini contracts of 1,000 bushels may be available. Given a 125-bushel expected yield, a 5,000-
+bushel contract commits 40 acres of corn. If growing 500 acres, one contract represents 8% of expected production.
+Consider pricing up to your crop insurance guarantee before harvest. For example, if the producer has a 75% 
+Revenue Protection policy, he may choose to price up to 94 bushels per acre before harvest. For this example, the 
+producer may consider pricing 25% of production before planting (December to April), another 25% post-planting
+(May to August), and another 25% as actual production becomes clearer (September to October).
+Marketing is important for the profitability of corn. Spend some time each week monitoring your marketing 
+activity. If you would like more information about commodity marketing, read the weekly Commodity Market 
+Outlook newsletter on the Clemson Extension Agribusiness Program Team website
+(clemson.edu/extension/agribusiness/marketing/commoditymarketing.html).
+8
+Corn Vegetative and Reproductive Growth Stages
+Michael Plumblee, PhD
+Identifying the corn growth stages is essential for proper crop management of pests, irrigation, and fertility. 
+Generally, corn growth and development can be divided into vegetative (V) and reproductive (R) growth stages. 
+The beginning of each stage starts when at least 50% of plants in the field or area are at that stage. Vegetative 
+growth stages start with corn emergence, and reproductive growth stages start with silking. An additional source on 
+corn growth stages can be found at “A Visual Guide to Corn Growth Stages”.
+Vegetative (V) Growth Stages
+The vegetative growth stages start with corn emergence (VE) and finish with tasseling (VT) (table 1). Description 
+of corn plant during early development is shown in figure 1. During the VE stage (figure 2), the mesocotyl 
+elongation pushes the growing coleoptile to the soil surface, and the radicle root and some lateral roots develop 
+from the seed. This seminal root system absorbs water and nutrients until the V3 growth stage (3 leaves with 
+collars). Following emergence, the coleoptile and mesocotyl elongation stops, and the growth continues from the 
+growing point (stem apex), which is located just above the mesocotyl and below the soil surface until the V5–V6 
+growth stage (5 to 6 corn leaves with collars). The rapidly developing embryonic leaves grow through the 
+coleoptile tip.
+Table 1. Vegetative (V) corn growth stages.
+Stage Description
+VE Plant emergence (depends on temperature and moisture).
+V1 First fully expanded leaf with the leaf collar (figure 3).
+V2 Second fully expanded leaf with the leaf collar (figure 4).
+V3 Third fully expanded leaf with the leaf collar.
+Vn
+VT
+(n) number of fully expanded leaf with the leaf collar.
+Tassel fully emerged (figure 5).
+Figure 1. Description of corn plant during early 
+development. Image credit: Michael Plumblee, Clemson 
+University. 
+Figure 2. VE – Corn emergence. Image credit: Michael 
+Plumblee, Clemson University.
+9
+Stages between VE and VT are designated numerically as V1 (figure 3), V2 (figure 4), through V(n). The (n) 
+represents stage with top leaf fully expanded before the VT stage (figure 5). A leaf is considered fully expanded if 
+the leaf collar (discolored line between the leaf blade and leaf sheath) is visible. The eventual number of leaves to 
+be produced by a plant is determined by V6 - V7 growth stage.
+Reproductive (R) Growth Stages
+The reproductive (R) stages are designated with R1 through R6 (table 2). These stages start with silking (R1) 
+(figure 6) and finish with physiological maturity (R6). Following R1, stage R2 refers to blister, R3 - milk, R4 -
+dough, R5 - dent, and R6 - physiological maturity (grain black layer).
+At R1 (figure 6), silks are first visible outside the husks. Pollination occurs when the falling pollen grains are 
+caught by these silks. All silks emerge from the base to the tip in 2 to 5 days and remain receptive for up to two 
+weeks. The silks will continue to elongate until fertilized. The ears pollinate from the base to the tip. Silks are 
+pollinated within 2 to 3 days. For successful pollination, it is important that silks emerge and pollinate at the same 
+time. Moisture stress at this time causes poor pollination and reduced seed set, and therefore reduced yield. More 
+information on conditions affecting corn can be found in the chapter, “Environmental Conditions Affecting Corn 
+Growth.”
+Figure 3. V1 – First fully expanded leaf with the leaf collar.
+Image credit: Michael Plumblee, Clemson University
+Figure 4. V2 – Second fully expanded leaf with the leaf collar.
+Image credit: Michael Plumblee, Clemson University
+Figure 5. R1 - Silking. Image credit: Michael Plumblee, 
+Clemson University
+Figure 6. R6 – Physiological maturity. Black layer. Image 
+credit: Michael Plumblee, Clemson University
+10
+At R2 stage, the kernels are white on the outside and have a blistered appearance. At R3, the kernel is yellow 
+outside and filled with a milk-colored fluid which is mainly starch. Kernels at this stage have 80% moisture. During 
+the R4 stage, starch continues to accumulate and thickens to a pasty consistency. At the R5 stage, most kernels are 
+dented. The kernels at the R5 stage are drying down, beginning at the top, where a small hard white layer of starch 
+is forming. The line indicating the hard starch layer will advance toward the base of the kernel.
+Table 2. Reproductive (R) corn growth stages.
+Stage Description
+R1 Silking (figure 6).
+R2 Blister.
+R3 Milk.
+R4 Dough.
+R5 Dent.
+R6 Physiological maturity. Black layer. (figure 7)
+The kernels reach their maximum dry matter weight at the R6 stage (figure 6) when the hard starch layer has 
+advanced completely to the cob and formed a brown or black abscission layer (black layer) right above the kernel 
+tip. The “black layer” is an indication of physiological maturity. Kernels at the R6 stage have about 30% to 35% 
+moisture content.
+11
+Planting Considerations
+Michael Plumblee, PhD
+Field Selection
+Corn can be grown on a wide range of soils. Field selection should be based on the potential to produce optimum 
+yields. Information to assist with field selection is presented in the County Soil Survey, available from local USDANRCS offices. In addition to soil survey maps, Clemson scientists are utilizing geo-referenced equipment (Veris 
+3100) that can map the spatial variability in soil type and depth to the subsoil within fields.
+Rotation
+Corn rotation with other crops like soybean, peanut, tobacco, and cotton, can help with reducing the weed, insect, 
+and disease pressure and improve yields. Additionally, rotating crops helps to remove phytotoxic substances 
+produced by corn and improve soil physical properties.
+Growing legumes prior to corn add residual nitrogen to the soil, which can be utilized by corn, and therefore the 
+nitrogen rates can be reduced on corn by 20 to 30 lb/A.
+Tillage
+Most of the soils in South Carolina are sandy and have low water and nutrient holding capacity. These soils tend to 
+form natural compacted zones or hardpans that are restrictive to corn root growth and development. Hardpans are 
+formed either by tillage operations (6 to 8 inches deep) or naturally (8 to 15 inches deep) right above but not 
+extending into the clay subsoil. These compacted layers or hardpans range in thickness from 2 to 12 inches. When 
+present, they prevent or delay root development into the subsoil, resulting in lower grain yields.
+Corn is sensitive to the presence of hardpans and responds well to deep tillage, which breaks the hardpan layers to 
+allow corn roots to reach for water and nutrients at lower soil depths and, therefore, better withstand short drought 
+periods during the growing season.
+Research over the past twenty years has shown significant yield increases as a result of deep tillage when hardpans 
+exist. Deep tillage, such as in-row subsoiling, promotes deeper root penetration into the soil, allowing roots to 
+extract more subsoil moisture and nutrients. The advantages of subsoiling over shallow cultivation are usually more 
+pronounced in drier years. Fields should be checked to confirm the presence of a hardpan each year. This can be 
+done by pushing a sharpened metal rod through the topsoil when soil moisture conditions are good. A hardpan can 
+usually be detected by an increase in resistance to rod penetration between the 4- and 14-inch soil depth. The depth 
+of the subsoil depends on the soil type. To properly adjust the operating depth of the deep tillage equipment, it is 
+necessary to know the depth of clay throughout the field.
+Chisel plows can operate to a depth of 11 to 12 inches but have a very high draft requirement when run at these 
+depths. In-row subsoilers perform more efficiently at these depths or deeper and offer the advantage of not 
+inverting the topsoil or mixing the subsoil with the topsoil. For subsoiling to be economically effective, the 
+subsoiler must reach the bottom of the hardpan layer but not into the clayey subsoil. Subsoiling deep into the clay 
+will not increase yields but will increase the costs of operation. In deeper sandy soils where the subsoiler will not 
+reach to the clay, subsoil to a depth of 16 to 18 inches if possible. Because of the curvature of the subsoiler shanks, 
+the depth of penetration of the shanks is seldom equal to the length of the shank. Inadequate penetration into the 
+soil is a common problem in South Carolina that does not increase grain yields but increases time, energy, and labor 
+costs. In-row subsoiling must be combined with some additional method to prevent the seed from settling too deep 
+in the loose soil slit made by the subsoiler shank. Several types of slit-closing devices are available such as spidergangs or rolling cultivators, fluted coulters, concave disks, and press wheels. These closing devices require that 
+their position, angle, and spring tension be adjusted based on subsoiler depth and the soil and residue conditions. 
+The benefits of deep tillage may be reduced if subsoiling is conducted when soil conditions are too dry (creates a 
+cloddier seed zone) or too wet (compacts soil adjacent to subsoiler slit). If needed, disking operations should be 
+12
+conducted before subsoiling to prevent recompaction. When in-row subsoiling is done correctly, it should substitute 
+for deep plowing and part of the secondary tillage.
+Conservation Tillage
+Conservation tillage refers to soil preparation that leaves a percentage of the soil surface covered by some form of 
+plant residue after a crop is established. The minimum portion of surface coverage to qualify as conservation tillage 
+is 30 percent after planting. This residue coverage on the soil surface reduces the risk of erosion and protects water 
+quality from degradation caused by runoff carrying sediment and possibly traces of fertilizer, pesticides, or both. 
+Tillage systems affect soil properties such as temperature, moisture, bulk density, aggregation, organic matter 
+content, and plant properties such as root density. Spring soil temperatures are usually lower in conservation tillage 
+systems than other tillage systems. Conservation tillage systems increase the amount of water stored in the soil 
+profile by reducing evaporation and helping the plants survive short periods of drought. Long-term conservation 
+tillage practices also increase organic matter levels in the soil. Lower soil temperatures and increased soil moisture 
+contribute to slower rates of organic matter oxidation. In conservation tillage systems, reduced tillage leads to 
+nutrient distributions that differ from those in other tillage systems. Less mixing of the soil in reduced tillage 
+systems leads to the distribution of phosphorus and potassium near the soil surface. Also, capturing more of the 
+rainfall through good use of conservation tillage can often help to improve corn yields and profitability.
+Planting Depth
+Good soil preparation is important for uniform placement of seeds in the soil to achieve high corn yields and 
+quality. It should protect the soil from water and wind erosion, provide a good seedbed for planting, break the 
+hardpans or compacted layers, and allow an increase of organic matter. Cultivate the soil so that the soil is just fine 
+enough to give good contact between the seed and soil. Good seed to soil contact is necessary so the seed can 
+absorb moisture from the soil particles. Overworking the soil does not help the corn seed to germinate or emerge, 
+but it will increase production costs, the risk of soil crusting, and soil erosion during periods of heavy precipitation.
+The seeding depth should be adjusted according to soil conditions. Avoid planting corn into cold (soil temperature 
+below 50°F at the top two inches) and wet soils if at all possible. Corn should be generally planted between 1½ to 2 
+inches deep. If planted early, the seed can be planted at 1½ inches deep due to generally higher soil moisture and 
+less evaporation. Later planting in warm soils requires deeper seed placement of up to 2 inches. It is important to 
+establish a good seed-soil contact while planting by using seed-press wheels.
+The risk associated with more shallow than 1½ inch depth is the possibility of poor development of the secondary 
+(permanent) root system. Check the seeding depth periodically to ensure proper depth across the field. Irregular 
+depth of planting may result in uneven plant emergence and reduced yields. Germination time will depend on 
+moisture and temperature. The temperature in the top 2 inches is influenced by the air temperature. Cooler soil 
+temperatures will extend the time from corn planting to emergence. Below 50°F, little, if any, germination can be 
+expected. With deeper planting, seeds are placed in cooler soil, which leads to slower emergence. Planting depths 
+greater than 2 inches result in seedlings with less vigor, slower growth and development, and less yield. Planting 
+corn seeds too deep may result in the coleoptile growth terminating below the soil surface. As the shoot grows 
+through the coleoptile tip, it will continue to grow unprotected towards the surface. In heavy soils, crusted or 
+compacted soils, an unprotected shoot will be torn apart before it can emerge.
+Regarding the organic soils where drainage is a problem, the recommended planting depth should be 1 inch during 
+the early part of the planting season. Deeper planting on organic soils often results in poor germination and 
+emergence.
+13
+Environmental Conditions Affecting Corn Growth
+Michael Plumblee, PhD
+Besides management practices, corn production depends on environmental conditions. The main environmental 
+factors influencing corn growth are temperature, moisture, and solar radiation. Especially important are temperature 
+and moisture.
+Temperature
+The optimal average temperatures for corn growth range between 68°F and 73°F. However, the optimum 
+temperature varies over the corn growing season and between daytime and nighttime. Corn can survive short 
+exposure to low and high temperatures of 32°F and 112°F, respectively.
+Cooler temperatures slow down the growth of plants. Growth decreases once the temperature drops to about 41°F. 
+Temperatures between 32°F and 28°F have very little effect on corn. Extremely low temperatures cause freeze 
+damage, the severity of which will depend on the temperature, duration, and corn growth stage. Extended low 
+temperatures at the seedling stage that reduce the soil temperatures to below freezing two inches below the surface 
+may kill corn. Later in the season, a long exposure of corn to temperatures below 28°F can damage corn by 
+damaging the “growing point.” The growing point for corn is located in the center of the stem and below the soil 
+surface until the V5 - V6 growth stage (5 to 6 corn leaves with collars). At the V6 growth stage, corn would be 
+approximately 12 inches tall. It is important to remember that although corn can germinate and grow slowly at 
+about 50°F, the planting should start when the average soil temperature reaches 55°F at the top two inches. Poor 
+germination and stand usually are the result of low soil temperatures.
+Corn yield may also be reduced due to high air temperatures (95°F and higher) during pollination. High 
+temperatures during this time can cause damage to pollination if plants are under drought stress. During moisture 
+stress, especially at low relative humidity, high temperatures can desiccate silks and damage or kill pollen. 
+Pollination will not be affected by high temperatures if there is adequate moisture in the soil because pollen shed 
+usually occurs during morning hours.
+Growing Degree Days (GDD)
+Corn productivity is also correlated with the length of the growing season, which is characterized by the Growing 
+Degree Day (GDD) accumulations (referred to as “heat units”). The GDD is accumulated from the day after 
+planting until physiological maturity. The GDD calculation method most commonly used for corn in the United 
+States is the 86/50 method. Growing degree days are calculated as the average daily temperature minus 50 using the 
+following formula:
+GDD = ((Tmax + Tmin) / 2) – 50
+where Tmax is the maximum temperature, and Tmin is the minimum temperature. If the maximum temperature is 
+above 86°F, 86 is used, and if the minimum temperature is lower than 50°F, 50 is used in the calculations of the 
+average temperature. Corn hybrids require a certain number of accumulated GDDs to reach maturity. Long-season 
+hybrids require more GDDs to reach physiological maturity than short-season hybrids. This GDD method is more 
+accurate in corn production than the traditional method of days from planting to maturity.
+14
+Moisture
+The highest corn yields can only be obtained under optimum moisture conditions during the growing season. 
+Moisture stress at any of the growth stages will result in potential yield reduction. Corn generally has high water 
+requirements and can use about 0.25 inch of water per day during rapid growth. However, water usage may 
+increase up to 0.35 inch per day during pollination. Corn yields are reduced when evapotranspiration exceeds water 
+supply from the soil at any time during corn growth. Evapotranspiration is the sum of the water loss from the soil 
+through evaporation and water used by the plant during transpiration. Major water loss in early corn growth is from 
+evaporation. During moisture stress, the availability and uptake of nutrients are also reduced, and therefore stress 
+weakened plants are also more susceptible to disease and insect damage. The yield loss due to water stress will 
+depend on the growth stage of corn during the drought stress as well as the length and severity of the drought. Corn 
+is most sensitive (highest potential yield loss) to water stress during pollination, followed by grain-filling and 
+vegetative growth stages.
+Water stress during vegetative growth stages will reduce stem and leaf cell expansion as well as dry matter 
+accumulation due to lower water and CO2 intake. This results in reduced plant height and leaf area and lower yield 
+potential. Severe moisture stress is indicated by leaf wilting. Corn plants in the initial phases of drought wilt in the 
+afternoon. During longer periods of drought, wilting occurs earlier in the day. Eventually, leaves remain wilted all 
+day. A 10% to 20% yield reduction may occur if drought stress occurs during vegetative stages of corn.
+Moisture stress during pollination is the most critical for reducing yield potential of corn. Severe moisture stress 
+will result in delayed silking and reduced pollination due to lack of viable pollen and reduced synchronization 
+between silking and pollination. Under severe stress, some plants will not form any silks, or silks will emerge after 
+pollen production has ended; therefore, resulting in poorly developed ears. The moisture stress during this stage 
+may cause up to 50% yield reduction. Kernels, especially near the tip of the ear, are most susceptible to abortion 
+during the first two weeks following pollination. Tip kernels are generally fertilized last and are less vigorous. 
+During the kernel dough stage, yield losses are mainly due to reductions in kernel dry weight accumulation. Stress 
+during dough and dent stages will decrease kernel weights and often causes premature black layer formation. Once 
+grain has reached physiological maturity, moisture stress will have no further physiological effect on final yield. 
+High plant populations in moisture-limiting environments increase moisture stress and silking problems, which lead 
+to reduced kernel number.
+15
+Soil Sampling and Fertility Management
+Bhupinder Farmaha, PhD
+The information provided in this chapter will help producers to make decisions related to lime and fertilizer to help 
+with maintaining high corn yields. For complete detail, readers are referred to Clemson University Cooperative 
+Extension Circular EC 476, Nutrient Management for South Carolina (bit.ly/3pH4HSb).
+Soil Testing
+The first step in soil testing is to obtain a representative soil sample from the field. Here are the steps for obtaining a 
+representative soil sample:
+• Divide field into 2.5-acre areas (also used in the precision ag sampling) based on similar management 
+history and soil characteristics - sample should not represent a field over 10 acres. Consider using precision 
+agriculture techniques such as grid sampling or zone sampling for more detailed information about soil 
+variability. 
+• Take into consideration difference in surface color is the most evident feature separating soil types, 
+indicating possible variability in texture, organic matter content, and drainage.
+• Nutrient removal rates by crops are important in determining residual soil fertility levels. Therefore, 
+cropping history is another important factor to consider when defining a sample area.
+• Construct an accurate map of the field to take samples from the same areas each year, preferably in the fall 
+after harvest, to enhance the relevance of annual comparisons. Consistent timing of sampling from year to 
+year is crucial for meaningful comparisons.
+Taking soil samples:
+• Obtain 10 to 20 soil cores (brush away surface plant residue material) from a 6 to 8 inches depth for tilled 
+areas. For no-till areas, consider stratified sampling: 0-2 inches and 2-8 inches to account for nutrient 
+stratification.
+• Place soil cores in a clean plastic bucket and mix thoroughly.
+• Fill a one-pint sample box with the soil subsample.
+Detailed information to develop management zones and prescription maps is available in the Land-Grant Press 
+publication, Precision Agriculture-Based Soil Sampling Strategies (bit.ly/3vJQAz2).
+In most sandy Coastal Plain soils where deep tillage is practiced to break root restrictive hardpans, a sample of the 
+top four inches of subsoil can be used to determine the availability of potassium, sulfur, and magnesium. These 
+nutrients readily leach through the sandy surface layer but are retained in the upper part of the subsoil. The results 
+of subsoil samples can be used to adjust fertilizer recommendations made from the analysis of the A horizon 
+sample.
+Soil samples can be sent to Clemson University’s Agricultural Services Lab for analyses (visit the Lab website, 
+bit.ly/3vJQAz2), or to a private lab. Your Cooperative Extension county office can help provide soil sample boxes, 
+submission forms, and advice on taking soil samples. The county office will also mail your samples to the Clemson 
+University’s Agricultural Services Lab on a fee basis.
+Soil samples are analyzed for soil pH and the plant-available contents of potassium (K), phosphorus (P), calcium 
+(Ca), magnesium (Mg), zinc (Zn), copper (Cu), boron (B), and manganese (Mn). Based on these soil test results, 
+recommendations are made regarding the correction of soil pH and fertilization requirements to achieve top yields. 
+These recommendations are based on several years of soil test calibration research conducted in South Carolina and 
+neighboring states. Soil analysis procedures determine the amount of each nutrient available for crop uptake. 
+16
+Soil pH and Liming
+A soil pH too low or too high can adversely affect nutrient availability and hence, corn growth and yield. The best 
+pH for corn grown in most South Carolina soils is between 5.8 and 6.5. Low soil pH is one of the most frequent 
+problems encountered in cornfields across South Carolina. If soil tests show a low soil pH, lime can be applied to 
+enhance yield by
+• Reducing toxicity of soil aluminum and/or manganese
+• Improving uptake of phosphorus, potassium, and molybdenum
+• Increasing availability of calcium and magnesium (with dolomitic lime)
+Lime Application
+Soil pH decreases over time due to use of application of nitrogen fertilizer, crop nutrient removal, and leaching of 
+basic cations (like calcium). Symptoms of low pH include stunted plant development, uneven crop growth across 
+the field, premature senescence of lower leaves, and interveinal chlorosis (yellowing between veins) on upper 
+leaves. Low soil pH can limit plant growth through aluminum and acid effects on plant roots, manganese toxicity, 
+calcium, magnesium, or molybdenum deficiency, and reduced phosphorus availability. Additionally, under low pH 
+conditions, bacterial activity is reduced, slowing the breakdown of soil organic matter, crop residues, and organic 
+fertilizer sources (such as animal manures). Thus nutrient release from these sources is lessened.
+The best time to apply the recommended rate of lime is following the harvest of the previous crop to allow lime for 
+neutralizing soil acidity prior to planting corn. Lime application will be slower in dry soil because water is required 
+for lime to react with the soil. Usually, liming materials with a high calcium carbonate equivalent (CCE) tend to 
+neutralize soil acidity faster than those with a low CCE. Faster activity of lime will be from finer material due to 
+greater surface area. Use dolomitic lime when magnesium levels are low or anticipated to be low prior to the next 
+time lime is needed. Dolomitic lime will supply 80 to 240 pounds of magnesium and 400 to 600 pounds of calcium 
+per ton. Calcitic lime will supply 8 to 12 pounds of magnesium (usually not enough) and 700 to 800 pounds of 
+calcium per ton. The Land-Grant Press publication, Basis of Selecting a Lime Material (bit.ly/3pHx7eS), provides 
+additional information about how to evaluate liming materials and choose the most effective and economical lime 
+source and appropriate rate for the crop production system.
+When selecting a liming material, consider both the CCE and the fineness of the material. Finer materials react 
+more quickly with the soil. For no-till systems or when a quicker pH change is needed, consider using finely ground 
+lime.
+Variable rate lime application based on precision soil sampling results can improve the efficiency of liming 
+practices and ensure more uniform soil pH across the field. 
+A soil with a low cation exchange capacity (CEC) has a low buffer capacity and will not require a lot of lime to 
+correct soil pH but may need lime applied frequently. A soil with a high CEC may require a large amount of lime to 
+initially correct pH but may not need another application for a few years due to a high buffering capacity.
+Starter Fertilizers
+Research in several states in the Southeast has shown that the placement of some fertilizers near the seed at planting 
+may increase grain yields in years of good rainfall or when corn is grown with irrigation. Usually, this fertilizer is 
+placed 2 inches to the side and 2 inches below the seed. Higher yields will usually be achieved on sandy soils if the 
+starter fertilizer is applied. Applying phosphorus as a starter may be beneficial if the soil test shows phosphorus to
+be very low or if corn is planted in cold soil. Starter fertilizer may help to increase early plant growth but doesn’t
+always translate to higher grain yield.
+17
+Nutrient Deficiencies
+Even when soil fertility levels are optimum, nutrient deficiencies may occur if root growth and function are 
+restricted by soil compaction and hardpans, nematodes, diseases, low soil temperatures, or excess rain over a 
+prolonged period of time. If nutrient deficiencies are suspected, take leaf samples from both healthy and deficient 
+plants for tissue test analyses. Soil samples should also be collected from the same areas and sent to the lab for 
+nutrient analysis.
+Nitrogen (N)
+Optimum levels of nitrogen are required to sustain high corn growth and yield. Nitrogen is critical in many plant 
+processes, such as a key component of chlorophyll and the leaf enzymes associated with sugar production. It is also 
+a major component of amino acids to build proteins, energy-transfer compounds, such as ATP (adenosine 
+triphosphate), which allow cells to use energy during metabolism, and nucleic acids such as DNA - genetic material 
+that allows plant cells to grow and reproduce. Nitrogen is also vital in maintaining green leaf area and proper ear 
+development.
+Soil nitrogen exists in organic and inorganic (mainly as ammonium (NH4+) and nitrate (NO3-) ions) forms. Most 
+of the potentially available nitrogen in the soil is in organic forms, which are not directly available to plants until 
+converted to NH4+ by soil microorganisms. Ammonium ions bind to the soil’s negatively-charged cation exchange 
+complex while nitrate ions exist dissolved in the soil water.
+Nitrogen-deficient corn plants are pale green and have small, spindly stalks. Additional symptoms include a Vshaped yellowing beginning at the leaf tip and proceeding to the base of the leaf on lower leaves. Corn plants 
+generally accumulate up to two-thirds of their total nitrogen two weeks before and two weeks after tasseling (figure 
+1). Recent research has shown, however, that many stay-green hybrids accumulate even a greater proportion of 
+their total nitrogen during the grain-filling period. Therefore, nitrogen applications must be properly managed to 
+ensure that adequate nitrogen is available to the plants during this period of development. The most profitable rate 
+of nitrogen fertilizer depends on many factors such as soil type, amount of rainfall during the growing season, plant 
+population, cultural practices, residual nitrogen from the previous year (especially following a year with low 
+rainfall), and decomposition of organic matter under warm soil conditions.
+18
+Figure 1. Seasonal N accumulation and partitioning averaged over six hybrids evaluated at Urbana, IL and DeKalb, IL in 2010. The average 
+grain yield of the six hybrids was approximately 191 bu ac−1. GGDF = growing degree days (Fahrenheit). (Source: Bender, R.R., Haegele, 
+J.W., Ruffo, M.L., and Below F.E. 2013. Modern corn hybrids’ nutrient uptake patterns. Better Crops Plant Food 97: 7–10.). 
+The suggested rates of nitrogen need to be adjusted based on the grower’s experience. For most corn, under dryland 
+conditions, a rate from 120 to 150 pounds per acre should be sufficient. For very sandy soils with yield potentials of 
+80 bushels per acre or less, 100 pounds of nitrogen per acre is adequate. Use from 150 to 180 pounds of nitrogen 
+per acre on river bottoms or on soils with high water and nutrient holding capacities which produce yields of 130 
+bushels per acre or more.
+When corn is irrigated, apply 180 to 225 pounds of nitrogen per acre. Reduce the rate by 20 to 30 pounds per acre 
+when corn follows soybean in a rotation. When a legume cover crop is grown and turned under before planting 
+corn, reduce the rate of nitrogen applied by 50 to 80 pounds per acre.
+When animal manure is applied to the field, adjust inorganic fertilizer nitrogen rates for the nitrogen supplied by the 
+manure. Since animal waste is highly variable in nutrient content (nitrogen, phosphorus, and potassium), laboratory 
+analyses are needed to determine its nutritive value. Animal waste analyses for cropland application can be 
+obtained from the Agricultural Service Laboratory of Clemson University. See your county Extension agent for 
+submission forms and sampling instructions.
+A broadcast application of nitrogen immediately before or after planting may be the most convenient method to 
+apply nitrogen to the soil, but it is the least effective. Nitrate, the most prevalent form of nitrogen in the soil, is a 
+very mobile compound in sandy soils and is subject to leaching during periods of heavy precipitation.
+Consequently, nitrogen fertilizer should be applied in a split application to increase the efficiency of nitrogen 
+application. Apply 30 to 40 pounds of nitrogen at planting. The start-up nitrogen application may be combined with 
+a small amount of phosphorus. The early phosphorus application may help to improve its uptake under cool soil 
+temperatures, which generally reduce phosphorus uptake under these conditions. The best method to apply this 
+nitrogen is to band it 2 inches to the side and 2 inches below the seed or on the soil surface, 2 to 4 inches to the side 
+19
+of the row. Application too close to the germinating seed or emerging plant may cause severe salt injury. Also, the 
+fertilizer salts may cause plants to wilt in low moisture soils by pulling water away from corn roots. Another 
+method is to apply the nitrogen in a band over the row. If banded over the row, use the lower rate of nitrogen and 
+have the band at least 8 inches wide to avoid injury to the seed or seedlings. The remainder of the nitrogen rate for 
+corn should be applied when the plants are 15 to 30 inches high (between six and eight fully expanded leaves on the 
+plants), just before corn begins rapid growth and development.
+Corn will obtain this height usually 21 to 30 days after plant emergence. Moisture and nutrient deficiencies after 
+this stage of growth will affect ear development. The nitrogen use efficiency can be improved by splitting the 
+sidedress nitrogen portion (balance) into two sidedress applications for dryland corn and three applications for 
+irrigated corn. For example, apply the first half of the sidedress balance when corn plants are 12 inches tall and the 
+second half of the balance when corn plants are 24 to 30 inches tall for dryland corn. For irrigated corn, the timing 
+of the first two applications would be similar to the dryland corn, and a third portion would be applied two weeks 
+later through the irrigation system. All sources of nitrogen are equally effective for corn production when applied 
+correctly. To increase the period of availability, growers may consider using slow-release forms of nitrogen or add 
+a nitrification or urease inhibitor to the fertilizer. When nitrogen is applied with irrigation water (fertigation), the 
+additional nitrogen may be applied over two or three applications. A 100 bushel per acre corn yield will remove 65 
+pounds of nitrogen in the grain. If harvested for silage, the grain and stover will remove 130 pounds of nitrogen per 
+acre from the soil. Nutrient levels on the soil test report are indexed into the following categories (table 1).
+Table 1. Soil test report nutrient levels.
+To improve N use efficiency, consider the following strategies:
+1. Use of enhanced efficiency fertilizers, such as slow-release N forms or fertilizers with nitrification or urease 
+inhibitors.
+2. Split applications of N, with multiple applications throughout the growing season.
+3. Use of in-season diagnostic tools, such as chlorophyll meters or aerial imagery, to guide N applications.
+When applying nitrogen through irrigation systems (fertigation), consider multiple small applications throughout 
+the season to match crop demand and reduce the risk of leaching losses.
+Phosphorus (P)
+Phosphorus is an essential component in the structure of many plant compounds and plays an important role in 
+energy storage and transfer within the plant. It is relatively immobile and moves very little in the soil profile under 
+most conditions. Most phosphorus is tightly bound to soil particles and unavailable to plants. Over-fertilization of 
+soils with poultry litter, dairy wastes, and other animal manure contributes to the buildup of very high levels of 
+phosphorus and may result in leaching in sandy soils.
+A fibrous and extensive corn root system is essential for optimal phosphorus uptake. Early in the growing season, 
+deficiency symptoms (purple leaves) may appear during periods of cold weather even when soil phosphorus is 
+Level Category
+Low Soil is deficient, and applied nutrient will significantly increase yields.
+Medium There will be a response to nutrient application approximately 50 percent of the time.
+Sufficient Soil plant nutrient element level is in that range adequate to meet the crop requirement as well as 
+that needed for consistent high crop yield production. A maintenance application rate is 
+recommended to compensate for expected crop removal.
+High or Excessive Nutrient supply in the soil is sufficient for top yield performance, and nutrient addition is not likely to 
+increase yields.
+20
+adequate because root growth is slowed to a relatively greater extent than vegetative growth. Sugars accumulated in 
+the leaves and stem of the plant are not moved fast enough to slowly growing roots and therefore trigger 
+anthocyanin production resulting in purple plants.
+Small ears, undeveloped kernels at the ear tips, and twisted or bowed ears indicate that phosphorus deficiency 
+occurred during reproductive development. The rate of phosphorus fertilizer to apply can only be determined by 
+soil testing. A broadcast application is usually satisfactory, provided the fertilizer is incorporated into the soil. 
+When the soil test for phosphorus is low, or corn is planted in cold soil, initial growth may be improved if part of 
+the phosphorus is banded 2 inches below and 2 inches to the side of the seed. However, this practice may not 
+always result in higher grain yields. A 100 bushel per acre corn yield will remove 34 pounds of P205 per acre in the 
+grain. If harvested as silage, the grain and stover will remove 45 pounds of P205 per acre from the soil. The 
+recommended rates of phosphorus for corn are shown in tables 2 through 6.
+In no-till systems, P tends to accumulate near the soil surface. This stratification may affect P availability, 
+especially during dry periods when the surface soil dries out. Deep banding of P fertilizer may be beneficial in these 
+situations.
+Potassium (K)
+Potassium is important to maintain the plant’s salt balance and regulate water and sugar movement within the plant. 
+Because of its positive charge, potassium is involved in charge balance within the plant cells as well as making 
+enzymes functional. Deficiency symptoms are usually first detected on older leaves and include the yellowing and 
+dying of plant leaf margins beginning at the tips of lower leaves. The ears will not be filled at the tip, and the stalks 
+will be weak and may lodge. Potassium movement depends on soil cation exchange capacity and will leach into the 
+subsoil eventually in most sandy soils. A single application of potassium is sufficient on most soils, but split 
+applications are recommended on very sandy soils. The rate of potassium fertilizer to apply must be determined by 
+soil testing. The plant will take up more potassium than needed (luxury consumption) if excess potassium is added 
+to the soil. Also, a high rate of potassium application may induce magnesium deficiency on soils with low 
+magnesium levels. A 100 bushel per acre corn yield will remove 24 pounds of K2O in the grain. If harvested for 
+silage, the grain and stover will remove 100 pounds of K2O per acre from the soil. The recommended rates of 
+potassium for corn are shown in tables 2 through 6 (Source: General Comments for Agronomic Crops guide, 
+(bit.ly/3pEhIeX).
+Like P, K can also become stratified in no-till systems. Soil testing of separate depth increments (e.g., 0-2 inches 
+and 2-8 inches) can help identify stratification issues. If stratification is severe, deep banding of K fertilizer may be 
+beneficial.
+Table 2. Fertilizer recommendations for corn grain yield goal of 100 bu/acre based on soil test results in South Carolina.
+Phosphorus Potassium
+Low Medium Sufficient High Excessive
+ pounds of N-P2O5-K2O per acre
+Low 120-80-110 120-80-80 120-80-40 120-80-0 120-80-0
+Medium 120-55-110 120-55-80 120-55-40 120-55-0 120-55-0
+Sufficient 120-30-110 120-30-80 120-30-40 120-30-0 120-30-0
+High 120-00-110 120-00-80 120-00-40 120-00-0 120-00-0
+Excessive 120-00-110 120-00-80 120-00-40 120-00-0 120-00-0
+21
+Table 3. Fertilizer recommendations for corn grain yield goal of 150 bu/acre based on soil test results in South Carolina.
+Phosphorus Potassium
+Low Medium Sufficient High Excessive
+pounds of N-P2O5-K2O per acre
+Low 170-105-135 170-105-95 170-105-60 170-105-
+30
+170-105-0
+Medium 170-80-135 170-80-95 170-80-60 170-80-30 170-80-0
+Sufficient 170-55-135 170-55-95 170-55-60 170-55-30 170-55-0
+High 170-00-135 170-00-95 170-00-60 170-00-30 170-00-0
+Excessive 170-00-135 170-00-95 170-00-60 170-00-30 170-00-0
+Table 4. Fertilizer recommendations for corn grain yield goal of 200 Bu/acre based on soil test results in South Carolina.
+Phosphorus Potassium
+Low Medium Sufficient High Excessive
+pounds of N-P2O5-K2O per acre
+Low 220-130-170 220-130-120 220-130-75 220-130-40 220-130-0
+Medium 220-105-170 220-105-120 220-105-75 220-105-40 220-105-0
+Sufficient 220-80-170 220-80-120 220-80-75 220-80-40 220-80-0
+High 220-00-170 220-00-120 220-00-75 220-00-40 220-00-0
+Excessive 220-00-170 220-00-120 220-00-75 220-00-40 220-00-0
+Table 5. Fertilizer recommendations for corn grain yield goal of 250 Bu/acre based on soil test results in South Carolina.
+Phosphorus Potassium
+Low Medium Sufficient High Excessive
+pounds of N-P2O5-K2O per acre
+Low 270-155-220 270-155-145 270-155-85 270-155-50 270-155-0
+Medium 270-130-220 270-130-145 270-130-85 270-130-50 270-130-0
+Sufficient 270-105-220 270-105-145 270-105-85 270-105-50 270-105-0
+High 270-00-220 270-00-145 270-00-85 270-00-50 270-00-0
+Excessive 270-00-220 270-00-145 270-00-85 270-00-50 270-00-0
+Table 6. Fertilizer recommendations for corn silage based on soil test results in South Carolina.
+Phosphorus Potassium
+Low Medium Sufficient High Excessive
+pounds of N-P2O5-K2O per acre
+Low 180-100-100 180-100-60 180-100-50 180-100-0 180-100-0
+Medium 180-50-100 180-50-60 180-50-50 180-50-0 180-50-0
+Sufficient 180-40-100 180-40-60 180-40-50 180-40-0 180-40-0
+High 180-00-100 180-00-60 180-00-50 180-00-0 180-00-0
+Excessive 180-00-100 180-00-60 180-00-50 180-00-0 180-00-0
+22
+Calcium (Ca)
+Calcium is involved in the construction of plant cell walls. Consequently, when a young plant is deficient in 
+calcium, the tips of new leaves will not unroll properly and will stick together. Other symptoms include dark green 
+stems, weakened stems, and poor ear formation. Applying lime will supply enough calcium for optimum corn 
+growth, and deficiencies will not occur if a favorable soil pH is maintained. A soil test level of 300 pounds per acre 
+or greater will supply adequate calcium for corn production. Apply sulfate forms (gypsum is calcium sulfate) if 
+calcium deficiencies occur at optimum soil pH.
+Magnesium (Mg)
+Magnesium is an important component of chlorophyll molecules. Deficiency symptoms include chlorosis 
+(yellowing) between the leaf veins of upper leaves and often a reddish tint on the stem and underside of lower 
+leaves. Magnesium may become limiting at low pH on sandy soils.
+Compact layers or hardpans and a high rate of potassium or calcium may also cause magnesium deficiencies in 
+corn. Also, magnesium deficiency may be induced by high crop nitrogen uptake but usually disappears after about 
+two weeks. If the soil test level for magnesium is 32 pounds per acre or greater, the corn plant will have adequate 
+magnesium. Magnesium saturation of the cation exchange capacity should be greater than 10% to ensure adequate 
+magnesium availability. Magnesium is seldom a limiting nutrient if dolomitic limestone is applied as the lime 
+source several months prior to planting corn. The use of calcitic lime sources (including some types of poultry 
+manures) are often the cause of magnesium deficiency. If magnesium needs to be added to the soil without adding 
+lime, apply 10 to 15 pounds per acre of magnesium as magnesium sulfate, sulfate of potash-magnesia, or 
+magnesium oxide. Dolomitic lime is always the least expensive source of magnesium.
+Sulfur (S)
+Sulfur is a key component of many compounds in the plant, such as the energy-producing chloroplast and several 
+amino acids. Sulfur deficient plants are small and spindly and have slower growth and delayed maturation. Sulfur 
+deficiency is expressed as an overall yellowing of the plant or yellowing of the new leaves. This response is in 
+contrast to nitrogen deficiencies which are more apparent on old lower leaves. During periods of low temperature 
+and/or with excessive rainfall in the spring, sulfur deficiencies on corn can occur shortly after seedling emergence, 
+especially on sandy soils. The plants often recover when roots reach the subsoil zone where sulfur has accumulated. 
+Side-dressing with a nitrogen-sulfur solution or a sulfate-sulfur source will help the plants to recover. Elemental 
+sulfur is not a good choice for alleviating sulfur deficiency because it is only slowly available and can decrease soil 
+pH drastically. Sulfur, like nitrate, is relatively mobile in the soil and may be leached to the clay layer with rainfall.
+However, sulfur will accumulate in the subsoil, unlike nitrate. Soils with the clay layer within the root zone will 
+generally have adequate sulfur for corn production. Apply 10 pounds of sulfur per acre when the depth to clay is 
+greater than 15 inches. Apply sulfur with phosphorus and potassium fertilizers at planting or with the nitrogen sidedress—split applications for deep sandy soils. Corn requires a relatively large amount of sulfur, generally 20 to 30 
+pounds per acre.
+The importance of S fertilization has increased in recent years due to reduced atmospheric deposition of S. 
+Consider including S in your fertilizer program, especially on sandy soils or those low in organic matter. Tissue 
+testing during the growing season can help identify S deficiencies.
+Zinc (Zn)
+Because of its involvement in chlorophyll formation, zinc deficiencies will often appear as a bleached-colored 
+chlorosis on the lower portion of new leaves. Also, deficiencies include decreased stem length (rosetting) and 
+interveinal chlorosis. Deficiencies have been observed on young corn plants in cold soil during cool weather, but 
+the plants usually grow out of the deficiency with warmer temperatures. Severe zinc deficiencies may occur when 
+deep sandy soils are limed to a soil pH of 6.5 or higher, which results in the reduction of zinc available to plants. 
+23
+Soils having the suggested soil pH (5.8 to 6.5) will have adequate zinc for corn production if the soil test shows 1.8 
+pounds of zinc per acre or higher. To prevent zinc deficiency, apply 3 pounds per acre of actual zinc preplant or at 
+planting, but only when soil tests are low.
+Boron (B)
+Boron deficiency may appear on new plant growth, especially on sandy soils low in organic matter. Symptoms of 
+boron deficiency include shortened internodes, necrotic speckling on leaves, and poor tassel and ear formation. 
+Boron occurs in the soil in both organic and inorganic forms, but only a small amount is available to plants. The 
+best method for determining when boron is needed is plant analysis, not soil testing. High levels of calcium, 
+potassium, or nitrogen levels can interfere with boron uptake. Soils high in calcium will require more boron. 
+Generally, apply 1 - 2 pounds of boron per acre in split applications (with the nitrogen). Soils in the pH range of 5.8 
+to 6.5 will have adequate boron for corn production.
+Boron is particularly important for pollination and kernel set in corn. Foliar application of B during the 
+reproductive stages may be beneficial, especially if soil tests or tissue analyses indicate low B levels.
+Manganese (Mn)
+Manganese deficiencies may appear on new corn growth, especially on over-limed soils or with lime-amended 
+biosolids. Manganese-deficient upper leaves become pale and chlorotic and are much narrower than normal leaves. 
+Avoid stockpiling lime in the field and apply lime based on soil test recommendations. Soils in the suggested soil 
+pH range of 5.8 to 6.5 will have adequate manganese for corn. If needed, manganese can be applied as manganese 
+sulfate, manganese oxide, and manganese chelates or organic complexes. Manganese oxide must be finely ground 
+to be effective. Manganese sulfate can be effectively applied either to the soil or to the crop foliage. In some soils,
+the chelates may be better than Mn sulfate but not for foliar application.
+Copper (Cu)
+Common Cu deficiency symptoms include stunting, leaf tip/shoot dieback, and poor upper leaf pigmentation. 
+Copper deficiency is most likely on organic soils. Copper is commonly applied as copper sulfate, although copper 
+oxides, copper chelates or organic complexes, and copper ammonium phosphates are also applied either to the soil 
+or as foliar sprays or dusts. Copper chelates and organic complexes should be applied as a foliar application at 
+much lower rates than soil applications. However, soil-applied copper will have much longer residual effects.
+24
+Selecting the Right Hybrid
+Michael Plumblee, PhD
+Corn hybrid selection depends on the farming operation. Plant corn early and use early-season hybrids if you plan 
+to harvest early. Choose full-season hybrids if you plan to harvest late in the season. Planting different maturities at 
+different times helps to spread the planting and harvest operations. Choose hybrids that produce consistently high 
+yields across multiple locations and years. However, the selection should not only be based on the yields but also 
+lodging, which may severely decrease yields under certain situations. Consider varieties with good tolerance to 
+insects and diseases and good grain quality. If the feeding or other values are important, check the protein and oil 
+composition of corn grain. Select hybrids with high grain protein for feeding and high oil content for processing.
+Typical relative maturity in hybrids grown in South Carolina range from 111 days. to 120 days. Earlier RM hybrids 
+have been evaluated but are not always suited for our climate and diseases.
+Hybrid selection should be based on
+• Maturity: appropriate for location and farming operations. Selecting two to three different maturity groups 
+can help to minimize the adverse effect of weather conditions and spread planting and harvesting 
+operations
+• Yield: high yielding hybrids using local data over multiple locations and years should be used
+• Stalk strength: good stalk strength helps to minimize grain yield losses due to lodging
+• Disease and insect tolerance: select varieties with good disease and insect resistance
+• Grain quality: choose hybrids with good grain quality
+• Select hybrids with high digestibility if used for silage
+Corn producers should plant different maturity corn to minimize the adverse effect of weather conditions and 
+reduce risk. Corn maturity is described as Relative Maturity (RM). However, the actual days to maturity will 
+depend on the time of planting and seasonal weather changes. More accurate determination of days to maturity can 
+be calculated based on the GDD. Due to changes in temperature, the actual number of GDDs experienced for any 
+given period will vary from year to year. The kernel moisture content at physiological maturity generally averages 
+about 30% to 35%.
+At physiological maturity, a “black layer” will form under the outer layer of the kernel tip. When this forms, it 
+signals that kernel dry matter accumulation has reached the maximum level.
+25
+Planting Dates
+Michael Plumblee, PhD
+Spreading the planting dates and maturity groups can help with planting and harvesting operations. If conditions 
+allow, corn needs to be planted at the optimum time. The most active planting for South Carolina is between March 
+20 and April 20. Planting usually begins in early March. If many acres of corn need to be planted, start planting 
+when the conditions allow it, so the planting can finish within the optimum planting time. Calendar date and soil 
+temperature are reliable indicators for making the decision on when to begin planting corn. Some other advantages 
+of early planted corn include higher soil moisture at planting, lower temperatures during pollination, earlier 
+maturity and harvest in the fall, and higher yield and test weight potential. Early planting dates also result in faster 
+canopy closure in the growing season, better stalk quality, and may help reduce late insect and disease pressure.
+When planting, start with full-season hybrids first, and then plant early-season and mid-season hybrids. The fullmaturity hybrids would have the benefit of maximum heat-unit accumulation. Delaying planting of full-season 
+hybrids would reduce yields more than other short- and mid-season hybrids. Therefore, use short- or mediumseason hybrids instead of full-season hybrids when planting late. However, planting corn late in the growing season 
+increases the insect and disease pressure and the risk of low corn yields due to pollination occurring during a period 
+of high temperature and moisture stress.
+Higher grain yields are usually obtained when corn is planted as early as weather conditions permit. Higher yields 
+of early planted corn are mainly due to reduced pest pressure late in the season, better rainfall patterns, and cooler 
+air temperatures during corn silking. Start planting corn when the soil temperature reaches about 55°F at 2-inch
+depth in the morning, and the weather forecast indicates a good chance of warm temperatures over the next few 
+days. Soil temperature will depend on soil type and moisture content. Light sandy soils will warm up faster than 
+heavy and wet soils. Also, planting should be delayed by three to five if planting in the no-till system due to plant 
+residue and higher moisture. Corn should be planted during optimum moisture to support traffic without causing 
+soil compaction and mudding the seeds. Frost may still occur following planting, but corn normally withstands frost 
+damage to above-ground tissue since the growing point is still below the soil surface until corn reaches V5–V6 
+stage (about 12 inches).
+26
+Plant Populations
+Michael Plumblee, PhD
+Plant population is correlated with corn yields and should be based on soil type. Heavier soils have higher water 
+and nutrient holding capacity than sandy soils and have higher yield potential. Recommended populations range 
+from 19,000 to 24,000 for sandy soils with low rainfall, 24,000 to 28,000 for heavier soils, and 28,000 to 32,000 for 
+irrigated corn. The seeding rate should be about 10% to 15% higher than desired harvest population (table 1). 
+Seeding rates will also depend on the tillage, hybrid tolerance, and standability.
+It is important to remember that extremely high plant populations will lead to increased lodging, smaller ears, a 
+lower number of kernels per ear, and lower yields. Usually, high-yielding grain corn hybrids produce high biomass 
+yields. Also, there are corn hybrids developed specifically for silage. The plant population for growing corn for 
+silage should be 2,000 to 3,000 plants higher compared to planting a hybrid for grain. The elevated plant population 
+increases the biomass yields and total digestible nutrient production without the risk of lodging due to the earlier 
+harvest of corn for silage. Table 2 can assist with calculating the plant stand per acre after counting the number of 
+plants within a specific row width and length and multiplying this number by 1,000.
+Table 1. Kernel spacing within the row for different seeding rates and row spacings.
+Seeding 
+rate/acre Stand/acre (10%
+loss)
+Row spacing (inches)
+15 20 22 28 30 36 38 40
+Space between kernels (inches)
+19,000 17,100 22.0 16.5 15.0 11.8 11.0 9.2 8.7 8.3
+20,000 18,000 20.9 15.7 14.3 11.2 10.5 8.7 8.3 7.8
+21,000 18,900 19.9 14.9 13.6 10.7 10.0 8.3 7.9 7.5
+22,000 19,800 19.0 14.3 13.0 10.2 9.5 7.9 7.5 7.1
+23,000 20,700 18.2 13.6 12.4 9.7 9.1 7.6 7.2 6.8
+24,000 21,600 17.4 13.1 11.9 9.3 8.7 7.3 6.9 6.5
+25,000 22,500 16.7 12.5 11.4 9.0 8.4 7.0 6.6 6.3
+26,000 23,400 16.1 12.1 11.0 8.6 8.0 6.7 6.3 6.0
+27,000 24,300 15.5 11.6 10.6 8.3 7.7 6.5 6.1 5.8
+28,000 25,200 14.9 11.2 10.2 8.0 7.5 6.2 5.9 5.6
+29,000 26,100 14.4 10.8 9.8 7.7 7.2 6.0 5.7 5.4
+30,000 27,000 13.9 10.5 9.5 7.5 7.0 5.8 5.5 5.2
+31,000 27,900 13.5 10.1 9.2 7.2 6.7 5.6 5.3 5.1
+32,000 28,800 13.1 9.8 8.9 7.0 6.5 5.4 5.2 4.9
+33,000 29,700 12.7 9.5 8.6 6.8 6.3 5.3 5.0 4.8
+34,000 30,600 12.3 9.2 8.4 6.6 6.1 5.1 4.9 4.6
+35,000 31,500 11.9 9.0 8.1 6.4 6.0 5.0 4.7 4.5
+36,000 32,400 11.6 8.7 7.9 6.2 5.8 4.8 4.6 4.4
+Table 2. Row spacing and row length for 1/1,000 acre method.
+Row spacing (inches) Row length (1/1,000 acre)
+15 34 ft 10 in
+20 26 ft 2 in
+22 23 ft 9 in
+28 18 ft 8 in
+30 17 ft 5 in
+36 14 ft 6 in
+38 13 ft 9 in
+40 13 ft 1 in
+Page 27
+Corn Irrigation
+Michael Plumblee, PhD
+Irrigated corn acres are typically our highest irrigated row crop acres in South Carolina compared to other 
+commodities such as soybean and cotton. Irrigating corn has the potential to maintain or improve yield if crop water 
+use is met at the right time and with the right amount of water. The goal of supplemental irrigation is to make up for 
+rainfall deficits to meet crop water use demand. Understanding how much water a corn crop uses at each crop 
+growth stage is imperative in accurately and effectively scheduling irrigation (table 1).
+Table 1. The corn seasonal crop water use and irrigation schedule.
+Days after Planting Weeks After Planting Inches per Week Inches per Day
+1 to 7 1 0.21 0.03
+8 to 14 2 0.35 0.05
+15 to 21 3 0.63 0.09
+22 to 28 4 0.84 0.12
+29 to 35 5 0.98 0.14
+36 to 42 6 1.33 0.19
+43 to 49 7 1.47 – 1.61 0.21 - 0.23
+50 to 56 8 1.75 0.25
+57 to 63 9 1.96 0.28
+64 to 70 10 2.17 0.31
+71 to 77 11 2.31 0.33
+78 to 84 12 2.31 0.33
+85 to 91 13 2.38 0.34
+92 to 98 14 2.31 0.33
+99 to 105 15 2.17 0.31
+106 to 112 16 1.89 – 1.68 0.27 – 0.24
+113 to 119 17 1.47 0.21
+Corn water use curve by growth stage*
+Irrigation in corn can have several other secondary advantages, such as improving the effectiveness of soil-applied 
+herbicides, stand establishment, fertigation, and chemigation. 
+Page 28
+*This water use curve is to be used as a guide for scheduling irrigation, and water use values may not directly correlate with calendar dates or growth stages.
+Several better alternatives than the above rule-of-thumb method are available. The Irrigator Pro model from the 
+USDA Agricultural Research Service website (bit.ly/35VwdUF) bases irrigation decisions on soil moisture sensors.
+The UGA EASY (Evaporation-based Accumulator for Sprinkler-enhanced Yield) Pan Irrigation Scheduler allows 
+crop water needs to be monitored in the field using a low-cost system that can be built on farm after a trip to the 
+hardware store. Review the bulletin on the UGA website for more information (bit.ly/3HLn0M3). 
+Soil moisture sensors are another alternative to the checkbook-type scheduling methods listed above. Some of the 
+benefits from using an irrigation schedule to know when to irrigate are to meet the crop water demand with 
+supplemental irrigation at appropriate timings throughout the growing season; Reduce the likelihood of plant stress, 
+often yield has been lost by the time visual stress symptoms are observed; Reduce over-watering crops; Maximize 
+pod yield, quality, and profits. Benefits of scheduling irrigation with soil moisture sensors relative to other methods 
+are that they allow real-time site-specific monitoring of soil moisture, they can assist with determining watersensitive periods throughout the growing season by accurately depicting crop water use, and sensors help quantify 
+the actual amount of rainfall that enters the soil and into the rooting zone.
+Soil moisture sensors are separated into main categories based on how they read soil moisture. The first category, 
+volumetric sensors (Volumetric water content and Capacitance sensors), measure the amount of water in a given 
+volume of soil providing a soil water content percentage. The second category, soil water tension (Gypsum blocks 
+and Watermark sensors), measures the force the plant roots must overcome to extract water from the surrounding 
+soil particles. These sensors provide readings in units of kilopascals (kPa) or centibars (cbar). Several differences 
+exist between the two categories of sensors, including price, accuracy, recurring subscription costs, and telemetry or 
+how data is accessed; however, both categories are suitable for irrigation scheduling in row crops.
+The following are recommendations on commonly asked questions concerning soil moisture sensors. 
+How many sensors do I need? At least one sensor or set of sensors (if multiple sensors are needed for multiple 
+depths) per irrigation management zone (i.e., under each center pivot) will aid in irrigation decision-making. Other 
+scenarios where more than one sensor per irrigation management zone may be warranted include changes in soil 
+texture across the field in areas that can be managed separately or with the use of a variable rate irrigation system. 
+Furthermore, if a particular system takes several days to make one revolution, consider placing sensors at the start 
+and stop of the irrigation cycle to determine if the system needs to continue to another irrigation cycle after the 
+prior cycle. 
+Page 29
+Where do I put my sensors within the field? Several factors should be considered when placing sensors in the 
+field to ensure a representative reading will be obtained. Consider soil texture differences; try to manage irrigation 
+based on the soil texture representing the majority of the field. Avoid putting sensors in areas that are very droughty 
+or hold water during the growing season. If yield data is available, yield maps can be used as another tool to 
+evaluate areas of the field to avoid or try to stay in with placement. Try to place sensors in the field after planting 
+and in areas where a representative stand exists. Avoid traffic rows and minimize damage to plants when installing 
+sensors. Due to the limitations on irrigation sprinkler packages on center pivot systems, avoid placing sensors near 
+the center point of the system. It is recommended to install sensors a tower or two from the end of the system to 
+ensure irrigation uniformity.
+Do I install sensors in the row or row middle? Install soil moisture sensors within the planted row of plants. By 
+installing sensors within the row, accurate soil moisture measurements within the crops rooting zone can be 
+achieved. With all soil moisture sensors, sensor to soil contact is essential to read soil moisture accurately. 
+Therefore, the correct installation of soil moisture sensors is critical to the sensors working correctly.
+How do I know when to irrigate based on the soil moisture sensor? Most sensor manufacturers have generic 
+threshold values associated with the crop and soil texture that the sensor is placed into. Typically, these threshold 
+values reflect allowing the plant available water of a specific soil texture to deplete 25% to 50% before irrigation is 
+applied to recharge. On-going research at Clemson University is evaluating sensor thresholds in multiple crops to 
+develop sensor threshold recommendations based on South Carolina soil textures and crop.
+If soil water tension sensors, such as WATERMARK, are being utilized to schedule irrigation, Clemson University 
+has put together a simple web-based application that can be accessed via smartphone or computer to take actual 
+sensor readings and assist with making irrigation decisions based on predefined or manually entered thresholds. 
+Visit the Clemson Precision Agriculture Watermark Calculator website (bit.ly/3Cjtf8F) for more information. 
+References
+Bryant et al. 2021. Corn Production in Georgia. The University of Georgia Extension. Accessed at: 
+https://grains.caes.uga.edu/content/dam/caes-subsite/grains/docs/corn/2021-Corn-Production-Guide.pdf.
+Page 30
+Weed Management in Corn
+Michael W. Marshall, PhD
+Weeds can be a significant determinant of efficient and profitable corn production. Early to mid-season weeds can 
+compete with the crop for light, nutrients, and water, reducing its yield potential. Therefore, it is critical to manage 
+weed populations during early vegetative growth. Palmer amaranth is the most common and troublesome weed in 
+corn. If Palmer amaranth emerges at the same time as the crop, yield reductions up to 91% have been reported. Late 
+emerging weedy grasses, such as Texas panicum, can also impact corn yield. The weeds listed in table 1 are the 
+most troublesome in South Carolina corn production.
+Table 1. Troublesome weeds in South Carolina corn production.
+Weed Biology and Lifecycles
+Weeds are classified into three different plant lifecycles: annuals, biennials, and perennials. Annuals complete their 
+lifecycle from within one season (either summer or winter). For example, Palmer amaranth and Texas panicum are 
+summer annuals, and cutleaf eveningprimrose and wild radish are winter annuals. Annuals are propagated by seed.
+Therefore, reducing or eliminating seed production is a highly effective management strategy in reducing these 
+populations over time. Annuals have a significant variation in seed production capability. Palmer amaranth can 
+produce up to 500,000 seeds per plant in a single growing season. However, large-seeded annual weeds (e.g., 
+common cocklebur) produce fewer seeds per plant.
+Weeds that complete their lifecycle over a two-year period are biennials. Bull thistle is an example of a biennial 
+weed. During the first season, the seed germinates and forms a whorl of leaves at the soil surface known as a rosette 
+that overwinters, and the following spring/early summer, bolts (forms a stalk) on which flowers, fruits, and seed are 
+borne. Similar to annual weeds, eliminating seed production is a highly effective management strategy for biennials
+over the long term. Herbicide treatment of biennial weeds is recommended during the rosette or vegetative growth 
+stage.
+Perennials reproduce by seed and vegetative structures. Spreading perennials use stem or root structures to 
+propagate. These weeds often form colonies using aboveground stems (e.g., stolons), underground stems (e.g., 
+rhizomes), and creeping roots, which produce new daughter plants from the source plant. Johnsongrass is an 
+example of a perennial weed that reproduces by seed and underground stems (i.e., rhizomes). In contrast, simple 
+perennials produce new shoots from a taproot. Common pokeweed is an example of a simple perennial. Other 
+perennial reproductive structures include tubers (e.g., yellow nutsedge) and bulbs (e.g., wild garlic). Perennials are 
+typically the most difficult to manage. A combination of several different management practices is needed.
+Weed Scouting
+Weed populations respond over time to the predominant management practice(s) imposed on a production field.
+For example, using one herbicide over and over can select weed populations resistant to that herbicide. Visually 
+inspecting and recording changes in weed populations each year can detect shifts in weed populations and 
+document weed escapes (possible herbicide-resistant biotypes) before they become a significant problem in your 
+fields. In summary, documenting weed population changes over time is a critical component in your weed 
+management decisions.
+Weed Lifecycle
+Palmer amaranth Annual
+Texas panicum Annual
+Annual morningglory Annual
+Sicklepod Annual
+Page 31
+Herbicide Tolerance Traits Available in Corn
+Several herbicide tolerance traits are available in corn hybrids. They are typically printed on the seed tag as RR2 
+(Roundup Ready or glyphosate tolerance) and LL (Liberty-Link or Liberty tolerance) (table 2). These traits are 
+usually packaged with insect protection traits. Examples include Herculex HX1, Optimum Intrasect YHR, and 
+YieldGard VT3 or Genuity VT double PRO and SmartStax SSX. Enlist corn hybrids were recently introduced with 
+enhanced tolerance for the postemergence applications of 2,4-D choline. Select the herbicide based on your weed 
+spectrum and use a soil residual herbicide at each application.
+Table 2. Herbicide-tolerant traits available in corn.
+Precautions for Using Herbicides with other Pesticides in Corn
+The use of ALS-inhibitors (Group 2 herbicides) or HPPD-inhibitors (Group 27 herbicides) after the application of a 
+soil-applied insecticide/nematicide and/or tank mix with a foliar organophosphate/carbamate insecticide can result 
+in severe corn injury depending on the combination and timing of application. This injury can also be exacerbated 
+by poor environmental conditions at or following application, including cold temperature and waterlogging. See 
+table 3 for information on using these herbicides with the insecticides/nematicides.
+Table 3. Herbicide use precautions with insecticides and nematicides in corn.
+1
+The following herbicide products have an ALS-inhibitor (MOA=Group 2) active ingredient that can interact with the insecticides/nematicides and cause 
+substantial corn injury.
+2
+APSAIN, At-Plant Soil Applied Insecticide/Nematicide (i.e., Counter 15G, Counter 20G, Lorsban 15G, Thimet, Dyfonat). Soil use patterns include T-band, 
+band, or in-furrow.
+3
+FOPCI, Foliar Organophosphate/Carbamate Insecticide application (i.e., corn herbicide tank mixture with the insecticides Lorsban, Malathion, and/or 
+Parathion).
+4
+Do not tank mix Corvus with organophosphate or carbamate insecticides and apply to emerged corn.
+5
+Do not use Terbufos (Counter) or Phorate (Thimet) insecticide/nematicides.
+Platform Herbicide Tolerance
+Roundup Ready 2 Glyphosate
+Liberty Link Liberty
+Enlist Glyphosate + 2,4-D
+Herbicide1 APSIN2 FOPCI3
+Accent Do not apply (in-furrow) Do not tank mix
+Beacon Do not apply (in-furrow) Do not tank mix
+Capreno Do not apply (all use patterns) Do not tank mix, wait 7 days
+Corvus Do not apply (all use patterns) Do not tank mix, wait 7 days4
+Hornet Do not apply (all use patterns) Do not tank mix, wait 10 days
+Instigate Do not apply (all use patterns) ------------------------------
+Option Do not apply (all use patterns) Do not tank mix, wait 7 days
+Python T-band or band only (no in-furrow)5 ------------------------------
+Realm Q Do not apply within 45 days of Counter Do not tank mix, wait 7 d before 
+or 3 d after
+Resicore Do not apply after an at-plant application of Phorate or Terbufos Do not tank mix, wait 7 days before 
+or after
+Resolve Q/DF Do not apply within 45 days after an at-plant application of Terbufos Do not tank mix
+Revulin Q Do not apply within 45 days of Counter Do not tank mix, wait 7 d before 
+or 3 d after
+Steadfast/Q/ATZ Do not apply (in-furrow) Do not tank mix
+SureStart II T-band or band only (no in-furrow)5 ------------------------------
+Page 32
+Corn Hybrid Sensitivity to Herbicides
+Variation in environmental conditions following herbicide application can result in crop response of any crop 
+variety. Certain corn hybrids have warning or caution statements about using ALS-inhibitors (Group 2), Growth 
+Regulators (Group 4), HPPD-inhibitors (Group 27), and Amides (Group 15). These injury response values were 
+provided by the seed company. Corn hybrids change yearly, so this is not meant to be an exhaustive list of all corn 
+hybrids grown in South Carolina (table 4). Check with your seed dealer for up-to-date information on herbicide 
+precautions for your corn hybrid selection(s).
+Table 4. Sensitivity of selected corn hybrids to herbicides.
+Abbreviations: ---=no information available; A=Acceptable, herbicide injury unlikely to occur; C=Caution, injury usually does not occur under normal 
+herbicide use rates or timings; however, injury may occur in adverse environmental conditions, high product use rates, or abnormal soil conditions, use drop 
+nozzles for postemergence applications to avoid potential interactions; W=Warning, do not use, injury has occurred using this herbicide.
+1
+Amide product examples include s-metolachlor (Dual Magnum), acetochlor (Warrant), dimethanemid-p (Outlook).
+2
+Benzoic product examples include dicamba (Xtendimax); Phenoxy product examples include 2,4-D (Enlist One).
+3
+HPPD product examples include tompramezone (Impact), isoxaflutole (Balance), mesotrione (Callisto).
+4
+ALS/SU product examples include nicosulfuron (Accent), primisulfuron (Beacon), rimsulfuron (Resolve)
+Guidelines for Using Triazine Herbicides in Corn
+Atrazine and simazine users are strongly encouraged to follow label guidelines discussed below to share in the 
+responsibility of preserving the future use of atrazine and simazine. These restrictions apply to all formulations of 
+atrazine and simazine and all pre-mix package products that contain atrazine and simazine (table 4).
+Application Rate Restrictions
+For soils that are not defined as highly erodible, the maximum use rate for atrazine is 2.0 lb ai (active ingredient) 
+per acre and for simazine is 2.0 lb ai per acre per season. For soils classified as highly erodible (as defined by 
+NRCS), If conservation tillage is practiced with at least 30 percent crop residue coverage at planting, the maximum 
+use rate is 2.0 lb ai per acre for atrazine and simazine. If crop residue coverage is less than 30 percent, then the 
+maximum rate for atrazine and simazine is 1.6 lb ai per acre. If atrazine was not applied prior to corn emergence, 
+then the total amount applied should not exceed 2.0 lb ai per acre. If atrazine was applied to a field preemergence, 
+then the total amount of atrazine should not exceed 2.5 lb ai per acre per calendar year. The total amount of 
+simazine should not exceed 2.0 lb ai per acre per calendar year.
+Setbacks 
+Operations that involve mixing, loading, rinsing, or washing atrazine or simazine within 50 feet of wells (including 
+abandoned wells, drainage wells, or sinkholes), rivers, intermittent streams, lakes, or reservoirs is prohibited. This 
+restriction does not apply to operations within a properly designed impervious pad and diked mixing/loading areas. 
+Atrazine or simazine must not be applied aerially or by ground equipment within 66 feet of points where field 
+surface water enters perennial or intermittent streams and rivers or within 200 feet around natural or impounded 
+lakes and reservoirs. If atrazine or simazine is applied to highly erodible land, the 66-foot buffer or setback from 
+runoff entry points must be planted to crop, seeded with grass, or other suitable crop.
+Hybrid Amide1 Benzoic/Phenoxy2 HPPD3 ALS/SU4
+Dekalb - - - -
+DKC 63-57 - A A A
+DKC 65-20 - A A C
+DKC 67-44 - A A A
+Pioneer - - - -
+P1506YHR A A C A
+32B16 A A C A
+P1870YHR A A A A
+Page 33
+If atrazine or simazine is applied to tile-terraced fields containing standpipes, then users are advised to follow one 
+of the following restrictions: 1) do not apply atrazine or simazine within 66 feet of standpipes; 2) After applying 
+atrazine or simazine to the entire field, immediately incorporate it to a depth of 2-3 inches; or 3) Apply atrazine or 
+simazine to the entire field under conservation tillage practices where high crop residue levels are present.
+Table 5. Examples of herbicide products containing the active ingredient Atrazine or Simazine.
+Mixing and Loading Guidelines for Use of Acetochlor Containing Herbicides 
+in Corn
+Do not mix or load acetochlor (i.e., Warrant, Harness) products within 50 feet of any wells (including abandoned 
+wells and drainage wells), sinkholes, perennial or intermittent streams and rivers, and natural or impounded lakes 
+and reservoirs. This setback does not apply to properly capped or plugged abandoned wells and does not apply to 
+impervious pad or properly diked mixing/loading areas. Operations that involve mixing, loading, rinsing, or 
+washing of this product into or from pesticide handling or application equipment or containers within 50 feet of any 
+well are prohibited unless conducted on an impervious pad constructed to withstand the weight of the heaviest load 
+that may be positioned on or moved across the pad. Such a pad shall be designed and maintained to contain any 
+product spills or equipment leaks, product container or application equipment rinsate, and rainwater that may fall 
+on the pad. Surface water shall not be allowed to either flow over or from the pad, which means the pad must be 
+self-contained. The pad shall be sloped to facilitate material removal. An unroofed pad shall be of sufficient 
+capacity to contain a minimum of 110% of the capacity of the largest pesticide container or application equipment 
+on the pad. A pad that is covered by a roof of sufficient size to completely exclude precipitation from contact with 
+the pad shall have a minimum containment capacity of 100 percent of the capacity of the largest pesticide container 
+or application equipment on the pad. Containment capacities as described above shall always be maintained. The 
+above specified minimum containment capacities do not apply to vehicles when delivering pesticide shipments to 
+the mixing/loading site. States may have additional requirements regarding wellhead setbacks and operational 
+containment.
+Herbicides for Weed Management in Corn
+Herbicides are a key component of a successful weed management program in corn. They provide a cost-effective 
+and efficient option for weed control. Always follow the label and use the guidelines discussed on the product label. 
+Although they are several broad-spectrum herbicides available in corn (i.e., atrazine, glyphosate, glufosinate), 
+scouting and monitoring the weed populations present at the time of application (or will be present after the crop 
+emerges) is critical for long-term success. Changes in these weed populations over time can indicate the 
+development of herbicide resistance in weed populations in corn. It is important to remember to rotate your 
+herbicide mode-of-action and not rely on a single herbicide for all your weed control.
+Preplant Burndown
+Corn is planted early (i.e., February–March) in South Carolina. A clean, weed-free field is important to ensure a 
+competition-free environment during and after crop emergence. Preplant burndown is an application that occurs 7 
+Product Name Active Ingredient(s) Product Name Active Ingredient(s)
+Aatrex atrazine Keystone NXT acetochlor + atrazine
+Bicep II Magnum atrazine + s-metolachlor Lexar s-metolachlor + mesotrione + atrazine
+Cinch ATZ s-metolachlor + atrazine Lumax s-metolachlor + atrazine + mestrione
+Degree Xtra acetochlor + atrazine Marksman dicamba + atrazine
+Expert glyphosate + s-metolachlor + 
+atrazine
+Princep simazine
+Fultime NXT acetochlor + atrazine Steadfast ATZ nicosulfuron + rimsulfuron + atrazine
+Page 34
+to 14 days before planting and controls the existing weeds. In corn, most waiting intervals between application and 
+planting are 7 days or less. However, some herbicides like glyphosate and 2,4-D need 10 to 14 days after 
+application before planting for maximum activity on weeds (especially large ones). Paraquat (i.e., Gramoxone) is 
+another broad-spectrum burndown herbicide option for corn. Paraquat is effective on small weeds but limited 
+activity on large, flowering weeds or perennials. Consult the product label for specific details on recommended 
+waiting periods before planting.
+Preemergence
+A herbicide product that is applied shortly after the crop is planted is a preemergence or soil active residual. These 
+herbicides are designed to be applied to the soil surface and are activated by rainfall or irrigation. Preemergence 
+herbicides control or prevent weed seed germination in the upper soil profile (usually less than 1 inch). These 
+reduce the overall germination cohort of the weed populations before the postemergence herbicides are used. 
+Small-seeded weed seeds (e.g., Palmer amaranth, crabgrass) are generally more affected by these herbicides (e.g., 
+s-metolachlor, Dual Magnum) than large-seed ones (e.g., cocklebur).
+Postemergence
+Herbicides that are applied after the weeds have emerged are called postemergence. They are used to control weeds 
+and minimize early season competition with the crop. Typically, postemergence herbicides can vary in weed 
+selectivity. For example, nicosulfuron (Accent) will only control grass weeds in corn. There are corn hybrids with 
+genetic tolerance to several broad-spectrum postemergence herbicides, including glyphosate (e.g., Roundup) and 
+glufosinate (Liberty). There are several HPPD herbicides available for use in corn. This mode-of-action is not 
+available in our other crops (i.e., soybean or cotton); therefore, it can serve as an effective rotation for other 
+herbicides used in those crops. Some herbicides in corn are limited to certain growth stages. For example, atrazine 
+can only be applied up to the 6-leaf growth stage. The key to remember for successful herbicide performance is to 
+apply these herbicides when weeds are small and actively growing as compared to large and/or drought-stressed
+weeds, which often need retreatment for satisfactory control. Consult the product label for information on 

@@ -8,6 +8,11 @@ import { NextResponse, type NextRequest } from "next/server";
  * per page and Route Handler. Skips entirely in placeholder mode.
  */
 export function proxy(request: NextRequest) {
+  // Demo bypass: when DEMO_TENANT_ID is set the DAL skips real auth, so the
+  // proxy must let /tools/* through too (otherwise it redirects to a sign-in
+  // that does nothing). Remove with the demo bypass once Auth ships.
+  if (process.env.DEMO_TENANT_ID) return NextResponse.next();
+
   const supabaseConfigured =
     !!process.env.NEXT_PUBLIC_SUPABASE_URL &&
     !!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;

@@ -1,0 +1,39 @@
+SOURCE: Iowa State University Extension - Integrated Crop Management
+TITLE: Wet, Yellow, and Worried: Making Sound Nitrogen Decisions This Spring
+AUTHOR: Dr. Richard T. Roth, Extension Nitrogen Science and Soil Fertility Specialist
+URL: https://crops.extension.iastate.edu/post/wet-yellow-and-worried-making-sound-nitrogen-decisions-spring
+PUBLISHED: June 17, 2026
+LICENSE: Republishable with credit to author, Integrated Crop Management News, and Iowa State University Extension and Outreach (as stated in source).
+TOPIC: Corn nitrogen fertilization, sidedress N, Late Spring Nitrate Test (LSNT)
+
+---
+
+It's a question that arrives in our inboxes every spring without fail: "It's been raining — have I lost nitrogen, and do I need to apply more?" With a highly variable spring precipitation pattern across Iowa and corn now approaching or past the critical V6 growth stage, many producers are seeing yellowing in their fields and wondering what to do next.
+
+UNDERSTANDING NITROGEN LOSS
+
+Not all wet weather leads to meaningful nitrogen loss, and not all yellow corn signals an N deficiency. The two primary loss mechanisms are denitrification (the conversion of nitrate to gas under saturated, warm soil conditions) and leaching (the downward movement of nitrate with water through the soil profile). Both require nitrate-N to be present — ammonium-N and urea are generally not at risk until they convert to nitrate. The timing, temperature, and duration of saturation all influence how much loss actually occurs.
+
+DOES THE CORN ACTUALLY NEED MORE NITROGEN?
+
+Estimating loss is a useful starting point, but it doesn't automatically answer whether your crop will fall short of its yield potential. Early light-green or yellow areas can reflect N deficiency, but they can equally result from saturated soils slowing root activity — a situation that may resolve on its own as soils dry and warm. Research shows that early-season N recovery doesn't necessarily predict final yield.
+
+A practical rule of thumb: observe corn color and growth. If the crop has good color and is growing well after soils return to normal conditions, supplemental N is unlikely to be needed. If corn remains pale or stunted despite improved conditions, that's a stronger signal to act.
+
+ASSESSING WHETHER ADDITIONAL NITROGEN IS NEEDED
+
+Tissue testing and visual scouting can identify N stress symptoms but often lag behind actual crop need and can be confounded by other nutrient issues or stress.
+
+Pre-sidedress soil nitrate testing (PSNT), also known as the Late Spring Nitrate Test (LSNT), remains one of the most powerful in-season nitrogen application decision-making tools. Soil samples collected from the 0–12 inch depth provide a direct measure of plant-available nitrate in the field. The sampling protocols and interpretation framework for Iowa is detailed in ISU Extension publication CROP 3140: Use of the Late-Spring Soil Nitrate Test in Iowa Corn Production.
+
+LSNT N DECISION RESPONSE TOOL
+
+ISU has recently released the LSNT N Decision Response Tool, which moves beyond simple threshold-based decisions and helps producers determine whether an additional nitrogen application is likely to produce an economic response — and if so, at what rate.
+
+2026 CONTEXT
+
+Pre-season soil nitrate levels across Iowa were higher than normal — but highly variable from field to field. This means some producers may find they have adequate N despite losses, while others may be in a deficit. Blanket assumptions in either direction could be costly.
+
+BOTTOM LINE
+
+Yellow corn after a wet spring is a legitimate signal worth investigating — but it's not an automatic prescription for rescue nitrogen. Watch crop color and growth carefully as soils normalize. If the signal persists, the LSNT paired with the new N Decision Response Tool gives the best available field-specific information to make an economically sound decision.

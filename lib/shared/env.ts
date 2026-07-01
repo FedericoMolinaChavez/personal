@@ -14,6 +14,8 @@ const envSchema = z.object({
   LLM_PROVIDER: z.string().optional(),
   LLM_API_KEY: z.string().optional(),
   LLM_MODEL: z.string().optional(),
+  // Embeddings (P1 RAG) — OpenAI; chunks table is fixed at vector(1536).
+  OPENAI_API_KEY: z.string().optional(),
   EMBEDDING_MODEL: z.string().optional(),
   // Temporary: bypass auth and act as this tenant until real sign-in ships.
   DEMO_TENANT_ID: z.string().optional(),

@@ -71,23 +71,24 @@ export default function IntakeForm() {
   }
 
   return (
-    <div className="rounded-xl border border-outline-variant/50 bg-surface-container-low p-6">
+    <div className="rounded-xl border border-cmd-line bg-cmd-surface p-6">
       <form onSubmit={onSubmit} className="space-y-4">
         <div>
-          <label className="mb-1 block text-label-md font-label-md text-on-surface">
-            Note
-          </label>
+          <label className="mb-1 block text-label-md text-cmd-text">Note</label>
           <textarea
             value={note}
             onChange={(e) => setNote(e.target.value)}
             rows={3}
             placeholder="e.g. Sprayed Roundup 32 oz/acre on north field, 40 ac, 6 mph wind, 6/24"
-            className="w-full rounded-lg border border-outline-variant bg-surface px-3 py-2 text-body-md text-on-surface placeholder:text-on-surface-variant/60 focus:border-primary focus:outline-none"
+            className="w-full rounded-lg border border-cmd-line bg-cmd-bg px-3 py-2 text-body-md text-cmd-text placeholder:text-cmd-muted focus:border-cmd-accent focus:outline-none"
           />
         </div>
 
         <div className="flex flex-wrap items-center gap-4">
-          <label className="cursor-pointer rounded-full border border-outline-variant px-4 py-2 text-label-md font-label-md text-on-surface-variant hover:border-primary hover:text-primary">
+          <label className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-cmd-line px-4 py-2 text-label-md text-cmd-text transition-colors hover:border-cmd-accent hover:text-cmd-accent">
+            <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+              photo_camera
+            </span>
             {file ? "Change photo" : "Attach photo"}
             <input
               type="file"
@@ -97,14 +98,14 @@ export default function IntakeForm() {
             />
           </label>
           {file && (
-            <span className="truncate text-label-sm text-on-surface-variant">
+            <span className="truncate font-mono text-label-sm text-cmd-muted">
               {file.name}
             </span>
           )}
           <button
             type="submit"
             disabled={busy}
-            className="ml-auto rounded-full bg-primary-container px-6 py-2 text-label-md font-label-md text-on-primary-container transition-all hover:scale-95 disabled:opacity-60"
+            className="ml-auto inline-flex items-center gap-2 rounded-full bg-cmd-accent px-6 py-2 text-label-md text-cmd-on-accent transition-all hover:bg-cmd-accent-strong disabled:opacity-50"
           >
             {busy ? "Processing…" : "Submit record"}
           </button>
@@ -112,16 +113,16 @@ export default function IntakeForm() {
       </form>
 
       {error && (
-        <p className="mt-4 rounded-lg bg-error-container px-3 py-2 text-body-md text-on-error-container">
+        <p className="mt-4 rounded-lg border border-cmd-danger/30 bg-cmd-danger/10 px-3 py-2 text-body-md text-cmd-danger">
           {error}
         </p>
       )}
 
       {result && (
-        <div className="mt-5 border-t border-outline-variant/50 pt-5">
-          <p className="mb-3 text-label-md font-label-md text-on-surface">
+        <div className="mt-5 border-t border-cmd-line pt-5">
+          <p className="mb-3 text-label-md text-cmd-text">
             Result:{" "}
-            <span className="text-on-surface-variant">
+            <span className="font-mono text-cmd-muted">
               {result.status === "needs_review"
                 ? "Queued for review"
                 : result.status === "parsed"
@@ -135,10 +136,10 @@ export default function IntakeForm() {
                 const v = result.record?.[k];
                 return (
                   <div key={k}>
-                    <dt className="text-label-sm text-on-surface-variant">
+                    <dt className="text-label-sm text-cmd-muted">
                       {FIELD_LABELS[k]}
                     </dt>
-                    <dd className="text-body-md text-on-surface">
+                    <dd className="font-mono text-body-md text-cmd-text">
                       {v == null || v === "" ? "—" : String(v)}
                     </dd>
                   </div>
@@ -151,7 +152,7 @@ export default function IntakeForm() {
               {result.issues.map((issue, i) => (
                 <li
                   key={i}
-                  className="text-body-md text-on-surface-variant before:mr-2 before:content-['⚠']"
+                  className="text-body-md text-cmd-amber before:mr-2 before:content-['⚠']"
                 >
                   {issue}
                 </li>

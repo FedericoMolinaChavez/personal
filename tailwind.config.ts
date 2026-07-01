@@ -56,6 +56,23 @@ const config: Config = {
         "on-secondary-container": "#5a682f",
         "on-primary": "#ffffff",
         "surface-container-lowest": "#ffffff",
+        // "Command" theme — dark, field-ready. Scoped to /tools (see .command-theme).
+        cmd: {
+          bg: "#0B0F0A",
+          surface: "#121711",
+          surface2: "#181F15",
+          line: "#26301C",
+          "line-strong": "#3A4A2A",
+          text: "#E6EEDD",
+          muted: "#8B9880",
+          accent: "#A3E635",
+          "accent-strong": "#BEF264",
+          "accent-dim": "#65A30D",
+          amber: "#F59E0B",
+          info: "#7DD3FC",
+          danger: "#F87171",
+          "on-accent": "#0B0F0A",
+        },
       },
       borderRadius: {
         DEFAULT: "0.25rem",
@@ -82,6 +99,7 @@ const config: Config = {
         "body-md": ["var(--font-bricolage)", "sans-serif"],
         "headline-md": ["var(--font-bricolage)", "sans-serif"],
         display: ["var(--font-bricolage)", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "SFMono-Regular", "monospace"],
       },
       fontSize: {
         "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" }],

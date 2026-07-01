@@ -2,9 +2,11 @@ import Anthropic from "@anthropic-ai/sdk";
 import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
 import type {
   ChatMessage,
+  ChatStream,
   ExtractParams,
   ExtractResult,
   LLMProvider,
+  LLMUsage,
 } from "../index";
 
 type ImageMediaType = "image/jpeg" | "image/png" | "image/gif" | "image/webp";
@@ -48,6 +50,61 @@ export class AnthropicProvider implements LLMProvider {
       .filter((b): b is Anthropic.TextBlock => b.type === "text")
       .map((b) => b.text)
       .join("");
+  }
+
+  /**
+   * Streamed chat. Splits system messages out (same as chat()), opens a
+   * Messages stream, and exposes text deltas plus a usage promise that resolves
+   * from the final message once the stream is drained.
+   */
+  stream(messages: ChatMessage[], opts?: { model?: string }): ChatStream {
+    const model = opts?.model ?? this.defaultModel;
+    const system =
+      messages
+        .filter((m) => m.role === "system")
+        .map((m) => m.content)
+        .join("\n\n") || undefined;
+    const turns = messages
+      .filter((m) => m.role !== "system")
+      .map((m) => ({ role: m.role as "user" | "assistant", content: m.content }));
+
+    const sdkStream = this.client.messages.stream({
+      model,
+      max_tokens: 4096,
+      system,
+      messages: turns,
+    });
+
+    let resolveUsage!: (u: LLMUsage) => void;
+    let rejectUsage!: (e: unknown) => void;
+    const usage = new Promise<LLMUsage>((resolve, reject) => {
+      resolveUsage = resolve;
+      rejectUsage = reject;
+    });
+
+    async function* textStream(): AsyncIterable<string> {
+      try {
+        for await (const event of sdkStream) {
+          if (
+            event.type === "content_block_delta" &&
+            event.delta.type === "text_delta"
+          ) {
+            yield event.delta.text;
+          }
+        }
+        const final = await sdkStream.finalMessage();
+        resolveUsage({
+          model,
+          promptTokens: final.usage.input_tokens,
+          completionTokens: final.usage.output_tokens,
+        });
+      } catch (err) {
+        rejectUsage(err);
+        throw err;
+      }
+    }
+
+    return { textStream: textStream(), usage };
   }
 
   async embed(): Promise<number[][]> {

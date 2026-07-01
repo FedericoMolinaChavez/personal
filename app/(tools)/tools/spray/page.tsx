@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { requireTenant } from "@/lib/shared/auth/dal";
 import { listSubmissions } from "@/lib/spray/records";
+import PageHeader from "@/components/tools/PageHeader";
+import EmptyState from "@/components/tools/EmptyState";
+import { buttonClasses } from "@/components/tools/Button";
 import IntakeForm from "@/components/spray/IntakeForm";
 import SubmissionCard from "@/components/spray/SubmissionCard";
 
@@ -15,44 +18,41 @@ export default async function SprayPage() {
   ).length;
 
   return (
-    <section className="space-y-10 py-12">
-      <header className="flex flex-wrap items-start justify-between gap-4">
-        <div>
-          <h1 className="font-display text-headline-lg font-extrabold text-on-surface">
-            Spray Records
-          </h1>
-          <p className="mt-2 max-w-2xl text-body-md text-on-surface-variant">
-            Submit a photo of a paper log or a quick note. We extract a
-            structured, compliant record, check it against label limits, and
-            queue anything uncertain for review.
-          </p>
-        </div>
-        <div className="flex shrink-0 items-center gap-3">
-          <Link
-            href="/tools/spray/review"
-            className="rounded-full border border-outline-variant px-4 py-2 text-label-md font-label-md text-on-surface-variant hover:border-primary hover:text-primary"
-          >
-            Review queue{needsReview > 0 ? ` (${needsReview})` : ""}
-          </Link>
-          <a
-            href="/api/spray/export"
-            className="rounded-full border border-outline-variant px-4 py-2 text-label-md font-label-md text-on-surface-variant hover:border-primary hover:text-primary"
-          >
-            Export CSV
-          </a>
-        </div>
-      </header>
+    <section className="space-y-10">
+      <PageHeader
+        eyebrow="Compliance"
+        title="Spray Records"
+        description="Submit a photo of a paper log or a quick note. We extract a structured, compliant record, check it against label limits, and queue anything uncertain for review."
+        actions={
+          <>
+            <Link href="/tools/spray/review" className={buttonClasses("ghost")}>
+              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+                fact_check
+              </span>
+              Review queue{needsReview > 0 ? ` (${needsReview})` : ""}
+            </Link>
+            <a href="/api/spray/export" className={buttonClasses("ghost")}>
+              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+                download
+              </span>
+              Export CSV
+            </a>
+          </>
+        }
+      />
 
       <IntakeForm />
 
       <div>
-        <h2 className="mb-4 font-display text-headline-md font-bold text-on-surface">
+        <h2 className="mb-4 font-display text-headline-md font-bold text-cmd-text">
           Recent submissions
         </h2>
         {submissions.length === 0 ? (
-          <p className="text-body-md text-on-surface-variant">
-            No submissions yet — add one above.
-          </p>
+          <EmptyState
+            icon="receipt_long"
+            title="No submissions yet"
+            description="Add a note or photo of a spray log above to create your first record."
+          />
         ) : (
           <ul className="space-y-3">
             {submissions.map((s) => (

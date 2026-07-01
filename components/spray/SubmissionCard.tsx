@@ -1,5 +1,5 @@
 import type { SubmissionView } from "@/lib/spray/records";
-import StatusBadge from "./StatusBadge";
+import StatusPill from "@/components/tools/StatusPill";
 
 export default function SubmissionCard({
   submission,
@@ -14,17 +14,22 @@ export default function SubmissionCard({
     new Date(submission.createdAt).toLocaleDateString(),
   ]
     .filter(Boolean)
-    .join(" · ");
+    .join("  ·  ");
 
   return (
-    <div className="flex items-center justify-between gap-4 rounded-lg border border-outline-variant/50 bg-surface-container-low p-4">
-      <div className="min-w-0">
-        <p className="truncate text-body-md font-medium text-on-surface">
-          {title}
-        </p>
-        <p className="text-label-sm text-on-surface-variant">{sub || "—"}</p>
+    <div className="flex items-center justify-between gap-4 rounded-xl border border-cmd-line bg-cmd-surface p-4 transition-colors hover:border-cmd-line-strong">
+      <div className="flex min-w-0 items-center gap-3">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-cmd-surface2 text-cmd-muted">
+          <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+            {submission.channel === "photo" ? "image" : "edit_note"}
+          </span>
+        </span>
+        <div className="min-w-0">
+          <p className="truncate text-body-md font-medium text-cmd-text">{title}</p>
+          <p className="font-mono text-label-sm text-cmd-muted">{sub || "—"}</p>
+        </div>
       </div>
-      <StatusBadge status={submission.status} />
+      <StatusPill status={submission.status} />
     </div>
   );
 }

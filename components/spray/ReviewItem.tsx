@@ -53,7 +53,7 @@ export default function ReviewItem({
   }
 
   return (
-    <div className="rounded-xl border border-outline-variant/50 bg-surface-container-low p-6">
+    <div className="rounded-xl border border-cmd-line bg-cmd-surface p-6">
       <div className="grid gap-6 md:grid-cols-[200px_1fr]">
         <div>
           {photoUrl ? (
@@ -63,10 +63,10 @@ export default function ReviewItem({
               width={200}
               height={200}
               unoptimized
-              className="h-auto w-full rounded-lg border border-outline-variant/50 object-cover"
+              className="h-auto w-full rounded-lg border border-cmd-line object-cover"
             />
           ) : (
-            <div className="flex h-32 items-center justify-center rounded-lg border border-dashed border-outline-variant text-label-sm text-on-surface-variant">
+            <div className="flex h-32 items-center justify-center rounded-lg border border-dashed border-cmd-line font-mono text-label-sm text-cmd-muted">
               No photo
             </div>
           )}
@@ -79,10 +79,8 @@ export default function ReviewItem({
                 const v = r[key] as unknown;
                 return (
                   <div key={key}>
-                    <dt className="text-label-sm text-on-surface-variant">
-                      {label}
-                    </dt>
-                    <dd className="text-body-md text-on-surface">
+                    <dt className="text-label-sm text-cmd-muted">{label}</dt>
+                    <dd className="font-mono text-body-md text-cmd-text">
                       {v == null || v === "" ? "—" : String(v)}
                     </dd>
                   </div>
@@ -90,7 +88,7 @@ export default function ReviewItem({
               })}
             </dl>
           ) : (
-            <p className="text-body-md text-on-surface-variant">
+            <p className="text-body-md text-cmd-muted">
               No structured record — manual entry needed.
             </p>
           )}
@@ -100,7 +98,7 @@ export default function ReviewItem({
               {issues.map((issue, i) => (
                 <li
                   key={i}
-                  className="text-body-md text-on-surface-variant before:mr-2 before:content-['⚠']"
+                  className="text-body-md text-cmd-amber before:mr-2 before:content-['⚠']"
                 >
                   {issue}
                 </li>
@@ -112,20 +110,21 @@ export default function ReviewItem({
             <button
               onClick={() => decide("approve")}
               disabled={busy !== null}
-              className="rounded-full bg-secondary-container px-5 py-2 text-label-md font-label-md text-on-secondary-container transition-all hover:scale-95 disabled:opacity-60"
+              className="inline-flex items-center gap-2 rounded-full bg-cmd-accent px-5 py-2 text-label-md text-cmd-on-accent transition-all hover:bg-cmd-accent-strong disabled:opacity-50"
             >
+              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+                check
+              </span>
               {busy === "approve" ? "Approving…" : "Approve"}
             </button>
             <button
               onClick={() => decide("reject")}
               disabled={busy !== null}
-              className="rounded-full border border-outline-variant px-5 py-2 text-label-md font-label-md text-on-surface-variant transition-all hover:border-error hover:text-error disabled:opacity-60"
+              className="inline-flex items-center gap-2 rounded-full border border-cmd-line px-5 py-2 text-label-md text-cmd-muted transition-all hover:border-cmd-danger hover:text-cmd-danger disabled:opacity-50"
             >
               {busy === "reject" ? "Rejecting…" : "Reject"}
             </button>
-            {error && (
-              <span className="text-label-sm text-error">{error}</span>
-            )}
+            {error && <span className="text-label-sm text-cmd-danger">{error}</span>}
           </div>
         </div>
       </div>

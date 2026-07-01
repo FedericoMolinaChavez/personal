@@ -1,5 +1,5 @@
 import { requireUser } from "@/lib/shared/auth/dal";
-import ToolPlaceholder from "@/components/tools/ToolPlaceholder";
+import ComingSoon from "@/components/tools/ComingSoon";
 
 export default async function FieldDetailPage({
   params,
@@ -9,7 +9,8 @@ export default async function FieldDetailPage({
   await requireUser();
   const { fieldId } = await params;
   return (
-    <ToolPlaceholder
+    <ComingSoon
+      icon="satellite_alt"
       title={`Field ${fieldId}`}
       description="Per-field NDVI trend, weather, and the AI briefing that references this field's metrics."
     />
