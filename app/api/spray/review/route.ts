@@ -1,9 +1,12 @@
 import { NextResponse } from "next/server";
 import { requireTenant } from "@/lib/shared/auth/dal";
+import { guardTool } from "@/lib/shared/toolGate";
 import { decideSubmission } from "@/lib/spray/records";
 
 /** Approve or reject a submission in the review queue. */
 export async function POST(request: Request) {
+  const blocked = await guardTool(request, { rateLimit: false });
+  if (blocked) return blocked;
   const { session, tenantId } = await requireTenant();
 
   let body: { submissionId?: string; decision?: "approve" | "reject" };
