@@ -1,6 +1,27 @@
 import { NextResponse } from "next/server";
+import { requireTenant } from "@/lib/shared/auth/dal";
+import { refreshNdvi } from "@/lib/fields/ndvi";
+import { refreshWeather } from "@/lib/fields/weather";
+import { refreshPrices } from "@/lib/fields/prices";
 
-/** P3 — on-demand NDVI fetch/aggregation for a field. Stub. */
+/**
+ * Manual data refresh for the signed-in tenant — pulls NDVI + weather for this
+ * tenant's fields and the benchmark prices, so a demo can populate everything
+ * without waiting for the daily cron. The cron routes do the same unattended.
+ */
 export async function POST() {
-  return NextResponse.json({ error: "not_implemented" }, { status: 501 });
+  const { tenantId } = await requireTenant();
+  try {
+    const [ndvi, weather, prices] = await Promise.all([
+      refreshNdvi({ tenantId }),
+      refreshWeather({ tenantId }),
+      refreshPrices(tenantId),
+    ]);
+    return NextResponse.json({ ndvi, weather, prices });
+  } catch (err) {
+    return NextResponse.json(
+      { error: err instanceof Error ? err.message : "Refresh failed." },
+      { status: 500 },
+    );
+  }
 }

@@ -1,62 +1,78 @@
-import { requireUser } from "@/lib/shared/auth/dal";
-import Panel from "@/components/tools/Panel";
+import { requireTenant } from "@/lib/shared/auth/dal";
+import { listFields } from "@/lib/fields/fields";
+import { computeFieldMetrics } from "@/lib/fields/metrics";
+import { getLatestBriefing } from "@/lib/fields/briefing";
+import FieldHealthMap, {
+  type FieldMapItem,
+} from "@/components/fields/FieldHealthMap";
+import FieldEditor from "@/components/fields/FieldEditor";
+import MetricCard from "@/components/fields/MetricCard";
+import BriefingPanel from "@/components/fields/BriefingPanel";
+import RefreshButton from "@/components/fields/RefreshButton";
+import PageHeader from "@/components/tools/PageHeader";
+import EmptyState from "@/components/tools/EmptyState";
 
-const FEATURES = [
-  {
-    icon: "satellite_alt",
-    title: "Satellite NDVI",
-    desc: "Per-field crop-health trends from Sentinel imagery, refreshed on a schedule.",
-  },
-  {
-    icon: "rainy",
-    title: "Weather",
-    desc: "Historical and forecast conditions scoped to each field boundary.",
-  },
-  {
-    icon: "trending_up",
-    title: "Commodity prices",
-    desc: "Track market prices for your crops alongside field performance.",
-  },
-];
+// Always render against live DB data per request (never prerender stale/empty).
+export const dynamic = "force-dynamic";
 
 export default async function FieldsPage() {
-  await requireUser();
+  const { tenantId } = await requireTenant();
+  const [fields, metrics, briefing] = await Promise.all([
+    listFields(tenantId),
+    computeFieldMetrics(tenantId),
+    getLatestBriefing(tenantId),
+  ]);
+
+  const healthById = new Map(metrics.map((m) => [m.fieldId, m.health]));
+  const mapFields: FieldMapItem[] = fields.map((f) => ({
+    id: f.id,
+    name: f.name,
+    geometry: f.geometry,
+    health: healthById.get(f.id) ?? "unknown",
+  }));
+
+  const initialBriefing = briefing
+    ? { summary: briefing.summary, briefing: briefing.metrics?.briefing ?? null }
+    : null;
 
   return (
     <section className="space-y-10">
-      <div className="flex flex-col items-center py-10 text-center">
-        <span className="inline-flex h-16 w-16 items-center justify-center rounded-2xl border border-cmd-line bg-cmd-surface glow-accent">
-          <span className="material-symbols-outlined text-cmd-accent" style={{ fontSize: 30 }}>
-            satellite_alt
-          </span>
-        </span>
-        <p className="mt-6 font-mono text-label-sm uppercase tracking-[0.2em] text-cmd-amber">
-          Coming soon
-        </p>
-        <h1 className="mt-3 font-display text-headline-lg font-extrabold text-cmd-text">
-          Field Health &amp; Operations
-        </h1>
-        <p className="mt-3 max-w-xl text-body-lg text-cmd-muted">
-          Satellite NDVI, weather, and commodity prices per field — with a weekly
-          AI briefing that ties it all together.
-        </p>
-      </div>
+      <PageHeader
+        eyebrow="Operations"
+        title="Field Health Dashboard"
+        description="Satellite NDVI, weather, and commodity prices per field — with a plain-English weekly briefing on what changed, why, and what to do."
+        actions={<RefreshButton />}
+      />
 
-      <div className="grid gap-4 md:grid-cols-3">
-        {FEATURES.map((f) => (
-          <Panel key={f.title} className="p-6">
-            <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-cmd-surface2 text-cmd-accent">
-              <span className="material-symbols-outlined" style={{ fontSize: 24 }}>
-                {f.icon}
-              </span>
-            </span>
-            <h3 className="mt-4 font-display text-headline-md font-bold text-cmd-text">
-              {f.title}
-            </h3>
-            <p className="mt-2 text-body-md text-cmd-muted">{f.desc}</p>
-          </Panel>
-        ))}
-      </div>
+      {fields.length === 0 ? (
+        <div className="space-y-6">
+          <EmptyState
+            icon="map"
+            title="No fields yet"
+            description="Add one — draw it on the map or paste a GeoJSON polygon — then refresh to pull its NDVI history."
+          />
+          <FieldEditor />
+        </div>
+      ) : (
+        <>
+          <FieldHealthMap fields={mapFields} />
+
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <h2 className="font-display text-headline-md font-bold text-cmd-text">
+              Fields
+            </h2>
+            <FieldEditor />
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {metrics.map((m) => (
+              <MetricCard key={m.fieldId} m={m} />
+            ))}
+          </div>
+
+          <BriefingPanel initial={initialBriefing} />
+        </>
+      )}
     </section>
   );
 }
