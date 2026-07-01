@@ -1,0 +1,33 @@
+SOURCE: USDA National Agricultural Statistics Service (NASS)
+TITLE: May Crop Production - Agricultural Statistics Board Briefing
+URL: https://www.nass.usda.gov/Newsroom/Executive_Briefings/2026/05-12-2026.pdf
+DATE: May 12, 2026
+LICENSE: Public domain (work of the U.S. federal government, 17 U.S.C. 105)
+NOTE: This monthly briefing is wheat/hay/fruit/nut/cotton focused. CORN production
+estimates appear in the July+ Crop Production reports and continuously in the
+Quick Stats database (see README for the corn-specific API query).
+FORMAT EXAMPLE: Shows the structured statistical style of NASS reporting
+(planted/harvested acres, yield bu/acre, production, % change YoY by state).
+
+---
+
+May Crop Production - Agricultural Statistics Board Briefing
+Anthony Prillaman, Acting Chief, Crops Branch — May 12, 2026
+
+DATA SOURCES: Operator Reported Survey + Field Survey. Ag Yield Sample Size = 7,350
+(April 29 - May 7); Objective Yield Sample Size = 257 (April 24 - May 1).
+
+WINTER WHEAT — Top 5 states by production (Planted / Harvested 1,000 ac, Yield bu/ac, Production 1,000 bu):
+- Kansas: 7,000 / 5,800 / 37.0 / 214,600
+- Washington: 1,850 / 1,800 / 67.0 / 120,600
+- Montana: 1,900 / 1,750 / 47.0 / 82,250
+- Idaho: 810 / 720 / 97.0 / 69,840
+- Oklahoma: 4,400 / 2,300 / 28.0 / 64,400
+US winter wheat: 32,410 planted / 22,015 harvested / 47.6 bu/ac / 1,047,510 (1,000 bu).
+US winter wheat production by class: Hard Red Winter 514,779; Soft Red Winter 300,862; White Winter 231,869 (1,000 bu).
+
+HAY STOCKS (May 1, US total 23,287 thousand tons, down 3.3% YoY).
+NONCITRUS FRUIT / TREE NUTS: CA peaches 480k tons; US almonds 2,700,000 (1,000 lb).
+2025 ALL COTTON: US 9,283 planted / 7,827 harvested / 852 lb/ac / 13,897 (1,000 bales).
+
+UPCOMING REPORTS: June 11 Crop Production; June 30 Acreage, Grain Stocks, Rice Stocks; June 25 Hogs and Pigs.
