@@ -1,4 +1,5 @@
 import { requireTenant } from "@/lib/shared/auth/dal";
+import { guardTool } from "@/lib/shared/toolGate";
 import { retrieveChunks } from "@/lib/agronomy/retrieve";
 import { rerankChunks } from "@/lib/agronomy/rerank";
 import {
@@ -30,6 +31,8 @@ export const maxDuration = 60;
  * relevant survives the re-rank floor). Persists both turns and logs cost.
  */
 export async function POST(request: Request) {
+  const blocked = await guardTool(request);
+  if (blocked) return blocked;
   const { tenantId } = await requireTenant();
 
   let body: { conversationId?: string; message?: string };
