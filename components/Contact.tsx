@@ -19,7 +19,8 @@ export default function Contact() {
         </h2>
         <p className="font-body-lg text-body-lg text-on-primary/80 max-w-xl relative z-10">
           Book a free 15-minute call to talk through your vision — or kick off
-          the $500 build plan and we&apos;ll get straight to work.
+          the $500 planning sprint and we&apos;ll map out exactly what to
+          build.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 relative z-10">
           <ScheduleCallButton

@@ -24,7 +24,7 @@ export default function Expertise() {
           Expertise
         </span>
         <h2 className="font-display text-headline-lg md:text-[48px] text-on-background">
-          Where the magic happens.
+          The work, broken down.
         </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

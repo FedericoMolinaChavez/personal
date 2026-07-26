@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "CTO + AI — Fractional CTO & AI Developer for founders";
+export const alt = "CTO + AI — Fractional CTO & AI Developer for AI SaaS founders";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -50,7 +50,7 @@ export default function OpengraphImage() {
             &nbsp;your users pay for.
           </div>
           <div style={{ fontSize: 30, color: "#544340", maxWidth: 880 }}>
-            Fractional CTO &amp; AI Developer for founders.
+            Fractional CTO &amp; AI Developer for AI SaaS founders.
           </div>
         </div>
 
