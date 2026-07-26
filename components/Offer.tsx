@@ -9,8 +9,8 @@ const steps = [
   },
   {
     icon: "groups",
-    title: "3 working sessions — or an MVP",
-    body: "Three focused sessions to pressure-test the idea and shape the roadmap. Starting from scratch? I'll build you a basic MVP instead.",
+    title: "3 planning sessions",
+    body: "Three focused sessions to pressure-test the idea, map the architecture, and turn ambiguity into a scoped roadmap.",
   },
   {
     icon: "trending_up",
@@ -41,8 +41,9 @@ export default function Offer() {
         </div>
         <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
           Before any big commitment, I map out exactly what we&apos;d build and
-          how. You walk away with a concrete plan either way — and an easy way
-          to keep going if it&apos;s the right fit.
+          how, across three focused planning sessions. You walk away with a
+          concrete, written plan — and an easy way to keep going if it&apos;s
+          the right fit.
         </p>
       </div>
 

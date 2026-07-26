@@ -10,10 +10,27 @@ export default function Hero() {
         <span className="text-primary italic">product</span> your users pay for.
       </h1>
       <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-        Tech strategist and AI-focused developer. I help founders navigate
-        technical complexity to scale profitable products with a craftsman&apos;s
-        touch.
+        Tech strategist and AI-focused developer. I help AI-focused B2B SaaS
+        founders navigate technical complexity to scale profitable products.
       </p>
+      <div className="flex flex-wrap gap-8 md:gap-12">
+        <div className="flex flex-col gap-1">
+          <span className="font-display text-headline-lg md:text-[40px] text-primary font-extrabold">
+            ~500K
+          </span>
+          <span className="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant max-w-[16ch]">
+            leads attributed / month via Attribute.ai
+          </span>
+        </div>
+        <div className="flex flex-col gap-1">
+          <span className="font-display text-headline-lg md:text-[40px] text-primary font-extrabold">
+            5
+          </span>
+          <span className="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant max-w-[18ch]">
+            products shipped across fintech, legal tech &amp; AI marketing
+          </span>
+        </div>
+      </div>
     </section>
   );
 }

@@ -14,7 +14,7 @@ const projects: Project[] = [
     url: "https://www.getattribute.ai",
     category: "AI · Marketing Attribution",
     description:
-      "AI-powered lead attribution and scoring — multi-touch tracking that shows which channels actually drive conversions.",
+      "AI-powered lead attribution and scoring — multi-touch tracking that shows which channels actually drive conversions. Attributes roughly 500K leads a month.",
     icon: "query_stats",
     bg: "#e9dad5",
     accent: "text-primary",
@@ -172,6 +172,11 @@ export default function Projects() {
         <h2 className="font-display text-headline-lg md:text-[48px] text-on-background">
           Products I&apos;ve built or helped build.
         </h2>
+        <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Two of these — Attribute.ai and The Nomad Hub — are my own products.
+          I build and ship for myself too, so I bring an owner&apos;s judgment
+          to client work, not just billable hours.
+        </p>
       </div>
 
       {/* Featured pair (asymmetric) */}

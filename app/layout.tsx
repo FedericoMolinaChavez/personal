@@ -20,9 +20,9 @@ const jetbrainsMono = JetBrains_Mono({
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
-const title = "CTO + AI — Fractional CTO & AI Developer for founders";
+const title = "CTO + AI — Fractional CTO & AI Developer for AI SaaS founders";
 const description =
-  "Tech strategist and AI-focused developer. I help founders navigate technical complexity to scale profitable products with a craftsman's touch.";
+  "Tech strategist and AI-focused developer. I help AI-focused B2B SaaS founders navigate technical complexity to scale profitable products.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -86,9 +86,9 @@ const jsonLd = {
   serviceType: "Fractional CTO & AI development",
   makesOffer: {
     "@type": "Offer",
-    name: "Build Plan & MVP Sprint",
+    name: "Build Plan & Planning Sprint",
     description:
-      "A written build plan plus 3 working sessions, or a basic MVP if starting from scratch. Credited toward a full project or hourly rate if we continue.",
+      "A written build plan plus 3 planning sessions to pressure-test the idea and shape the roadmap. Credited toward a full project or hourly rate if we continue.",
     price: process.env.SERVICE_PRICE_USD || "500",
     priceCurrency: "USD",
   },
