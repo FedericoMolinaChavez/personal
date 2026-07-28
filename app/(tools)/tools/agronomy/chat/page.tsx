@@ -14,7 +14,7 @@ export default async function AgronomyChatPage() {
         description="Grounded, cited answers from your document library. The assistant declines when the documents don't contain the answer."
         actions={
           <Link href="/tools/agronomy" className={buttonClasses("ghost")}>
-            <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+            <span translate="no" className="material-symbols-outlined" style={{ fontSize: 18 }}>
               folder_open
             </span>
             Manage documents

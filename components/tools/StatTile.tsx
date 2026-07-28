@@ -20,6 +20,7 @@ export default function StatTile({
         </p>
         {icon && (
           <span
+            translate="no"
             className="material-symbols-outlined text-cmd-accent-dim"
             style={{ fontSize: 18 }}
           >

@@ -16,6 +16,7 @@ export default function ComingSoon({
     <section className="flex min-h-[60vh] flex-col items-center justify-center py-16 text-center">
       <span className="inline-flex h-16 w-16 items-center justify-center rounded-2xl border border-cmd-line bg-cmd-surface glow-accent">
         <span
+          translate="no"
           className="material-symbols-outlined text-cmd-accent"
           style={{ fontSize: 30 }}
         >

@@ -8,6 +8,7 @@ export default function Contact() {
       <div className="bg-primary text-on-primary p-12 md:p-20 rounded-3xl flex flex-col items-center text-center gap-8 relative overflow-hidden">
         <div className="absolute top-0 right-0 p-10 opacity-10 pointer-events-none">
           <span
+            translate="no"
             className="material-symbols-outlined text-[200px]"
             style={{ fontVariationSettings: "'FILL' 1" }}
           >
@@ -30,6 +31,7 @@ export default function Contact() {
           <HireMeButton
             label="Book a $300 session"
             className="bg-primary-container border border-on-primary/30 text-on-primary px-10 py-4 rounded-full font-label-md text-label-md hover:bg-on-primary/10 transition-colors cursor-pointer disabled:opacity-70"
+            disclosureClassName="text-on-primary/80"
           />
         </div>
       </div>

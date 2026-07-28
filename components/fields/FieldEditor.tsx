@@ -123,7 +123,7 @@ export default function FieldEditor() {
         onClick={() => setOpen(true)}
         className="inline-flex items-center gap-2 rounded-full bg-cmd-accent px-6 py-2.5 text-label-md text-cmd-on-accent transition-all hover:bg-cmd-accent-strong"
       >
-        <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+        <span translate="no" className="material-symbols-outlined" style={{ fontSize: 18 }}>
           add_location_alt
         </span>
         Add field

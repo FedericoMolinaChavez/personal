@@ -75,7 +75,7 @@ export default async function FieldDetailPage({
         href="/tools/fields"
         className="inline-flex items-center gap-1 text-label-md text-cmd-muted transition-colors hover:text-cmd-accent"
       >
-        <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+        <span translate="no" className="material-symbols-outlined" style={{ fontSize: 18 }}>
           arrow_back
         </span>
         All fields

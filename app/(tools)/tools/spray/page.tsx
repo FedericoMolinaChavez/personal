@@ -26,13 +26,13 @@ export default async function SprayPage() {
         actions={
           <>
             <Link href="/tools/spray/review" className={buttonClasses("ghost")}>
-              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+              <span translate="no" className="material-symbols-outlined" style={{ fontSize: 18 }}>
                 fact_check
               </span>
               Review queue{needsReview > 0 ? ` (${needsReview})` : ""}
             </Link>
             <a href="/api/spray/export" className={buttonClasses("ghost")}>
-              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+              <span translate="no" className="material-symbols-outlined" style={{ fontSize: 18 }}>
                 download
               </span>
               Export CSV

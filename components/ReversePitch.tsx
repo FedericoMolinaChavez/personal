@@ -146,6 +146,7 @@ export default function ReversePitch() {
         {status === "success" ? (
           <div className="flex flex-col items-center text-center gap-4 py-8">
             <span
+              translate="no"
               className="material-symbols-outlined text-[56px] text-primary"
               style={{ fontVariationSettings: "'FILL' 1" }}
             >

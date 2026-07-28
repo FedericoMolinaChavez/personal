@@ -1,5 +1,6 @@
 import HireMeButton from "./HireMeButton";
 import ScheduleCallButton from "./ScheduleCallButton";
+import { paymentProcessorNotice, tradingNameNotice } from "@/lib/company";
 
 type Tier = {
   name: string;
@@ -108,7 +109,7 @@ export default function Offer() {
             <ul className="flex flex-col gap-3">
               {tier.includes.map((item) => (
                 <li key={item} className="flex gap-3 items-start">
-                  <span className="material-symbols-outlined text-[20px] text-primary shrink-0">
+                  <span translate="no" className="material-symbols-outlined text-[20px] text-primary shrink-0">
                     check_small
                   </span>
                   <span className="font-body-md text-body-md text-on-surface-variant">
@@ -138,11 +139,24 @@ export default function Offer() {
         ))}
       </div>
 
-      <p className="mt-10 font-body-md text-body-md text-on-surface-variant max-w-2xl">
-        The audit and the retainer are scoped on a call and invoiced afterwards
-        — buying either cold, without a conversation about your system first,
-        works out badly for both of us.
-      </p>
+      <div className="mt-10 flex flex-col gap-3 max-w-2xl">
+        <p className="font-body-md text-body-md text-on-surface-variant">
+          The audit and the retainer are scoped on a call and invoiced
+          afterwards — buying either cold, without a conversation about your
+          system first, works out badly for both of us.
+        </p>
+        <p className="font-label-sm text-label-sm text-on-surface-variant">
+          All prices in USD. {paymentProcessorNotice} {tradingNameNotice} See
+          the{" "}
+          <a
+            href="/terms"
+            className="text-primary hover:underline underline-offset-4"
+          >
+            Terms of Service
+          </a>{" "}
+          for scope, payment and refund terms.
+        </p>
+      </div>
     </section>
   );
 }

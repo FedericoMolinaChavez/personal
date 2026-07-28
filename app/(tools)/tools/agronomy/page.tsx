@@ -24,7 +24,7 @@ export default async function AgronomyLibraryPage() {
         actions={
           <>
             <Link href="/tools/agronomy/chat" className={buttonClasses("primary")}>
-              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+              <span translate="no" className="material-symbols-outlined" style={{ fontSize: 18 }}>
                 forum
               </span>
               Open chat{ready > 0 ? ` (${ready})` : ""}

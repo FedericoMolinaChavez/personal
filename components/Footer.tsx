@@ -1,8 +1,11 @@
+import { company, tradingNameNotice } from "@/lib/company";
+
 const socials = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/federico-molina-chavez/" },
   { label: "GitHub", href: "https://github.com/FedericoMolinaChavez" },
   { label: "Read.cv", href: "#" },
-  { label: "Email", href: "mailto:federico@federicomolina.com" },
+  { label: "Email", href: `mailto:${company.supportEmail}` },
+  { label: "Terms", href: "/terms" },
 ];
 
 export default function Footer() {
@@ -18,7 +21,7 @@ export default function Footer() {
             architect. Fixed prices, published up front.
           </p>
         </div>
-        <div className="flex gap-8">
+        <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
           {socials.map((s) => (
             <a
               key={s.label}
@@ -28,6 +31,19 @@ export default function Footer() {
               {s.label}
             </a>
           ))}
+        </div>
+      </div>
+
+      {/* Entity disclosure — connects the trading name to the legal entity on
+          the Stripe account, so a charge is never unrecognisable. */}
+      <div className="border-t border-outline-variant/40">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-6 flex flex-col gap-1 items-center md:items-start text-center md:text-left">
+          <p className="font-label-sm text-label-sm text-on-surface-variant">
+            {tradingNameNotice}
+          </p>
+          <p className="font-label-sm text-label-sm text-on-surface-variant">
+            {company.address}
+          </p>
         </div>
       </div>
     </footer>

@@ -37,7 +37,7 @@ export default function Expertise() {
             key={item.title}
             className="p-10 bg-surface-container rounded-xl flex flex-col gap-4 hover:bg-surface-container-high transition-colors"
           >
-            <span className="material-symbols-outlined text-[40px] text-primary">
+            <span translate="no" className="material-symbols-outlined text-[40px] text-primary">
               {item.icon}
             </span>
             <h4 className="font-display text-headline-md">{item.title}</h4>

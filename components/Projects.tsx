@@ -98,6 +98,7 @@ function FeaturedCard({ project, size }: { project: Project; size: "lg" | "md" }
           className={`absolute ${iconPos} opacity-20 group-hover:opacity-40 transition-opacity`}
         >
           <span
+            translate="no"
             className={`material-symbols-outlined ${iconSize}`}
             style={{ fontVariationSettings: "'FILL' 1" }}
           >
@@ -109,7 +110,7 @@ function FeaturedCard({ project, size }: { project: Project; size: "lg" | "md" }
         <p className="font-body-md text-body-md text-on-surface-variant max-w-md">
           {project.description}
         </p>
-        <span className="material-symbols-outlined text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
+        <span translate="no" className="material-symbols-outlined text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
           arrow_outward
         </span>
       </div>
@@ -143,6 +144,7 @@ function SmallCard({ project }: { project: Project }) {
         </div>
         <div className="absolute top-8 right-8 opacity-20 group-hover:opacity-40 transition-opacity">
           <span
+            translate="no"
             className="material-symbols-outlined text-[56px]"
             style={{ fontVariationSettings: "'FILL' 1" }}
           >
@@ -154,7 +156,7 @@ function SmallCard({ project }: { project: Project }) {
         <p className="font-body-md text-body-md text-on-surface-variant">
           {project.description}
         </p>
-        <span className="material-symbols-outlined text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform shrink-0">
+        <span translate="no" className="material-symbols-outlined text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform shrink-0">
           arrow_outward
         </span>
       </div>

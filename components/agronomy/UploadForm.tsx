@@ -47,7 +47,7 @@ export default function UploadForm() {
     <div className="rounded-xl border border-cmd-line bg-cmd-surface p-6">
       <form onSubmit={onSubmit} className="flex flex-wrap items-center gap-4">
         <label className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-cmd-line px-4 py-2.5 text-label-md text-cmd-text transition-colors hover:border-cmd-accent hover:text-cmd-accent">
-          <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+          <span translate="no" className="material-symbols-outlined" style={{ fontSize: 18 }}>
             attach_file
           </span>
           {file ? "Change file" : "Choose document"}

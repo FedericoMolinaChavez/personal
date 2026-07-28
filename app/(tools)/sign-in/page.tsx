@@ -10,7 +10,7 @@ export default function SignInPage() {
     <main className="command-theme flex min-h-screen items-center justify-center bg-cmd-bg px-margin-mobile text-cmd-text font-body-md">
       <div className="w-full max-w-md rounded-2xl border border-cmd-line bg-cmd-surface p-8 text-center">
         <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-cmd-accent text-cmd-on-accent">
-          <span className="material-symbols-outlined" style={{ fontSize: 24 }}>
+          <span translate="no" className="material-symbols-outlined" style={{ fontSize: 24 }}>
             eco
           </span>
         </span>
@@ -28,7 +28,7 @@ export default function SignInPage() {
           href="/"
           className="mt-6 inline-flex items-center gap-2 rounded-full border border-cmd-line px-5 py-2.5 text-label-md text-cmd-text transition-colors hover:border-cmd-accent hover:text-cmd-accent"
         >
-          <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+          <span translate="no" className="material-symbols-outlined" style={{ fontSize: 18 }}>
             arrow_back
           </span>
           Back to site
