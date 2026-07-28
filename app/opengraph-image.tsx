@@ -1,6 +1,7 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "CTO + AI — Fractional CTO & AI Developer for AI SaaS founders";
+export const alt =
+  "Federico Molina — Fractional CTO for AI & agent systems";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -30,7 +31,7 @@ export default function OpengraphImage() {
             letterSpacing: "-0.01em",
           }}
         >
-          CTO + AI
+          Federico Molina
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
@@ -45,12 +46,15 @@ export default function OpengraphImage() {
               flexWrap: "wrap",
             }}
           >
-            I turn your idea into a&nbsp;
-            <span style={{ color: "#8f4538", fontStyle: "italic" }}>product</span>
-            &nbsp;your users pay for.
+            Your agents work in the demo and&nbsp;
+            <span style={{ color: "#8f4538", fontStyle: "italic" }}>
+              break in production
+            </span>
+            .
           </div>
           <div style={{ fontSize: 30, color: "#544340", maxWidth: 880 }}>
-            Fractional CTO &amp; AI Developer for AI SaaS founders.
+            Fractional CTO &amp; AI systems architect. Fixed prices, published up
+            front.
           </div>
         </div>
 

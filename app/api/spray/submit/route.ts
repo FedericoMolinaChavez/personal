@@ -24,7 +24,7 @@ async function notifyFailure(
     const resend = new Resend(key);
     await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL ?? "notifications@thenomadhub.xyz",
-      to: process.env.CONTACT_EMAIL ?? "federicomolinachavez@gmail.com",
+      to: process.env.CONTACT_EMAIL ?? "federico@federicomolina.com",
       subject: `Spray intake failed — tenant ${tenantId}`,
       html: `<p>Submission <strong>${submissionId ?? "(unsaved)"}</strong> failed to process:</p><pre>${message}</pre>`,
     });

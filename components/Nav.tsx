@@ -13,12 +13,12 @@ const links = [
 export default function Nav() {
   return (
     <header className="w-full sticky top-0 z-50 bg-surface/80 backdrop-blur-md">
-      <nav className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+      <nav className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center gap-4 h-20">
         <a
           href="#top"
-          className="font-display text-headline-md font-extrabold text-primary"
+          className="font-display text-[18px] md:text-headline-md font-extrabold text-primary whitespace-nowrap"
         >
-          CTO + AI
+          Federico Molina
         </a>
         <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
@@ -31,7 +31,10 @@ export default function Nav() {
             </a>
           ))}
         </div>
-        <HireMeButton className="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-md text-label-md hover:scale-95 transition-all duration-100 soil-shadow cursor-pointer disabled:opacity-70" />
+        <HireMeButton
+          label="Book a session"
+          className="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-md text-label-md whitespace-nowrap hover:scale-95 transition-all duration-100 soil-shadow cursor-pointer disabled:opacity-70"
+        />
       </nav>
     </header>
   );

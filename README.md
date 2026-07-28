@@ -1,8 +1,12 @@
-# CTO + AI — Personal site
+# federicomolina.com — Personal site
 
-A [Next.js](https://nextjs.org) (App Router + TypeScript + Tailwind) portfolio for a
-fractional CTO / AI developer. Earth-tone design with a working **Stripe** checkout
-("Hire Me") and a **Cal.com** booking widget ("Book a Consultation").
+A [Next.js](https://nextjs.org) (App Router + TypeScript + Tailwind) site for a fractional
+CTO specialising in AI and agent systems. Earth-tone design with a working **Stripe**
+checkout for the $300 entry-point session and a **Cal.com** booking widget.
+
+Three services are published on the page; only the cheapest has a public checkout. The
+$2,500 audit and $4,000/mo retainer are deliberately scoped on a call and invoiced from
+Stripe afterwards — a stranger buying either cold is a refund waiting to happen.
 
 ## Stack
 - Next.js 16 (App Router) + React 19 + TypeScript
@@ -27,16 +31,17 @@ env vars to make them live.
 | Variable | Purpose |
 | --- | --- |
 | `STRIPE_SECRET_KEY` | Stripe secret key (test: `sk_test_…`). Enables checkout. |
-| `SERVICE_NAME` | Product name shown at checkout (default: "Strategy Consultation"). |
-| `SERVICE_PRICE_USD` | Price in USD for the single service (default: `500`). |
+| `STRIPE_PRODUCT_ID` | Existing Stripe product the checkout price is attached to (default: `prod_Uy6BWUbniHJ4PF`). Must exist in the same Stripe account/mode as `STRIPE_SECRET_KEY`. |
+| `SERVICE_PRICE_USD` | Price in USD for the public checkout (default: `300`). |
+| `CONTACT_EMAIL` | Where payment / pitch notifications are sent (default: `federico@federicomolina.com`). |
 | `NEXT_PUBLIC_BASE_URL` | Base URL for Stripe success/cancel redirects. |
 | `NEXT_PUBLIC_CALCOM_LINK` | Cal.com event link, e.g. `yourhandle/consultation`. |
 
 See `.env.local.example` for the full template.
 
 ### Stripe test checkout
-Set `STRIPE_SECRET_KEY` to a test key, run the app, click **Hire Me**, and pay with the test
-card `4242 4242 4242 4242` (any future expiry, any CVC). You'll land on `/success`.
+Set `STRIPE_SECRET_KEY` to a test key, run the app, click **Book a session**, and pay with
+the test card `4242 4242 4242 4242` (any future expiry, any CVC). You'll land on `/success`.
 
 ### Cal.com
 Create a free account at [cal.com](https://cal.com), add an event type, and set

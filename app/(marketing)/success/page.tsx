@@ -10,8 +10,9 @@ export default function SuccessPage() {
         Payment received — thank you!
       </h1>
       <p className="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-        Your booking is confirmed. I&apos;ll reach out shortly with next steps.
-        If you haven&apos;t already, feel free to book a time on my calendar.
+        Your strategy session is booked. I&apos;ll email you within one business
+        day to schedule the 90 minutes and ask what you want to put them
+        against. The written summary follows within 48 hours of the session.
       </p>
       <Link
         href="/"
