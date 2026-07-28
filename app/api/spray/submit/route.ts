@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { requireTenant } from "@/lib/shared/auth/dal";
+import { guardTool } from "@/lib/shared/toolGate";
 import { extractRecord } from "@/lib/spray/extract";
 import { validateRecord } from "@/lib/spray/rules";
 import {
@@ -34,6 +35,8 @@ async function notifyFailure(
 }
 
 export async function POST(request: Request) {
+  const blocked = await guardTool(request);
+  if (blocked) return blocked;
   const { tenantId } = await requireTenant();
 
   let form: FormData;

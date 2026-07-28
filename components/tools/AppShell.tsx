@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ToolGate from "./ToolGate";
 
 const NAV = [
   { href: "/tools", label: "Overview", icon: "space_dashboard", exact: true },
@@ -118,7 +119,9 @@ export default function AppShell({ children }: { children: ReactNode }) {
             </nav>
           </div>
 
-          <main className="flex-1 px-margin-mobile py-10 md:px-8">{children}</main>
+          <main className="flex-1 px-margin-mobile py-10 md:px-8">
+            <ToolGate>{children}</ToolGate>
+          </main>
         </div>
       </div>
     </div>

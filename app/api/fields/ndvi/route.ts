@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { requireTenant } from "@/lib/shared/auth/dal";
+import { guardTool } from "@/lib/shared/toolGate";
 import { refreshNdvi } from "@/lib/fields/ndvi";
 import { refreshWeather } from "@/lib/fields/weather";
 import { refreshPrices } from "@/lib/fields/prices";
@@ -9,7 +10,9 @@ import { refreshPrices } from "@/lib/fields/prices";
  * tenant's fields and the benchmark prices, so a demo can populate everything
  * without waiting for the daily cron. The cron routes do the same unattended.
  */
-export async function POST() {
+export async function POST(request: Request) {
+  const blocked = await guardTool(request);
+  if (blocked) return blocked;
   const { tenantId } = await requireTenant();
   try {
     const [ndvi, weather, prices] = await Promise.all([

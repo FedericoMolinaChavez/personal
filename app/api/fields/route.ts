@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { requireTenant } from "@/lib/shared/auth/dal";
+import { guardTool } from "@/lib/shared/toolGate";
 import { createField, listFields } from "@/lib/fields/fields";
 import { fieldCreateSchema } from "@/lib/fields/schema";
 
@@ -12,6 +13,8 @@ export async function GET() {
 
 /** Create a field from a GeoJSON Polygon (drawn on the map or uploaded). */
 export async function POST(request: Request) {
+  const blocked = await guardTool(request, { rateLimit: false });
+  if (blocked) return blocked;
   const { tenantId } = await requireTenant();
 
   let body: unknown;

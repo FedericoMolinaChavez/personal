@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { requireTenant } from "@/lib/shared/auth/dal";
+import { guardTool } from "@/lib/shared/toolGate";
 import { extOf, ingestDocument } from "@/lib/agronomy/ingest";
 import {
   createDocument,
@@ -15,6 +16,8 @@ export const maxDuration = 300;
 
 /** P1 — upload + ingest a document (parse, chunk, embed) inline. */
 export async function POST(request: Request) {
+  const blocked = await guardTool(request);
+  if (blocked) return blocked;
   const { tenantId } = await requireTenant();
 
   let form: FormData;
@@ -88,6 +91,8 @@ export async function POST(request: Request) {
 
 /** P1 — delete a document (chunks cascade) and its stored original. */
 export async function DELETE(request: Request) {
+  const blocked = await guardTool(request, { rateLimit: false });
+  if (blocked) return blocked;
   const { tenantId } = await requireTenant();
 
   let body: { documentId?: string };
