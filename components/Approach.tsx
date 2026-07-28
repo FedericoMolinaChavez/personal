@@ -9,18 +9,20 @@ export default function Approach() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div className="flex flex-col gap-8 order-2 md:order-1">
           <h2 className="font-display text-display text-on-surface leading-tight">
-            Your Strategic Partner.
+            I&apos;ve shipped these systems. And killed one.
           </h2>
           <div className="flex flex-col gap-6 font-body-lg text-body-lg text-on-surface-variant">
             <p>
-              I&apos;m not just a programmer. I&apos;m the architect who
-              understands the balance between technical feasibility and return on
-              investment.
+              Eight years building production software, the last stretch of it
+              almost entirely on LLM and agent systems — as a fractional CTO
+              inside other people&apos;s products, and as the person on the hook
+              for my own.
             </p>
             <p>
-              From MVP conception to scalable infrastructure, I work side by side
-              with you to make sure every line of code contributes to the success
-              of the business.
+              That includes a multi-agent product I built solo, took to market,
+              and shut down after one paying customer. I&apos;d rather tell you
+              which parts of this are genuinely hard than hand you a roadmap
+              that assumes none of them are.
             </p>
           </div>
           <div className="flex flex-wrap gap-4 mt-4">
@@ -28,13 +30,13 @@ export default function Approach() {
               <span className="material-symbols-outlined text-primary">
                 verified
               </span>
-              CTO as a Service
+              Fractional CTO
             </div>
             <div className="px-6 py-3 bg-surface-container-highest rounded-full font-label-md text-label-md flex items-center gap-2">
               <span className="material-symbols-outlined text-primary">
                 psychology
               </span>
-              AI Architecture
+              Agent Systems
             </div>
           </div>
         </div>

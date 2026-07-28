@@ -20,27 +20,28 @@ const jetbrainsMono = JetBrains_Mono({
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
-const title = "CTO + AI — Fractional CTO & AI Developer for AI SaaS founders";
+const title =
+  "Federico Molina — Fractional CTO for AI & agent systems";
 const description =
-  "Tech strategist and AI-focused developer. I help AI-focused B2B SaaS founders navigate technical complexity to scale profitable products.";
+  "I work on LLM and agent systems that pass the demo and break in production: orchestration, context and memory, token cost, failure modes, and the security of the app around them. Fixed prices, published up front.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
     default: title,
-    template: "%s · CTO + AI",
+    template: "%s · Federico Molina",
   },
   description,
   keywords: [
     "fractional CTO",
-    "AI developer",
-    "MVP development",
+    "AI systems architecture audit",
+    "AI agents",
+    "multi-agent systems",
     "LLM engineering",
     "RAG",
-    "AI agents",
-    "technical co-founder",
-    "product strategy",
-    "startup CTO",
+    "LLM evals",
+    "AI production reliability",
+    "AI consulting",
   ],
   authors: [{ name: "Federico Molina Chavez" }],
   creator: "Federico Molina Chavez",
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "/",
-    siteName: "CTO + AI",
+    siteName: "Federico Molina",
     title,
     description,
   },
@@ -68,14 +69,14 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "CTO + AI — Fractional CTO & AI Developer",
+  name: "Federico Molina — Fractional CTO for AI & agent systems",
   description,
   url: baseUrl,
   image: `${baseUrl}/opengraph-image`,
   provider: {
     "@type": "Person",
     name: "Federico Molina Chavez",
-    jobTitle: "Fractional CTO & AI Developer",
+    jobTitle: "Fractional CTO & AI Systems Architect",
     url: baseUrl,
     sameAs: [
       "https://www.linkedin.com/in/federico-molina-chavez/",
@@ -83,15 +84,41 @@ const jsonLd = {
     ],
   },
   areaServed: "Worldwide",
-  serviceType: "Fractional CTO & AI development",
-  makesOffer: {
-    "@type": "Offer",
-    name: "Build Plan & Planning Sprint",
-    description:
-      "A written build plan plus 3 planning sessions to pressure-test the idea and shape the roadmap. Credited toward a full project or hourly rate if we continue.",
-    price: process.env.SERVICE_PRICE_USD || "500",
-    priceCurrency: "USD",
-  },
+  serviceType: "Fractional CTO & AI systems architecture",
+  makesOffer: [
+    {
+      "@type": "Offer",
+      name: "Technical Strategy Session (90 min)",
+      description:
+        "A focused 90-minute working session on one technical decision, plus a written summary within 48 hours. Credited in full against any engagement booked within 30 days.",
+      price: process.env.SERVICE_PRICE_USD || "300",
+      priceCurrency: "USD",
+    },
+    {
+      "@type": "Offer",
+      name: "AI Systems Architecture Audit",
+      description:
+        "A two-week fixed-scope review of an existing AI or agent system: architecture and orchestration, context and memory handling, token cost, production failure modes, and security posture. Written report plus a prioritized 90-day roadmap.",
+      price: "2500",
+      priceCurrency: "USD",
+    },
+    {
+      "@type": "Offer",
+      name: "Fractional CTO — Monthly Retainer",
+      description:
+        "Ongoing technical leadership at approximately 20 hours per month: architecture decisions, code and PR review, vendor and hiring evaluation, and hands-on implementation. Cancel with 30 days' notice.",
+      price: "4000",
+      priceCurrency: "USD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "4000",
+        priceCurrency: "USD",
+        billingDuration: 1,
+        billingIncrement: 1,
+        unitCode: "MON",
+      },
+    },
+  ],
 };
 
 export default function RootLayout({

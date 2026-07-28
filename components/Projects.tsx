@@ -22,9 +22,9 @@ const projects: Project[] = [
   {
     name: "The Nomad Hub",
     url: "https://www.thenomadhub.xyz",
-    category: "AI · Relocation",
+    category: "AI · Multi-Agent · Case Study",
     description:
-      "AI relocation planner for digital nomads — turns a move into a tailored visa, housing and banking plan in one click.",
+      "A multi-agent relocation planner: coordinated agents producing a visa, housing and banking plan from one prompt. Built and shipped solo, then wound down after one paying customer — kept live as a working case study in the architecture.",
     icon: "travel_explore",
     bg: "#dce5cc",
     accent: "text-secondary",
@@ -173,9 +173,10 @@ export default function Projects() {
           Products I&apos;ve built or helped build.
         </h2>
         <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl">
-          Two of these — Attribute.ai and The Nomad Hub — are my own products.
-          I build and ship for myself too, so I bring an owner&apos;s judgment
-          to client work, not just billable hours.
+          Two of these — Attribute.ai and The Nomad Hub — are my own products,
+          and one of them I shut down. I build, ship and occasionally kill
+          things for myself, so I bring an owner&apos;s judgment to client work,
+          not just billable hours.
         </p>
       </div>
 

@@ -1,18 +1,18 @@
 const items = [
   {
-    icon: "integration_instructions",
-    title: "LLM Engineering",
-    body: "Design and implementation of systems built on large language models, RAG, and autonomous agents.",
+    icon: "account_tree",
+    title: "Agent Architecture",
+    body: "Multi-agent orchestration, tool use, RAG, and the context and memory handling that decides whether any of it holds up past the demo.",
   },
   {
-    icon: "architecture",
-    title: "Scalable Systems",
-    body: "Cloud architectures optimized for performance, security, and — above all — long-term maintainability.",
+    icon: "monitoring",
+    title: "Production Reliability",
+    body: "Evals, tracing, and cost control. Finding the failure modes that only show up under real traffic — and the token spend nobody is watching.",
   },
   {
-    icon: "draw",
-    title: "Product Design",
-    body: "UX/UI with a technical lens. We don't just make something pretty — we make something that works and can be built.",
+    icon: "encrypted",
+    title: "The App Around the Model",
+    body: "Auth, route protection, secrets, and data handling. Most AI incidents aren't model problems; they're unprotected endpoints shipped at speed.",
   },
 ];
 
@@ -23,9 +23,13 @@ export default function Expertise() {
         <span className="font-label-sm text-label-sm text-primary uppercase tracking-widest">
           Expertise
         </span>
-        <h2 className="font-display text-headline-lg md:text-[48px] text-on-background">
-          The work, broken down.
+        <h2 className="font-display text-headline-lg md:text-[48px] text-on-background max-w-3xl">
+          Narrow on purpose.
         </h2>
+        <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          I don&apos;t take general full-stack work anymore. Three areas, all of
+          them the same problem seen from different angles.
+        </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {items.map((item) => (

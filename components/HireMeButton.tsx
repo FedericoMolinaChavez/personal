@@ -10,7 +10,7 @@ type Props = {
 
 export default function HireMeButton({
   className = "",
-  label = "Hire Me",
+  label = "Book a session",
 }: Props) {
   const [loading, setLoading] = useState(false);
   const [note, setNote] = useState<string | null>(null);

@@ -15,20 +15,20 @@ export default function Contact() {
           </span>
         </div>
         <h2 className="font-display text-display max-w-2xl relative z-10">
-          Ready to build the future of your industry?
+          Tell me what&apos;s breaking.
         </h2>
         <p className="font-body-lg text-body-lg text-on-primary/80 max-w-xl relative z-10">
-          Book a free 15-minute call to talk through your vision — or kick off
-          the $500 planning sprint and we&apos;ll map out exactly what to
-          build.
+          Book a free 15-minute call to see whether this is work I should be
+          doing — or go straight to a $300 strategy session and put 90 minutes
+          against the decision you&apos;re stuck on.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 relative z-10">
           <ScheduleCallButton
-            label="Schedule a Call"
+            label="Schedule a free call"
             className="bg-surface text-primary px-10 py-4 rounded-full font-label-md text-label-md hover:scale-95 transition-transform"
           />
           <HireMeButton
-            label="Hire Me"
+            label="Book a $300 session"
             className="bg-primary-container border border-on-primary/30 text-on-primary px-10 py-4 rounded-full font-label-md text-label-md hover:bg-on-primary/10 transition-colors cursor-pointer disabled:opacity-70"
           />
         </div>

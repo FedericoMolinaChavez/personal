@@ -98,7 +98,7 @@ export async function POST(request: Request) {
   try {
     await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL ?? "notifications@thenomadhub.xyz",
-      to: process.env.CONTACT_EMAIL ?? "federicomolinachavez@gmail.com",
+      to: process.env.CONTACT_EMAIL ?? "federico@federicomolina.com",
       replyTo: email,
       subject: `New pitch: ${name}${company ? ` (${company})` : ""} — ${budget}`,
       html: `
