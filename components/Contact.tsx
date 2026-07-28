@@ -8,6 +8,7 @@ export default function Contact() {
       <div className="bg-primary text-on-primary p-12 md:p-20 rounded-3xl flex flex-col items-center text-center gap-8 relative overflow-hidden">
         <div className="absolute top-0 right-0 p-10 opacity-10 pointer-events-none">
           <span
+            translate="no"
             className="material-symbols-outlined text-[200px]"
             style={{ fontVariationSettings: "'FILL' 1" }}
           >

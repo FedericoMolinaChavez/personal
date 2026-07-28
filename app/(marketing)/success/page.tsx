@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function SuccessPage() {
   return (
     <main className="max-w-container-max mx-auto px-margin-desktop min-h-screen flex flex-col items-center justify-center text-center gap-8">
-      <span className="material-symbols-outlined text-[64px] text-primary">
+      <span translate="no" className="material-symbols-outlined text-[64px] text-primary">
         check_circle
       </span>
       <h1 className="font-display text-display text-on-background">

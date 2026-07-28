@@ -50,7 +50,7 @@ export default function BriefingPanel({ initial }: { initial: Data }) {
           disabled={busy}
           className="inline-flex items-center gap-2 rounded-full bg-cmd-accent px-5 py-2 text-label-md text-cmd-on-accent transition-all hover:bg-cmd-accent-strong disabled:opacity-50"
         >
-          <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+          <span translate="no" className="material-symbols-outlined" style={{ fontSize: 18 }}>
             auto_awesome
           </span>
           {busy ? "Generating…" : "Generate briefing"}

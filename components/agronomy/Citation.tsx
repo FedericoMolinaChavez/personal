@@ -14,7 +14,7 @@ export default function Citation({ source }: { source: Source }) {
     "inline-flex items-center gap-1 rounded-full border border-cmd-accent/30 bg-cmd-accent/10 px-2.5 py-1 font-mono text-label-sm text-cmd-accent transition-colors hover:bg-cmd-accent/20";
   return source.url ? (
     <a href={source.url} target="_blank" rel="noopener noreferrer" className={cls}>
-      <span className="material-symbols-outlined" style={{ fontSize: 13 }}>
+      <span translate="no" className="material-symbols-outlined" style={{ fontSize: 13 }}>
         open_in_new
       </span>
       {label}

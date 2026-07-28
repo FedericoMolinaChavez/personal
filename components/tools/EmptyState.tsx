@@ -15,6 +15,7 @@ export default function EmptyState({
   return (
     <div className="flex flex-col items-center justify-center rounded-xl border border-dashed border-cmd-line bg-cmd-surface/50 px-6 py-14 text-center">
       <span
+        translate="no"
         className="material-symbols-outlined text-cmd-accent-dim"
         style={{ fontSize: 32 }}
       >

@@ -34,7 +34,7 @@ export default function RefreshButton() {
         disabled={busy}
         className="inline-flex items-center gap-2 rounded-full border border-cmd-line px-4 py-2.5 text-label-md text-cmd-text transition-colors hover:border-cmd-accent hover:text-cmd-accent disabled:opacity-50"
       >
-        <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+        <span translate="no" className="material-symbols-outlined" style={{ fontSize: 18 }}>
           {busy ? "hourglass_empty" : "refresh"}
         </span>
         {busy ? "Refreshing…" : "Refresh data"}

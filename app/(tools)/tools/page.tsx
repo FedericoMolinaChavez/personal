@@ -108,11 +108,11 @@ export default async function ToolsOverviewPage() {
             >
               <div className="flex items-center justify-between">
                 <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-cmd-surface2 text-cmd-accent">
-                  <span className="material-symbols-outlined" style={{ fontSize: 24 }}>
+                  <span translate="no" className="material-symbols-outlined" style={{ fontSize: 24 }}>
                     {t.icon}
                   </span>
                 </span>
-                <span className="material-symbols-outlined text-cmd-muted transition-colors group-hover:text-cmd-accent">
+                <span translate="no" className="material-symbols-outlined text-cmd-muted transition-colors group-hover:text-cmd-accent">
                   arrow_outward
                 </span>
               </div>

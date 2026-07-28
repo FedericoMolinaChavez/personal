@@ -109,7 +109,7 @@ export default function Offer() {
             <ul className="flex flex-col gap-3">
               {tier.includes.map((item) => (
                 <li key={item} className="flex gap-3 items-start">
-                  <span className="material-symbols-outlined text-[20px] text-primary shrink-0">
+                  <span translate="no" className="material-symbols-outlined text-[20px] text-primary shrink-0">
                     check_small
                   </span>
                   <span className="font-body-md text-body-md text-on-surface-variant">

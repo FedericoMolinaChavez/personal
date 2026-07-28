@@ -107,7 +107,7 @@ export default function Chat() {
       <div className="flex-1 space-y-6 overflow-y-auto p-6">
         {messages.length === 0 ? (
           <div className="flex h-full flex-col items-center justify-center text-center">
-            <span className="material-symbols-outlined text-cmd-accent-dim" style={{ fontSize: 32 }}>
+            <span translate="no" className="material-symbols-outlined text-cmd-accent-dim" style={{ fontSize: 32 }}>
               forum
             </span>
             <p className="mt-3 max-w-md text-body-md text-cmd-muted">
@@ -172,7 +172,7 @@ export default function Chat() {
           disabled={busy || !input.trim()}
           className="inline-flex items-center gap-2 rounded-full bg-cmd-accent px-6 py-2.5 text-label-md text-cmd-on-accent transition-all hover:bg-cmd-accent-strong disabled:pointer-events-none disabled:opacity-50"
         >
-          <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+          <span translate="no" className="material-symbols-outlined" style={{ fontSize: 18 }}>
             send
           </span>
           {busy ? "…" : "Send"}

@@ -27,13 +27,13 @@ export default function Approach() {
           </div>
           <div className="flex flex-wrap gap-4 mt-4">
             <div className="px-6 py-3 bg-surface-container-highest rounded-full font-label-md text-label-md flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary">
+              <span translate="no" className="material-symbols-outlined text-primary">
                 verified
               </span>
               Fractional CTO
             </div>
             <div className="px-6 py-3 bg-surface-container-highest rounded-full font-label-md text-label-md flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary">
+              <span translate="no" className="material-symbols-outlined text-primary">
                 psychology
               </span>
               Agent Systems

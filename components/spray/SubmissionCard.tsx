@@ -20,7 +20,7 @@ export default function SubmissionCard({
     <div className="flex items-center justify-between gap-4 rounded-xl border border-cmd-line bg-cmd-surface p-4 transition-colors hover:border-cmd-line-strong">
       <div className="flex min-w-0 items-center gap-3">
         <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-cmd-surface2 text-cmd-muted">
-          <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+          <span translate="no" className="material-symbols-outlined" style={{ fontSize: 18 }}>
             {submission.channel === "photo" ? "image" : "edit_note"}
           </span>
         </span>

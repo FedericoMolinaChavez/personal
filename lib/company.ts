@@ -7,10 +7,10 @@
  * moves — so this disclosure has to appear next to the buy buttons, in the
  * footer, and in the Terms. Keeping it here means one edit updates all three.
  *
- * TODO(federico): replace the TO_FILL placeholders with the real registration
- * state and registered address before this goes live. They are deliberately
- * left as visible placeholders rather than guessed — this text ends up in a
- * legal document and on customers' card statements.
+ * TODO(federico): registrationState is still a placeholder. It is deliberately
+ * not guessed from the mailing address — a company can be incorporated in one
+ * state and operate from another, and this value drives the governing-law
+ * clause in the Terms.
  */
 
 const TO_FILL = (field: string) => `[${field} — add before publishing]`;
@@ -20,10 +20,10 @@ export const company = {
   legalName: "Nomad Hub Holdings Inc",
   /** Public-facing trading name customers actually recognise. */
   tradingName: "federicomolina.com",
-  /** US state of incorporation. */
+  /** US state of incorporation — not necessarily the state in `address`. */
   registrationState: TO_FILL("State of incorporation"),
   /** Registered business address, single line. */
-  address: TO_FILL("Registered address"),
+  address: "1672 NE 29th St, Pompano Beach, FL 33064, US",
   /** Support / billing contact. */
   supportEmail: "federico@federicomolina.com",
 } as const;

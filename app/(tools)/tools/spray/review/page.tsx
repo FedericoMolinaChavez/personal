@@ -33,7 +33,7 @@ export default async function SprayReviewPage() {
         description="Submissions that were low-confidence or out-of-range. Confirm the parsed record against the original, then approve or reject."
         actions={
           <Link href="/tools/spray" className={buttonClasses("ghost")}>
-            <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+            <span translate="no" className="material-symbols-outlined" style={{ fontSize: 18 }}>
               arrow_back
             </span>
             Back to intake

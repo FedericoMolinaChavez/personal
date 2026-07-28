@@ -19,7 +19,7 @@ function Brand() {
   return (
     <Link href="/tools" className="flex items-center gap-2.5">
       <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-cmd-accent text-cmd-on-accent">
-        <span className="material-symbols-outlined" style={{ fontSize: 20 }}>
+        <span translate="no" className="material-symbols-outlined" style={{ fontSize: 20 }}>
           eco
         </span>
       </span>
@@ -55,6 +55,7 @@ export default function AppShell({ children }: { children: ReactNode }) {
                   }`}
                 >
                   <span
+                    translate="no"
                     className={`material-symbols-outlined ${active ? "text-cmd-accent" : "text-cmd-muted group-hover:text-cmd-text"}`}
                     style={{ fontSize: 20 }}
                   >
@@ -74,7 +75,7 @@ export default function AppShell({ children }: { children: ReactNode }) {
               href="/"
               className="flex items-center gap-2 px-1 text-label-md text-cmd-muted transition-colors hover:text-cmd-accent"
             >
-              <span className="material-symbols-outlined" style={{ fontSize: 18 }}>
+              <span translate="no" className="material-symbols-outlined" style={{ fontSize: 18 }}>
                 arrow_back
               </span>
               Back to site
@@ -108,7 +109,7 @@ export default function AppShell({ children }: { children: ReactNode }) {
                         : "border-cmd-line text-cmd-muted"
                     }`}
                   >
-                    <span className="material-symbols-outlined" style={{ fontSize: 16 }}>
+                    <span translate="no" className="material-symbols-outlined" style={{ fontSize: 16 }}>
                       {item.icon}
                     </span>
                     {item.label}

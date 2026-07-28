@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function CancelPage() {
   return (
     <main className="max-w-container-max mx-auto px-margin-desktop min-h-screen flex flex-col items-center justify-center text-center gap-8">
-      <span className="material-symbols-outlined text-[64px] text-on-surface-variant">
+      <span translate="no" className="material-symbols-outlined text-[64px] text-on-surface-variant">
         info
       </span>
       <h1 className="font-display text-display text-on-background">
