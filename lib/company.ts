@@ -1,0 +1,35 @@
+/**
+ * Legal entity details, in one place.
+ *
+ * The site trades as "federicomolina.com" but the legal entity on the Stripe
+ * account is Nomad Hub Holdings Inc (a DBA / trading-name setup). Stripe and
+ * card networks only require that the two are *visibly connected* before money
+ * moves — so this disclosure has to appear next to the buy buttons, in the
+ * footer, and in the Terms. Keeping it here means one edit updates all three.
+ *
+ * TODO(federico): replace the TO_FILL placeholders with the real registration
+ * state and registered address before this goes live. They are deliberately
+ * left as visible placeholders rather than guessed — this text ends up in a
+ * legal document and on customers' card statements.
+ */
+
+const TO_FILL = (field: string) => `[${field} — add before publishing]`;
+
+export const company = {
+  /** Registered legal name of the entity on the Stripe account. */
+  legalName: "Nomad Hub Holdings Inc",
+  /** Public-facing trading name customers actually recognise. */
+  tradingName: "federicomolina.com",
+  /** US state of incorporation. */
+  registrationState: TO_FILL("State of incorporation"),
+  /** Registered business address, single line. */
+  address: TO_FILL("Registered address"),
+  /** Support / billing contact. */
+  supportEmail: "federico@federicomolina.com",
+} as const;
+
+/** Short line shown next to every price and checkout button. */
+export const paymentProcessorNotice = `Payments processed by ${company.legalName}.`;
+
+/** Footer line connecting the trading name to the legal entity. */
+export const tradingNameNotice = `${company.tradingName} is a trading name of ${company.legalName}.`;

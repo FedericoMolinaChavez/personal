@@ -16,11 +16,13 @@ export default function Nav() {
       <nav className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center gap-4 h-20">
         <a
           href="#top"
-          className="font-display text-[18px] md:text-headline-md font-extrabold text-primary whitespace-nowrap"
+          className="font-display text-[18px] sm:text-headline-md font-extrabold text-primary whitespace-nowrap"
         >
           Federico Molina
         </a>
-        <div className="hidden md:flex items-center gap-8">
+        {/* Held back to lg: seven links plus the wordmark and CTA do not fit
+            in the 768–1000px band. */}
+        <div className="hidden lg:flex items-center gap-6 xl:gap-8">
           {links.map((link) => (
             <a
               key={link.href}
@@ -33,6 +35,7 @@ export default function Nav() {
         </div>
         <HireMeButton
           label="Book a session"
+          disclosure={false}
           className="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-md text-label-md whitespace-nowrap hover:scale-95 transition-all duration-100 soil-shadow cursor-pointer disabled:opacity-70"
         />
       </nav>

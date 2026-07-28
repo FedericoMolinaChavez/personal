@@ -30,6 +30,7 @@ export default function Contact() {
           <HireMeButton
             label="Book a $300 session"
             className="bg-primary-container border border-on-primary/30 text-on-primary px-10 py-4 rounded-full font-label-md text-label-md hover:bg-on-primary/10 transition-colors cursor-pointer disabled:opacity-70"
+            disclosureClassName="text-on-primary/80"
           />
         </div>
       </div>
