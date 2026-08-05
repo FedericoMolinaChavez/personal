@@ -1,12 +1,15 @@
+import Link from "next/link";
 import HireMeButton from "./HireMeButton";
 
+// Absolute form ("/#work") so these resolve from any page, not just the
+// homepage where the ids actually live.
 const links = [
-  { href: "#work", label: "Work" },
-  { href: "#approach", label: "Approach" },
-  { href: "#expertise", label: "Expertise" },
-  { href: "#offer", label: "Pricing" },
-  { href: "#pitch", label: "Pitch Me" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#work", label: "Work" },
+  { href: "/#approach", label: "Approach" },
+  { href: "/#expertise", label: "Expertise" },
+  { href: "/#offer", label: "Pricing" },
+  { href: "/#pitch", label: "Pitch Me" },
+  { href: "/#contact", label: "Contact" },
   { href: "/tools", label: "Tools" },
 ];
 
@@ -14,23 +17,23 @@ export default function Nav() {
   return (
     <header className="w-full sticky top-0 z-50 bg-surface/80 backdrop-blur-md">
       <nav className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center gap-4 h-20">
-        <a
-          href="#top"
+        <Link
+          href="/#top"
           className="font-display text-[18px] sm:text-headline-md font-extrabold text-primary whitespace-nowrap"
         >
           Federico Molina
-        </a>
+        </Link>
         {/* Held back to lg: seven links plus the wordmark and CTA do not fit
             in the 768–1000px band. */}
         <div className="hidden lg:flex items-center gap-6 xl:gap-8">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
         <HireMeButton

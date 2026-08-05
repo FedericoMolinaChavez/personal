@@ -1,30 +1,10 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { track } from "@vercel/analytics";
-
-const SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+import { useTurnstile } from "@/lib/use-turnstile";
 
 type Status = "idle" | "submitting" | "success" | "error";
-
-// Minimal typing for the Turnstile global injected by Cloudflare's script.
-declare global {
-  interface Window {
-    turnstile?: {
-      render: (
-        el: HTMLElement,
-        opts: {
-          sitekey: string;
-          callback: (token: string) => void;
-          "expired-callback"?: () => void;
-          "error-callback"?: () => void;
-          theme?: "light" | "dark" | "auto";
-        },
-      ) => string;
-      reset: (id?: string) => void;
-    };
-  }
-}
 
 const fieldClass =
   "w-full bg-surface-container-low border border-outline-variant rounded-xl px-4 py-3 text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors";
@@ -34,61 +14,11 @@ const labelClass =
 export default function ReversePitch() {
   const [status, setStatus] = useState<Status>("idle");
   const [note, setNote] = useState<string | null>(null);
-  const [token, setToken] = useState("");
-
-  const widgetRef = useRef<HTMLDivElement>(null);
-  const widgetId = useRef<string | null>(null);
-
-  // Render the Cloudflare Turnstile widget when a site key is configured.
-  useEffect(() => {
-    if (!SITE_KEY) return;
-
-    let cancelled = false;
-
-    function render() {
-      if (
-        cancelled ||
-        widgetId.current ||
-        !window.turnstile ||
-        !widgetRef.current
-      ) {
-        return;
-      }
-      widgetId.current = window.turnstile.render(widgetRef.current, {
-        sitekey: SITE_KEY!,
-        theme: "auto",
-        callback: (t) => setToken(t),
-        "expired-callback": () => setToken(""),
-        "error-callback": () => setToken(""),
-      });
-    }
-
-    if (window.turnstile) {
-      render();
-      return;
-    }
-
-    const SRC = "https://challenges.cloudflare.com/turnstile/v0/api.js";
-    let script = document.querySelector<HTMLScriptElement>(
-      `script[src="${SRC}"]`,
-    );
-    if (!script) {
-      script = document.createElement("script");
-      script.src = SRC;
-      script.async = true;
-      script.defer = true;
-      document.head.appendChild(script);
-    }
-    script.addEventListener("load", render);
-    return () => {
-      cancelled = true;
-      script?.removeEventListener("load", render);
-    };
-  }, []);
+  const { siteKey, token, widgetRef, reset } = useTurnstile();
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (SITE_KEY && !token) {
+    if (siteKey && !token) {
       setStatus("error");
       setNote("Please complete the verification below.");
       return;
@@ -119,10 +49,7 @@ export default function ReversePitch() {
       setStatus("error");
       setNote("Network error. Please try again or email me directly.");
     } finally {
-      if (SITE_KEY && window.turnstile && widgetId.current) {
-        window.turnstile.reset(widgetId.current);
-        setToken("");
-      }
+      reset();
     }
   }
 
@@ -256,7 +183,7 @@ export default function ReversePitch() {
             </div>
 
             {/* Cloudflare Turnstile mounts here when a site key is set. */}
-            {SITE_KEY && <div ref={widgetRef} className="min-h-[65px]" />}
+            {siteKey && <div ref={widgetRef} className="min-h-[65px]" />}
 
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
               <button
