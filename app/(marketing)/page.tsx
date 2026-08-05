@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Approach from "@/components/Approach";
 import Expertise from "@/components/Expertise";
+import ScorecardTeaser from "@/components/ScorecardTeaser";
 import Offer from "@/components/Offer";
 import ReversePitch from "@/components/ReversePitch";
 import Contact from "@/components/Contact";
@@ -19,6 +20,7 @@ export default function Home() {
         <Projects />
         <Approach />
         <Expertise />
+        <ScorecardTeaser />
         <Offer />
         <ReversePitch />
         <Contact />

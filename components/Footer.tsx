@@ -5,6 +5,7 @@ const socials = [
   { label: "GitHub", href: "https://github.com/FedericoMolinaChavez" },
   { label: "Read.cv", href: "#" },
   { label: "Email", href: `mailto:${company.supportEmail}` },
+  { label: "Scorecard", href: "/scorecard" },
   { label: "Terms", href: "/terms" },
 ];
 
