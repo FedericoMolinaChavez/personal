@@ -44,3 +44,10 @@ supabase/.temp
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Impeccable session artifacts. The durable design records (DESIGN.md,
+# .impeccable/design.json, .impeccable/surfaces/) are committed; these are
+# regenerable evidence from a single run.
+/.impeccable/review/
+/.impeccable/qualitybar/
+/.impeccable/questions/

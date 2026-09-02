@@ -1,49 +1,63 @@
 import { company, tradingNameNotice } from "@/lib/company";
 
-const socials = [
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/federico-molina-chavez/" },
+/**
+ * The dive log's last page: entity disclosure, contact, and the sounding
+ * closing back to zero.
+ */
+const links = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/federico-molina-chavez/",
+  },
   { label: "GitHub", href: "https://github.com/FedericoMolinaChavez" },
-  { label: "Read.cv", href: "#" },
   { label: "Email", href: `mailto:${company.supportEmail}` },
   { label: "Scorecard", href: "/scorecard" },
+  { label: "Tools", href: "/tools" },
   { label: "Terms", href: "/terms" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="w-full mt-20 bg-surface-container-low">
-      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 flex flex-col md:flex-row justify-between items-center gap-8">
-        <div className="flex flex-col items-center md:items-start gap-4">
-          <div className="font-display text-headline-md text-primary font-extrabold">
-            Federico Molina
+    <footer className="border-t border-hairline bg-abyss">
+      <div className="mx-auto max-w-container-max px-margin-mobile pb-28 pt-14 md:px-margin-desktop xl:pb-16">
+        <div className="flex flex-col justify-between gap-10 md:flex-row md:items-start">
+          <div className="flex flex-col gap-4">
+            <span className="font-display text-[1.25rem] font-bold uppercase tracking-[0.02em] text-snow">
+              Federico Molina
+            </span>
+            <p className="max-w-xs font-body text-[0.875rem] leading-relaxed text-snow-dim">
+              Fractional CTO and AI systems architect. Fixed prices, published
+              up front.
+            </p>
           </div>
-          <p className="font-body-md text-body-md text-on-surface-variant max-w-xs text-center md:text-left">
-            © {new Date().getFullYear()} Fractional CTO &amp; AI systems
-            architect. Fixed prices, published up front.
-          </p>
-        </div>
-        <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
-          {socials.map((s) => (
-            <a
-              key={s.label}
-              href={s.href}
-              className="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md hover:underline underline-offset-4"
-            >
-              {s.label}
-            </a>
-          ))}
-        </div>
-      </div>
 
-      {/* Entity disclosure — connects the trading name to the legal entity on
-          the Stripe account, so a charge is never unrecognisable. */}
-      <div className="border-t border-outline-variant/40">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-6 flex flex-col gap-1 items-center md:items-start text-center md:text-left">
-          <p className="font-label-sm text-label-sm text-on-surface-variant">
+          <nav aria-label="Footer">
+            <ul className="grid grid-cols-2 gap-x-12 gap-y-2.5 sm:grid-cols-3">
+              {links.map((l) => (
+                <li key={l.label}>
+                  <a
+                    href={l.href}
+                    className="font-data text-[0.625rem] uppercase tracking-[0.14em] text-snow-dim transition-colors hover:text-thermocline"
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+
+        {/* Entity disclosure — connects the trading name to the legal entity on
+            the Stripe account, so a charge is never unrecognisable. */}
+        <div className="mt-12 flex flex-col gap-1.5 border-t border-hairline pt-6">
+          <p className="font-data text-[0.5625rem] uppercase tracking-[0.12em] text-snow-faint">
             {tradingNameNotice}
           </p>
-          <p className="font-label-sm text-label-sm text-on-surface-variant">
+          <p className="font-data text-[0.5625rem] uppercase tracking-[0.12em] text-snow-faint">
             {company.address}
+          </p>
+          <p className="mt-2 font-data text-[0.5625rem] uppercase tracking-[0.12em] text-snow-faint">
+            © {new Date().getFullYear()} — All depths in metres
           </p>
         </div>
       </div>

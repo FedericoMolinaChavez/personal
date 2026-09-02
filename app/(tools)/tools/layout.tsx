@@ -1,3 +1,4 @@
+import MaterialSymbols from "@/components/MaterialSymbols";
 import AppShell from "@/components/tools/AppShell";
 
 /**
@@ -12,5 +13,10 @@ export default function ToolsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <AppShell>{children}</AppShell>;
+  return (
+    <>
+      <MaterialSymbols />
+      <AppShell>{children}</AppShell>
+    </>
+  );
 }

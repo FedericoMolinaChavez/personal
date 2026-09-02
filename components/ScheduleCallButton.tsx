@@ -10,12 +10,15 @@ type Props = {
    * have no #booking anchor and must pass the absolute form, "/#booking".
    */
   href?: string;
+  /** Trailing instrument glyph — usually <ControlArrow />. */
+  children?: React.ReactNode;
 };
 
 export default function ScheduleCallButton({
   className = "",
-  label = "Schedule a Call",
+  label = "Schedule a call",
   href = "#booking",
+  children,
 }: Props) {
   return (
     <a
@@ -23,7 +26,8 @@ export default function ScheduleCallButton({
       onClick={() => track("schedule_call_click")}
       className={className}
     >
-      {label}
+      <span>{label}</span>
+      {children}
     </a>
   );
 }

@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-02T00:00:00Z",
+  "title": "Design System: Federico Molina — Mesophotic Descent",
+  "extensions": {
+    "colorMeta": {
+      "sea-lit": {
+        "role": "neutral",
+        "displayName": "Sunlit Tip",
+        "canonical": "#0E3247",
+        "tonalRamp": ["#0D2D40", "#164F71", "#2072A1", "#2994D2", "#58ACDE", "#88C4E8", "#B9DCF1", "#EAF4FB"]
+      },
+      "sea-mid": {
+        "role": "neutral",
+        "displayName": "Midnight Depth",
+        "canonical": "#081626",
+        "tonalRamp": ["#0D253F", "#17406F", "#225C9F", "#2C78D0", "#5996DC", "#8AB5E6", "#BAD3F0", "#EAF2FB"]
+      },
+      "sea-cold": {
+        "role": "neutral",
+        "displayName": "Cold Depth",
+        "canonical": "#10243A",
+        "tonalRamp": ["#11253C", "#1D426A", "#2A5E97", "#367AC5", "#6298D4", "#90B6E0", "#BDD4ED", "#EBF2F9"]
+      },
+      "sea-meso": {
+        "role": "neutral",
+        "displayName": "Mesophotic Blue",
+        "canonical": "#071A2E",
+        "tonalRamp": ["#0A2642", "#124275", "#195FA8", "#217BDA", "#5199E5", "#84B7EC", "#B6D4F4", "#E9F2FC"]
+      },
+      "sea-deep": {
+        "role": "neutral",
+        "displayName": "Turnaround Depth",
+        "canonical": "#04121F",
+        "tonalRamp": ["#092744", "#0F4577", "#1663AB", "#1D81DF", "#4E9EE8", "#81BAEF", "#B5D6F5", "#E8F3FC"]
+      },
+      "abyss": {
+        "role": "neutral",
+        "displayName": "Abyssal Blue",
+        "canonical": "#02060D",
+        "tonalRamp": ["#0A1F42", "#123675", "#1A4DA7", "#2265DA", "#5187E4", "#84AAEC", "#B6CDF4", "#E9F0FC"]
+      },
+      "abyss-ink": {
+        "role": "neutral",
+        "displayName": "Abyss Ink",
+        "canonical": "#050A14",
+        "tonalRamp": ["#0A1833", "#122B5C", "#193E85", "#2151AE", "#4E79C4", "#82A1D7", "#B5C9E9", "#E9F0FA"]
+      },
+      "thermocline": {
+        "role": "primary",
+        "displayName": "Thermocline Cyan",
+        "canonical": "#23D6E6",
+        "tonalRamp": ["#084045", "#0E7079", "#14A1AD", "#1AD1E2", "#4BDDEB", "#7FE7F1", "#B4F1F6", "#E8FBFC"]
+      },
+      "thermocline-dim": {
+        "role": "primary",
+        "displayName": "Thermocline Dim",
+        "canonical": "#16899A",
+        "tonalRamp": ["#0A3C43", "#116976", "#1896A9", "#1FC4DC", "#50D3E6", "#83E0ED", "#B6ECF5", "#E9F9FC"]
+      },
+      "coral": {
+        "role": "secondary",
+        "displayName": "Drained Coral",
+        "canonical": "#FF6B4A",
+        "tonalRamp": ["#4C0E00", "#871900", "#C12300", "#FB2E00", "#FF5B37", "#FF8B71", "#FFBAAB", "#FFEAE5"]
+      },
+      "kelp": {
+        "role": "tertiary",
+        "displayName": "Kelp Green",
+        "canonical": "#6FD79B",
+        "tonalRamp": ["#113C23", "#1D693E", "#2A9758", "#37C573", "#62D392", "#90E0B2", "#BDEDD1", "#EBF9F1"]
+      },
+      "snow": {
+        "role": "neutral",
+        "displayName": "Marine Snow",
+        "canonical": "#F4F6FA",
+        "tonalRamp": ["#182135", "#2A3B5D", "#3C5485", "#4F6EAD", "#758EC0", "#9DAFD3", "#C5D0E5", "#EDF1F7"]
+      },
+      "snow-dim": {
+        "role": "neutral",
+        "displayName": "Snow Dim",
+        "canonical": "#9FB6C4",
+        "contrast": "8.3:1 on sea-meso",
+        "tonalRamp": ["#1D282F", "#334753", "#496678", "#60859C", "#83A1B3", "#A7BCC9", "#CBD8DF", "#EFF3F5"]
+      },
+      "snow-faint": {
+        "role": "neutral",
+        "displayName": "Snow Faint",
+        "canonical": "#7994A6",
+        "contrast": "5.6:1 on sea-meso",
+        "tonalRamp": ["#1F282E", "#364651", "#4D6474", "#648397", "#879FAF", "#AABBC6", "#CDD7DE", "#F0F3F5"]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#17334A",
+        "tonalRamp": ["#12283A", "#204767", "#2E6693", "#3C84C0", "#66A0CF", "#93BCDD", "#BFD7EB", "#ECF3F9"]
+      },
+      "hairline-lit": {
+        "role": "neutral",
+        "displayName": "Hairline Lit",
+        "canonical": "#26536F",
+        "tonalRamp": ["#142B39", "#224B64", "#316C90", "#408CBB", "#6AA6CC", "#95C0DB", "#C1DAEA", "#ECF4F8"]
+      }
+    },
+    "typographyMeta": {
+      "hero": { "displayName": "Hero", "purpose": "Two uses only — the first viewport's thesis and the closing call. Always uppercase Saira Condensed." },
+      "stage": { "displayName": "Stage", "purpose": "Every section h2. One per dive stage, capped at 14-18ch." },
+      "readout": { "displayName": "Readout", "purpose": "Dive-computer values and published prices. Martian Mono, tabular, with the unit at ~a third the size." },
+      "readout-sm": { "displayName": "Readout Small", "purpose": "Secondary instrument value inside a module." },
+      "lede": { "displayName": "Lede", "purpose": "The paragraph under a stage heading, in snow-dim, capped at 68ch." },
+      "prose": { "displayName": "Prose", "purpose": "Body copy inside a log row or module. Archivo only — never mono." },
+      "label": { "displayName": "Label", "purpose": "The engraving: RuleLabel and every control's text. Uppercase mono at 0.16em." },
+      "label-lg": { "displayName": "Label Large", "purpose": "Tracked instrument label where the small tier is too quiet." }
+    },
+    "shadows": [
+      {
+        "name": "module-lit",
+        "value": "0 0 0 1px color-mix(in srgb, var(--thermocline) 12%, transparent), 0 18px 40px -24px color-mix(in srgb, var(--thermocline) 45%, transparent)",
+        "purpose": "The only shadow in the system. Reads as light falling on a module, not as elevation. One element at a time — the featured price tier."
+      }
+    ],
+    "motion": [
+      { "name": "control-color", "value": "150ms", "purpose": "Control fill and border colour on hover. Colour only; geometry never changes." },
+      { "name": "hover-transform", "value": "200ms", "purpose": "Control arrow nudge, ArrowOut lift, specimen opacity, module border shift." },
+      { "name": "rail-tick-color", "value": "220ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Depth rail tick and label colour change." },
+      { "name": "rail-tick-geometry", "value": "300ms", "purpose": "Depth rail tick width between unvisited / passed / active." },
+      { "name": "rail-marker", "value": "420ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The rail's travelling marker." },
+      { "name": "snow-near", "value": "26s linear infinite", "purpose": "Near marine-snow layer drifting upward on transform only." },
+      { "name": "snow-far", "value": "46s linear infinite", "purpose": "Far marine-snow layer at 50% opacity — the parallax that gives the column depth." },
+      { "name": "lamp", "value": "requestAnimationFrame, CSS custom properties only", "purpose": "Pointer writes --lamp-x / --lamp-y / --lamp-r; nothing re-renders per frame. Radius opens to 320px on enter, 0 on leave." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ],
+    "knownGaps": [
+      {
+        "name": "No raster material in the world",
+        "body": "The quality bar names three material textures (marine-snow particulate, glass-sponge surface, black-coral surface) and a photographic hero register. The build ships zero raster imagery of the world: every specimen is authored hairline SVG (components/dive/Specimen.tsx) and all atmosphere is CSS (app/globals.css). Cause: the building session had no image generation of any kind, and PRODUCT.md forbids fabricating photography. A future round should produce (1) a tileable transparent marine-snow particulate plate at the existing 340px and 190px tile sizes, so snow-rise keeps working and stays compositor-only, and (2) a wide, dark, low-key coral/sponge wall texture in the sea-meso / sea-deep range with real warm chroma, so the lamp's saturation drain has something to take away and give back. Both carry provenance. Commissioned imagery replaces the drawn specimens on the wall rather than supplementing them. public/portrait.jpg is the one real photograph on the page, used in the dive-log module in components/Projects.tsx."
+      },
+      {
+        "name": "The booking embed is un-redesigned",
+        "body": "components/BookingEmbed.tsx still carries the previous world: rounded-3xl (24px inside a 2px system), the legacy aliases border-outline-variant and bg-surface-container-lowest, a soil-shadow class that no longer exists in any stylesheet, and a Cal.com brand colour of #8f4538 (terracotta from the abandoned earth-tone identity). A carried defect, not system guidance. Fix: a .module frame at 2px, drop the dead class, set cal-brand to #23D6E6."
+      },
+      {
+        "name": "Sibling marketing routes are not art-directed",
+        "body": "/scorecard, /terms, /success and /cancel inherit the palette only through remapped legacy Material-3 token names. Legible and on-world, but carrying none of the dive's stage structure, depth pinning or instrument vocabulary. The obvious next surface."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Control",
+      "kind": "button",
+      "refersTo": "control-primary",
+      "description": "The lit action. Filled thermocline on abyss text, with an arrow that nudges. One per section at most.",
+      "html": "<a class=\"ds-control ds-control-primary\" href=\"#booking\"><span>Book a 15-minute call</span><svg class=\"ds-control-arrow\" viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 12h15\"/><path d=\"M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-control { display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; padding: 14px 24px; border-radius: 2px; font-family: 'Martian Mono', ui-monospace, SFMono-Regular, monospace; font-size: 0.6875rem; font-weight: 600; line-height: 1.1; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color 150ms, border-color 150ms, color 150ms; } .ds-control-arrow { flex-shrink: 0; transition: transform 200ms; } .ds-control:hover .ds-control-arrow { transform: translateX(4px); } .ds-control-primary { background: #23D6E6; color: #02060D; border: none; } .ds-control-primary:hover { background: #5AE6F2; } .ds-control-primary:focus-visible { outline: 2px solid #23D6E6; outline-offset: 2px; border-radius: 1px; } .ds-control-primary:disabled { opacity: 0.6; cursor: not-allowed; }"
+    },
+    {
+      "name": "Secondary Control",
+      "kind": "button",
+      "refersTo": "control-secondary",
+      "description": "Everything that is not the lit action. A hairline box that fills with cold water on hover.",
+      "html": "<a class=\"ds-control ds-control-secondary\" href=\"#offer\"><span>Or buy 90 minutes — $300</span><svg class=\"ds-control-arrow\" viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 12h15\"/><path d=\"M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-control-secondary { background: transparent; color: #F4F6FA; border: 1px solid #26536F; } .ds-control-secondary:hover { background: #10243A; border-color: #23D6E6; } .ds-control-secondary:focus-visible { outline: 2px solid #23D6E6; outline-offset: 2px; border-radius: 1px; }"
+    },
+    {
+      "name": "Module",
+      "kind": "card",
+      "refersTo": "module",
+      "description": "The world's only container, never nested. Translucent midnight in a hairline box, with a header strip and a data strip.",
+      "html": "<article class=\"ds-module\"><div class=\"ds-module-header\"><span class=\"ds-module-key\">41 M · AI · Marketing attribution</span><svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" class=\"ds-module-out\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M8 16L18 6\"/><path d=\"M9 6h9v9\"/></svg></div><div class=\"ds-module-body\"><h3 class=\"ds-module-title\">Attribute.ai</h3><p class=\"ds-module-copy\">Multi-touch lead attribution and scoring — tracking that shows which channels actually drive conversions.</p></div><dl class=\"ds-module-strip\"><div class=\"ds-cell\"><dt class=\"ds-cell-key\">Status</dt><dd class=\"ds-cell-val\"><span class=\"ds-lamp-live\"></span>Live</dd></div><div class=\"ds-cell ds-cell-div\"><dt class=\"ds-cell-key\">Role</dt><dd class=\"ds-cell-val\">Own product</dd></div></dl></article>",
+      "css": ".ds-module { display: flex; flex-direction: column; border: 1px solid #17334A; background: rgb(8 22 38 / 0.55); border-radius: 2px; color: #F4F6FA; transition: border-color 200ms; } .ds-module:hover { border-color: rgb(35 214 230 / 0.6); } .ds-module-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid #17334A; padding: 12px 20px; } .ds-module-key { font-family: 'Martian Mono', ui-monospace, monospace; font-size: 0.5625rem; letter-spacing: 0.14em; text-transform: uppercase; color: #7994A6; font-variant-numeric: tabular-nums; } .ds-module-out { color: #7994A6; transition: transform 200ms, color 200ms; } .ds-module:hover .ds-module-out { transform: translate(2px, -2px); color: #23D6E6; } .ds-module-body { padding: 24px 20px; } .ds-module-title { margin: 0; font-family: 'Saira Condensed', ui-sans-serif, sans-serif; font-size: 2rem; font-weight: 700; line-height: 1; text-transform: uppercase; color: #F4F6FA; } .ds-module-copy { margin: 16px 0 0; max-width: 68ch; font-family: Archivo, ui-sans-serif, sans-serif; font-size: 0.9375rem; line-height: 1.65; color: #9FB6C4; } .ds-module-strip { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #17334A; margin: 0; } .ds-cell { padding: 12px 20px; } .ds-cell-div { border-left: 1px solid #17334A; } .ds-cell-key { font-family: 'Martian Mono', ui-monospace, monospace; font-size: 0.5rem; letter-spacing: 0.14em; text-transform: uppercase; color: #7994A6; } .ds-cell-val { margin: 6px 0 0; display: flex; align-items: center; gap: 8px; font-family: 'Martian Mono', ui-monospace, monospace; font-size: 0.5625rem; letter-spacing: 0.12em; text-transform: uppercase; color: #F4F6FA; } .ds-lamp-live { display: block; width: 6px; height: 6px; background: #6FD79B; }"
+    },
+    {
+      "name": "Lit Module",
+      "kind": "card",
+      "refersTo": "module",
+      "description": "The recommended option. Cyan border and the system's only shadow — light on the module, not a lift. One at a time.",
+      "html": "<article class=\"ds-module ds-module-lit\"><div class=\"ds-module-header\"><span class=\"ds-module-key\">Two weeks · fixed scope</span><span class=\"ds-module-flag\">Most common</span></div><div class=\"ds-module-body\"><h3 class=\"ds-module-title\" style=\"font-size:1.375rem;line-height:1.15\">AI systems architecture audit</h3><p class=\"ds-price\"><span class=\"ds-price-sym\">$</span>2,500<span class=\"ds-price-unit\">USD</span></p></div></article>",
+      "css": ".ds-module-lit { border-color: color-mix(in srgb, #23D6E6 55%, transparent); box-shadow: 0 0 0 1px color-mix(in srgb, #23D6E6 12%, transparent), 0 18px 40px -24px color-mix(in srgb, #23D6E6 45%, transparent); } .ds-module-flag { font-family: 'Martian Mono', ui-monospace, monospace; font-size: 0.5625rem; letter-spacing: 0.14em; text-transform: uppercase; color: #23D6E6; } .ds-price { margin: 20px 0 0; display: flex; align-items: baseline; gap: 8px; font-family: 'Martian Mono', ui-monospace, monospace; font-size: 2.5rem; line-height: 1; letter-spacing: -0.04em; color: #23D6E6; font-variant-numeric: tabular-nums; } .ds-price-sym { font-size: 0.5em; } .ds-price-unit { font-size: 0.5625rem; letter-spacing: 0.14em; text-transform: uppercase; color: #7994A6; }"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "A hairline box on the deep ground. Focus brings the thermocline to the border and a 1px ring.",
+      "html": "<label class=\"ds-field-wrap\"><span class=\"ds-field-label\">Your proposed price *</span><input class=\"ds-field\" type=\"text\" placeholder=\"$4,000 fixed · $120/hr · equity + cash…\" /><span class=\"ds-field-help\">Name a number or a range — whatever the work is worth to you.</span></label>",
+      "css": ".ds-field-wrap { display: flex; flex-direction: column; gap: 10px; } .ds-field-label { font-family: 'Martian Mono', ui-monospace, monospace; font-size: 0.5625rem; letter-spacing: 0.16em; text-transform: uppercase; color: #7994A6; } .ds-field { width: 100%; border: 1px solid #17334A; border-radius: 2px; background: #04121F; padding: 12px 16px; font-family: Archivo, ui-sans-serif, sans-serif; font-size: 0.9375rem; color: #F4F6FA; transition: border-color 150ms; } .ds-field::placeholder { color: rgb(121 148 166 / 0.7); } .ds-field:focus { border-color: #23D6E6; box-shadow: 0 0 0 1px #23D6E6; outline: none; } .ds-field-help { font-family: Archivo, ui-sans-serif, sans-serif; font-size: 0.75rem; color: #7994A6; }"
+    },
+    {
+      "name": "Surface Nav",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky 64px bar on translucent sunlit water. Wordmark, availability flag, mono links, and the lit control at the right.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-nav-brand\" href=\"#top\"><span class=\"ds-nav-mark\">Federico Molina</span><span class=\"ds-nav-avail\"><span class=\"ds-nav-dot\"></span>Fractional CTO · available</span></a><nav class=\"ds-nav-links\"><a class=\"ds-nav-link\" href=\"#break\">Failure</a><a class=\"ds-nav-link\" href=\"#expertise\">Scope</a><a class=\"ds-nav-link\" href=\"#work\">Log</a><a class=\"ds-nav-link\" href=\"#offer\">Rates</a></nav><a class=\"ds-control ds-control-primary ds-nav-cta\"><span>Book a call</span><svg class=\"ds-control-arrow\" viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 12h15\"/><path d=\"M13 6l6 6-6 6\"/></svg></a></header>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; padding: 0 24px; border-bottom: 1px solid #17334A; background: rgb(14 50 71 / 0.8); backdrop-filter: blur(12px); } .ds-nav-brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; white-space: nowrap; } .ds-nav-mark { font-family: 'Saira Condensed', ui-sans-serif, sans-serif; font-size: 1.0625rem; font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase; color: #F4F6FA; } .ds-nav-avail { display: inline-flex; align-items: center; gap: 8px; font-family: 'Martian Mono', ui-monospace, monospace; font-size: 0.5625rem; letter-spacing: 0.16em; text-transform: uppercase; color: #7994A6; } .ds-nav-dot { display: block; width: 6px; height: 6px; background: #6FD79B; } .ds-nav-links { display: flex; align-items: center; gap: 28px; } .ds-nav-link { font-family: 'Martian Mono', ui-monospace, monospace; font-size: 0.625rem; letter-spacing: 0.14em; text-transform: uppercase; color: #9FB6C4; text-decoration: none; transition: color 150ms; } .ds-nav-link:hover { color: #23D6E6; } .ds-nav-link:focus-visible { outline: 2px solid #23D6E6; outline-offset: 2px; } .ds-nav-cta { gap: 12px; padding: 10px 24px; font-size: 0.625rem; }"
+    },
+    {
+      "name": "Depth Rail",
+      "kind": "custom",
+      "refersTo": "nav-link",
+      "description": "The page's ordinate and its only navigation. Live depth readout above eight dive stages; active, passed and unvisited ticks differ in width as well as colour.",
+      "html": "<nav class=\"ds-rail\" aria-label=\"Dive profile\"><div class=\"ds-rail-readout\"><span class=\"ds-rail-key\">Depth</span><span class=\"ds-rail-val\">042.6<span class=\"ds-rail-unit\">M</span></span></div><ol class=\"ds-rail-list\"><li class=\"ds-rail-item\"><a class=\"ds-rail-link ds-passed\" href=\"#top\"><span class=\"ds-tick ds-tick-passed\"></span><span class=\"ds-rail-depth\">00</span><span class=\"ds-rail-name\">Surface</span></a></li><li class=\"ds-rail-item\"><a class=\"ds-rail-link ds-passed\" href=\"#break\"><span class=\"ds-tick ds-tick-passed\"></span><span class=\"ds-rail-depth\">18</span><span class=\"ds-rail-name\">Thermocline</span></a></li><li class=\"ds-rail-item\"><a class=\"ds-rail-link ds-active\" href=\"#work\"><span class=\"ds-tick ds-tick-active\"></span><span class=\"ds-rail-depth\">45</span><span class=\"ds-rail-name\">Mesophotic wall</span></a></li><li class=\"ds-rail-item\"><a class=\"ds-rail-link\" href=\"#offer\"><span class=\"ds-tick\"></span><span class=\"ds-rail-depth\">60</span><span class=\"ds-rail-name\">Turnaround</span></a></li></ol><div class=\"ds-rail-leg\"><span class=\"ds-rail-legdot\"></span><span class=\"ds-rail-key\">Descending</span></div></nav>",
+      "css": ".ds-rail { display: flex; flex-direction: column; width: 208px; border-left: 1px solid #17334A; padding-left: 16px; } .ds-rail-readout { display: flex; flex-direction: column; gap: 6px; margin-bottom: 20px; } .ds-rail-key { font-family: 'Martian Mono', ui-monospace, monospace; font-size: 0.5625rem; letter-spacing: 0.16em; text-transform: uppercase; color: #7994A6; } .ds-rail-val { font-family: 'Martian Mono', ui-monospace, monospace; font-size: 1.375rem; line-height: 1; color: #23D6E6; font-variant-numeric: tabular-nums; } .ds-rail-unit { margin-left: 4px; font-size: 0.5rem; letter-spacing: 0.1em; color: #7994A6; } .ds-rail-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; } .ds-rail-item { padding: 7px 0; } .ds-rail-link { display: flex; align-items: center; gap: 12px; text-decoration: none; } .ds-tick { display: block; height: 1px; width: 10px; background: #26536F; transition: width 300ms, background-color 220ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-tick-passed { width: 14px; background: #16899A; } .ds-tick-active { width: 24px; background: #23D6E6; } .ds-rail-link:hover .ds-tick { width: 16px; background: #7994A6; } .ds-rail-depth { font-family: 'Martian Mono', ui-monospace, monospace; font-size: 0.5625rem; letter-spacing: 0.12em; color: #7994A6; font-variant-numeric: tabular-nums; transition: color 220ms; } .ds-rail-name { white-space: nowrap; font-family: 'Martian Mono', ui-monospace, monospace; font-size: 0.5625rem; letter-spacing: 0.14em; text-transform: uppercase; color: #7994A6; transition: color 220ms; } .ds-passed .ds-rail-depth, .ds-passed .ds-rail-name { color: #9FB6C4; } .ds-active .ds-rail-depth { color: #23D6E6; } .ds-active .ds-rail-name { color: #F4F6FA; } .ds-rail-link:focus-visible { outline: 2px solid #23D6E6; outline-offset: 4px; } .ds-rail-leg { display: flex; align-items: center; gap: 8px; margin-top: 20px; border-top: 1px solid #17334A; padding-top: 12px; } .ds-rail-legdot { display: block; width: 6px; height: 6px; background: #23D6E6; }"
+    },
+    {
+      "name": "Log Row",
+      "kind": "custom",
+      "refersTo": "module",
+      "description": "The default for repeated content: a hairline-ruled observation, not a card. Code and depth on the left, the quote in display, the diagnosis in prose.",
+      "html": "<ol class=\"ds-log\"><li class=\"ds-log-row\"><div class=\"ds-log-meta\"><span class=\"ds-log-code\">TH-01</span><span class=\"ds-log-depth\">18 M</span></div><p class=\"ds-log-seen\">“It worked all week, then fell over on Tuesday.”</p><p class=\"ds-log-is\">Your agent loop has no idempotency and no cap. One upstream timeout became a retry, and the loop paid for it four hundred times before anyone noticed.</p></li></ol>",
+      "css": ".ds-log { list-style: none; margin: 0; padding: 0; border-top: 1px solid #17334A; } .ds-log-row { display: grid; grid-template-columns: 2fr 4fr 6fr; gap: 16px 40px; border-bottom: 1px solid #17334A; padding: 36px 0; transition: background-color 200ms; } .ds-log-row:hover { background: rgb(16 36 58 / 0.4); } .ds-log-meta { display: flex; flex-direction: column; gap: 8px; } .ds-log-code { font-family: 'Martian Mono', ui-monospace, monospace; font-size: 0.6875rem; letter-spacing: 0.12em; color: #23D6E6; font-variant-numeric: tabular-nums; } .ds-log-depth { font-family: 'Martian Mono', ui-monospace, monospace; font-size: 0.5625rem; letter-spacing: 0.14em; color: #7994A6; font-variant-numeric: tabular-nums; } .ds-log-seen { margin: 0; font-family: 'Saira Condensed', ui-sans-serif, sans-serif; font-size: 1.5rem; line-height: 1.15; text-transform: uppercase; color: #F4F6FA; } .ds-log-is { margin: 0; max-width: 68ch; font-family: Archivo, ui-sans-serif, sans-serif; font-size: 1.0625rem; line-height: 1.65; color: #9FB6C4; }"
+    },
+    {
+      "name": "Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Printed on the log, not interactive. A flat hairline rectangle — never a pill.",
+      "html": "<ul class=\"ds-tags\"><li class=\"ds-tag\">Fractional CTO</li><li class=\"ds-tag\">Agent systems</li><li class=\"ds-tag\">Evals &amp; tracing</li><li class=\"ds-tag\">Token cost</li></ul>",
+      "css": ".ds-tags { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; } .ds-tag { border: 1px solid #17334A; border-radius: 2px; padding: 8px 14px; font-family: 'Martian Mono', ui-monospace, monospace; font-size: 0.5625rem; letter-spacing: 0.14em; text-transform: uppercase; color: #9FB6C4; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Mesophotic Descent",
+    "overview": "The marketing site is one dive down a volcanic island wall, rendered with the discipline of dive instrumentation rather than the vocabulary of a consultancy landing page. The ground deepens as you scroll, a single thermocline cyan marks the depth you are currently at and carries every primary action, and warm colour is the thing that drains as you go down — restored only where a lamp falls on it. Nothing is decorative for its own sake: every rule, tick, numeral and label behaves like part of a gauge. Density is high and the surfaces are flat; there is no glass, no glow, no lift.\n\nThe world's argument is legibility under pressure. The claim being sold is that a system can look healthy at the surface and fail at depth, so the page makes the reader perform that discovery: at the mesophotic wall all chroma is drained and the work reads uniformly blue and fine until a pointer-driven lamp restores it. That one moment is authored; everything around it is instrument-flat and still.\n\nTwo confirmed rejections define the outer edges. The AI-consultancy canon — near-black with neon glow, gradient orbs, three identical icon cards, fake terminal chrome — is out. Its opposite, the warm-cream / big-serif / terracotta personal-consultant look this site used to be, is equally out. Where a section could resolve into a symmetrical card grid, it resolves into a ruled log instead.",
+    "keyCharacteristics": [
+      "One continuous water column, tinted by dive stage, never broken into per-section background blocks",
+      "A single cyan signal (thermocline) for active depth and every primary action; nothing else is filled with it",
+      "Hairline 1px structure and a 2px corner radius everywhere — machined, not rounded; no pills",
+      "Three faces, three jobs: condensed uppercase display, quiet grotesk prose, monospace for every measurement",
+      "Depth is the navigation: a fixed rail is the only nav, and every claim is pinned to the metre it happens at",
+      "Flat by default — one box-shadow exists in the entire system, and it reads as light rather than lift"
+    ],
+    "rules": [
+      { "name": "The Drain Rule", "body": "Warm colour is what depth takes away, so warm colour is never spent on decoration. coral appears only where something is genuinely wrong or genuinely over — an error, or a shut-down product. If a surface wants coral for emphasis, it wants a hairline or a label instead.", "section": "colors" },
+      { "name": "The One Signal Rule", "body": "thermocline marks exactly two things: the depth you are at, and the action the page wants you to take. Nothing else is filled with it. A screen where cyan appears in a third role has stopped being an instrument.", "section": "colors" },
+      { "name": "The Never-Only-Colour Rule", "body": "No status is carried by colour alone. StatusLamp pairs its square with the word Live or Sunset; the depth rail pairs its marker with Descending or Ascending; the nav pairs its kelp square with available. A swatch without its word is not a state.", "section": "colors" },
+      { "name": "The Legacy Alias Rule", "body": "The Material-3 names still present in tailwind.config.ts are aliases pointing at dive values, kept alive only so the un-redesigned sibling routes stay on-world. New landing-page work uses the dive names. Never introduce a Material-3 name into a dive surface, and never give an alias a value the dive scale does not already have.", "section": "colors" },
+      { "name": "The Three-Voice Rule", "body": "Display names, body argues, data measures. Martian Mono never sets a sentence and Archivo never sets a number that means something. If a numeral is a quantity, it is mono, tabular, and paired with its unit in snow-faint at roughly a third of its size.", "section": "typography" },
+      { "name": "The Tabular Rule", "body": "Every numeral in this world is a measurement, so it lines up. Any mono figure that changes, repeats down a column, or sits beside another figure carries .tabular. A live depth readout that jitters as it counts has broken the instrument.", "section": "typography" },
+      { "name": "The Uppercase Display Rule", "body": "Saira Condensed is always uppercase in this world. It is stencilled equipment lettering, not a headline face — sentence-case display is off-world.", "section": "typography" },
+      { "name": "The Depth-Pinned Rule", "body": "Every stage, every observation and every piece of work carries the depth it happens at, as a mono figure. Depth is the page's ordinate and its only navigation — new content earns a place on the profile in stages.ts or it does not belong in the dive.", "section": "layout" },
+      { "name": "The Log-Not-Grid Rule", "body": "Repeated content defaults to a hairline-ruled log. Boxed modules are reserved for things you can act on: a link out of the page, a purchase, a form, an ascent stop. Three identical icon cards is the anti-reference; do not converge on it.", "section": "layout" },
+      { "name": "The Flat-Ground Rule", "body": "Surfaces never lift. There is one shadow token and it reads as light. If a surface needs to separate from its neighbour, it gets a hairline, a tonal step in the water column, or nothing.", "section": "elevation" },
+      { "name": "The One-Ground Rule", "body": "The document sits in a single continuous .water-column gradient defined once in app/globals.css. Stages tint that ground; they never replace it with a background block of their own. A section that paints its own opaque background has cut the column and broken the dive.", "section": "elevation" },
+      { "name": "The 2px Rule", "body": "Every corner in this world is 2px. A radius above 3px is off-world; a pill is off-world. If a shape needs to feel softer, it is the wrong shape.", "section": "shapes" },
+      { "name": "The Hairline Rule", "body": "Structure is 1px, always. No 2px dividers, no double rules, no borders that thicken on hover — a hover changes a rule's colour, never its weight.", "section": "shapes" },
+      { "name": "The One-Stroke Rule", "body": "All authored line art is 1.5 stroke on a 24 grid, square cap, mitre join. A new icon is drawn into Icon.tsx under those constraints, not imported from a set.", "section": "shapes" },
+      { "name": "The Compositor-Only Rule", "body": "Ambient motion animates transform and nothing else. If a loop would animate a paint property across a fixed full-screen layer, it does not ship.", "section": "motion" },
+      { "name": "The No-Gate Rule", "body": "No content is ever behind a hover, a pointer, or a motion preference. The lamp is a way of seeing the wall, never the way of reading it.", "section": "motion" }
+    ],
+    "dos": [
+      "Do pin new content to a depth. Add the stage to components/dive/stages.ts so the rail, the anchors and the ordering all stay in agreement.",
+      "Do build every control from primaryControl / secondaryControl in components/dive/Instrument.tsx, and give it a ControlArrow.",
+      "Do default repeated content to a hairline-ruled log; reserve .module for something the reader can act on.",
+      "Do set every meaningful numeral in Martian Mono with .tabular, paired with its unit in snow-faint at roughly a third of the size.",
+      "Do draw new icons into components/dive/Icon.tsx on the 24 grid at 1.5 stroke, square cap, mitre join.",
+      "Do keep prose at max-w-measure (68ch) and let the column stay asymmetric above xl.",
+      "Do use .bleed for any full-width band, never a 100vw or 50% - 50vw trick.",
+      "Do state a new ink colour's contrast ratio against sea-meso in the token comment, the way snow-dim and snow-faint do."
+    ],
+    "donts": [
+      "Don't add a second saturated accent, or spend thermocline on anything that is neither the active depth nor a primary action.",
+      "Don't use coral for emphasis. It means failed or ended, and nothing else.",
+      "Don't exceed a 2px corner, and don't introduce a pill, capsule or circular indicator — status marks are square blocks.",
+      "Don't add a drop shadow. module-lit is the only shadow, it reads as light, and only one element wears it at a time.",
+      "Don't nest a .module inside a .module.",
+      "Don't give a section its own opaque background; tint the water column instead.",
+      "Don't set prose in Martian Mono, or set display type in sentence case.",
+      "Don't resolve a stage into three symmetrical icon cards, a gradient orb, a neon glow, or fake terminal chrome — and don't drift back toward the warm cream / big serif / terracotta consultant look this site replaced.",
+      "Don't put content behind a hover, a pointer, or a motion preference.",
+      "Don't let .command-theme or any cmd-* token touch a marketing surface, or a dive token touch /tools. The two worlds are scoped apart on purpose.",
+      "Don't treat the legacy Material-3 aliases as available design tokens. They exist to keep the un-redesigned sibling routes legible, not to be built on."
+    ]
+  }
+}

@@ -1,50 +1,65 @@
 import BookingEmbed from "./BookingEmbed";
 import HireMeButton from "./HireMeButton";
 import ScheduleCallButton from "./ScheduleCallButton";
+import {
+  ControlArrow,
+  primaryControl,
+  secondaryControl,
+} from "./dive/Instrument";
 
+/**
+ * 00 SURFACE & LOG — book the call.
+ *
+ * The ascent completes: light comes back, the ground returns to the sunlit
+ * tint, and the page ends on the one action it was built around.
+ */
 export default function Contact() {
   return (
-    <section id="contact" className="pb-32 scroll-mt-24 reveal">
-      <div className="bg-primary text-on-primary p-12 md:p-20 rounded-3xl flex flex-col items-center text-center gap-8 relative overflow-hidden">
-        <div className="absolute top-0 right-0 p-10 opacity-10 pointer-events-none">
-          <span
-            translate="no"
-            className="material-symbols-outlined text-[200px]"
-            style={{ fontVariationSettings: "'FILL' 1" }}
-          >
-            handshake
-          </span>
-        </div>
-        <h2 className="font-display text-display max-w-2xl relative z-10">
-          Tell me what&apos;s breaking.
-        </h2>
-        <p className="font-body-lg text-body-lg text-on-primary/80 max-w-xl relative z-10">
-          Book a free 15-minute call to see whether this is work I should be
-          doing — or go straight to a $300 strategy session and put 90 minutes
-          against the decision you&apos;re stuck on.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 relative z-10">
-          <ScheduleCallButton
-            label="Schedule a free call"
-            className="bg-surface text-primary px-10 py-4 rounded-full font-label-md text-label-md hover:scale-95 transition-transform"
-          />
-          <HireMeButton
-            label="Book a $300 session"
-            className="bg-primary-container border border-on-primary/30 text-on-primary px-10 py-4 rounded-full font-label-md text-label-md hover:bg-on-primary/10 transition-colors cursor-pointer disabled:opacity-70"
-            disclosureClassName="text-on-primary/80"
-          />
+    <section id="contact" className="scroll-mt-16 pb-28 pt-24 md:pt-32">
+      <div className="relative">
+        {/* Surfacing: the light returns. */}
+        <div
+          aria-hidden="true"
+          className="light-shafts pointer-events-none absolute inset-x-0 -top-10 h-[120%] opacity-70"
+        />
+
+        <div className="relative flex flex-col items-start gap-8 border-y border-thermocline/40 py-16 md:py-20">
+          <h2 className="max-w-[15ch] font-display text-hero uppercase text-snow">
+            Tell me what&apos;s breaking
+          </h2>
+
+          <p className="max-w-measure font-body text-lede text-snow-dim">
+            Fifteen minutes, free, to work out whether this is work I should be
+            doing. Or skip it and put ninety minutes straight against the
+            decision you&apos;re stuck on.
+          </p>
+
+          <div className="mt-2 flex flex-col items-start gap-x-5 gap-y-6 sm:flex-row">
+            <ScheduleCallButton
+              label="Book a 15-minute call"
+              className={primaryControl}
+            >
+              <ControlArrow />
+            </ScheduleCallButton>
+            <HireMeButton
+              label="Buy 90 minutes — $300"
+              className={secondaryControl}
+            >
+              <ControlArrow />
+            </HireMeButton>
+          </div>
         </div>
       </div>
 
-      {/* Booking widget */}
-      <div id="booking" className="mt-24 scroll-mt-24 flex flex-col gap-8">
-        <div className="flex flex-col gap-4">
-          <span className="font-label-sm text-label-sm text-primary uppercase tracking-widest">
-            Booking
-          </span>
-          <h3 className="font-display text-headline-lg md:text-[48px] text-on-background">
-            Pick a time that works for you.
+      {/* The booking instrument itself. */}
+      <div id="booking" className="mt-20 scroll-mt-16">
+        <div className="mb-8 flex items-baseline justify-between gap-6 border-b border-hairline pb-4">
+          <h3 className="font-display text-[1.5rem] uppercase leading-none text-snow md:text-[2rem]">
+            Pick a time
           </h3>
+          <span className="font-data text-[0.5625rem] uppercase tracking-[0.14em] text-snow-faint">
+            15 min · No charge
+          </span>
         </div>
         <BookingEmbed />
       </div>
