@@ -2,17 +2,310 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================================================
+   MESOPHOTIC DESCENT — the marketing world.
+   A technical dive down a volcanic island wall. The ground deepens by dive
+   stage, one thermocline cyan marks the active depth, and warm colour is the
+   thing that drains with depth.
+   ========================================================================== */
+
+:root {
+  --sea-lit: #0e3247;
+  --sea-mid: #081626;
+  --sea-cold: #10243a;
+  --sea-meso: #071a2e;
+  --sea-deep: #04121f;
+  --abyss: #02060d;
+  --thermocline: #23d6e6;
+  --coral: #ff6b4a;
+  --snow: #f4f6fa;
+  --hairline: #17334a;
+
+  /* Pointer lamp position, written by the Lamp component. */
+  --lamp-x: 50%;
+  --lamp-y: 40%;
+  --lamp-r: 0px;
+}
+
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
-  background-color: #fff8f3; /* surface */
-  color: #1f1b15; /* on-surface */
+  background-color: var(--sea-meso);
+  color: var(--snow);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* The water column: one continuous ground the whole document sits in, rather
+   than per-section background blocks. Stages tint it, they do not replace it. */
+.water-column {
+  background:
+    linear-gradient(
+      to bottom,
+      var(--sea-lit) 0%,
+      var(--sea-mid) 12%,
+      var(--sea-cold) 26%,
+      var(--sea-meso) 44%,
+      var(--sea-deep) 62%,
+      var(--sea-meso) 78%,
+      var(--sea-mid) 92%,
+      var(--sea-lit) 100%
+    );
+}
+
+/* ---- Instrument chrome --------------------------------------------------- */
+
+/* Hairline-boxed module, the world's only container. No nesting. */
+.module {
+  border: 1px solid var(--hairline);
+  background-color: rgb(8 22 38 / 0.55);
+}
+
+.module-lit {
+  border-color: color-mix(in srgb, var(--thermocline) 55%, transparent);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--thermocline) 12%, transparent),
+    0 18px 40px -24px color-mix(in srgb, var(--thermocline) 45%, transparent);
+}
+
+/* Tracked-out instrument label. */
+.rule-label {
+  font-variant-numeric: tabular-nums;
+  text-transform: uppercase;
+}
+
+/* Every numeral in this world is measurement: line them up. */
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* ---- Marine snow ---------------------------------------------------------
+   Particulate falling past the diver. Two layers at different rates so the
+   column reads as having depth. Pure CSS; no per-particle DOM.
+   ------------------------------------------------------------------------ */
+/* The drift is a transform on an over-tall tiled layer, not an animated
+   background-position: the latter repaints the whole viewport every frame,
+   which on two fixed full-screen layers is enough to stall the compositor. */
+.snow-field {
+  position: absolute;
+  inset: -340px 0 -340px 0;
+  will-change: transform;
+  animation: snow-rise 26s linear infinite;
+}
+
+.snow-field-far {
+  animation-duration: 46s;
+  opacity: 0.5;
+}
+
+@keyframes snow-rise {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    /* One tile up: particles rise past you as you descend. */
+    transform: translate3d(0, -340px, 0);
+  }
+}
+
+.marine-snow {
+  background-image:
+    radial-gradient(1.5px 1.5px at 20% 30%, rgb(244 246 250 / 0.55) 50%, transparent 55%),
+    radial-gradient(1px 1px at 62% 12%, rgb(244 246 250 / 0.4) 50%, transparent 55%),
+    radial-gradient(1.5px 1.5px at 85% 68%, rgb(244 246 250 / 0.45) 50%, transparent 55%),
+    radial-gradient(1px 1px at 12% 78%, rgb(244 246 250 / 0.35) 50%, transparent 55%),
+    radial-gradient(1.5px 1.5px at 44% 88%, rgb(244 246 250 / 0.3) 50%, transparent 55%),
+    radial-gradient(1px 1px at 74% 42%, rgb(244 246 250 / 0.4) 50%, transparent 55%);
+  background-size: 340px 340px;
+}
+
+.marine-snow-far {
+  background-size: 190px 190px;
+}
+
+/* ---- Sunlight ------------------------------------------------------------
+   Shafts only exist near the surface. They are lighting, not a subject.
+   ------------------------------------------------------------------------ */
+/* Ellipses, not bands: a shaft has to fade at both edges as well as with
+   depth, or it reads as a flat rectangle laid over the water. */
+.light-shafts {
+  background:
+    radial-gradient(
+      ellipse 15% 62% at 16% -6%,
+      rgb(140 220 236 / 0.2) 0%,
+      rgb(140 220 236 / 0.07) 45%,
+      transparent 72%
+    ),
+    radial-gradient(
+      ellipse 9% 48% at 45% -4%,
+      rgb(140 220 236 / 0.15) 0%,
+      rgb(140 220 236 / 0.05) 45%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 7% 38% at 74% -8%,
+      rgb(140 220 236 / 0.13) 0%,
+      rgb(140 220 236 / 0.04) 45%,
+      transparent 68%
+    ),
+    radial-gradient(
+      ellipse 5% 28% at 88% -4%,
+      rgb(140 220 236 / 0.1) 0%,
+      transparent 66%
+    );
+  background-repeat: no-repeat;
+}
+
+/* ---- The thermocline -----------------------------------------------------
+   The single brightest line on the page: the boundary you cross.
+   ------------------------------------------------------------------------ */
+.thermocline-band {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    color-mix(in srgb, var(--thermocline) 10%, transparent) 42%,
+    color-mix(in srgb, var(--thermocline) 85%, transparent) 50%,
+    color-mix(in srgb, var(--thermocline) 10%, transparent) 58%,
+    transparent 100%
+  );
+}
+
+/* ---- The lamp ------------------------------------------------------------
+   THE signature interaction. At depth every warm colour has drained; the
+   layer underneath is the true colour, revealed only inside the lamp cone.
+   One authored moment, bounded to the wall section.
+   ------------------------------------------------------------------------ */
+/* Chroma drains with depth; luminance does not. Saturation only, so text
+   contrast is identical lit or unlit — the lamp changes colour, never legibility. */
+.lamp-drained {
+  filter: saturate(0.15);
+}
+
+.lamp-true {
+  -webkit-mask-image: radial-gradient(
+    circle var(--lamp-r) at var(--lamp-x) var(--lamp-y),
+    #000 0%,
+    #000 42%,
+    rgb(0 0 0 / 0.55) 68%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    circle var(--lamp-r) at var(--lamp-x) var(--lamp-y),
+    #000 0%,
+    #000 42%,
+    rgb(0 0 0 / 0.55) 68%,
+    transparent 100%
+  );
+}
+
+/* The cone itself — a faint warm wash so the light is visible, not just its
+   effect. Sits above the revealed layer, below the text. */
+.lamp-cone {
+  background: radial-gradient(
+    circle calc(var(--lamp-r) * 1.05) at var(--lamp-x) var(--lamp-y),
+    rgb(190 235 245 / 0.1) 0%,
+    rgb(190 235 245 / 0.045) 45%,
+    transparent 72%
+  );
+}
+
+/* ---- Depth rail ---------------------------------------------------------- */
+.rail-tick {
+  transition: color 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rail-marker {
+  transition: transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* A passed stage stays lit behind you rather than resetting. */
+.rail-stage[data-passed="true"] .rail-stage-line {
+  background-color: color-mix(in srgb, var(--thermocline) 45%, transparent);
+}
+
+/* ---- Browser surfaces ----------------------------------------------------
+   The parts not drawn still carry the design.
+   ------------------------------------------------------------------------ */
+::selection {
+  background-color: color-mix(in srgb, var(--thermocline) 32%, transparent);
+  color: var(--snow);
+}
+
+:root {
+  caret-color: var(--thermocline);
+  accent-color: var(--thermocline);
+}
+
+/* Focus ring: a lamp on the control. */
+:where(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--thermocline);
+  outline-offset: 2px;
+  border-radius: 1px;
+}
+
+a {
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 1px;
+}
+
+/* Sounding line: the page's own scrollbar reads as the depth axis. */
+* {
+  scrollbar-color: var(--thermocline-dim, #16899a) var(--sea-deep);
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar,
+main ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--sea-deep);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #16899a;
+  border: 3px solid var(--sea-deep);
+  border-radius: 0;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--thermocline);
+}
+
+/* ---- Motion policy -------------------------------------------------------
+   Under reduced motion the dive still reads: the lamp renders wide and
+   static, drift stops, and every stage arrives already at true colour.
+   ------------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .snow-field {
+    animation: none;
+  }
+  .lamp-drained {
+    filter: none;
+  }
+  .lamp-true,
+  .lamp-cone {
+    -webkit-mask-image: none;
+    mask-image: none;
+    background: none;
+    opacity: 0;
+  }
+  .rail-marker,
+  .rail-tick {
+    transition: none;
+  }
+}
+
+/* ============================================================================
+   Material Symbols — still used by /tools and the sibling marketing routes.
+   The landing page draws its own icons.
+   ========================================================================== */
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
   display: inline-block;
@@ -20,52 +313,23 @@ body {
   line-height: 1;
 }
 
-.soil-shadow {
-  box-shadow: 0 20px 40px -10px rgba(74, 69, 62, 0.08);
-}
-
+/* Sibling marketing routes (/scorecard, /terms, /success, /cancel) inherit the
+   dive palette through the remapped legacy tokens; these two helpers keep
+   their form fields on-world. */
 .architectural-input {
-  border-bottom: 2px solid #544340;
-  background-color: #f1eee6;
+  border-bottom: 2px solid var(--hairline);
+  background-color: var(--sea-cold);
   transition: border-color 0.3s ease;
 }
 
 .architectural-input:focus {
-  border-color: #ad5d4e;
+  border-color: var(--thermocline);
   outline: none;
-}
-
-.text-clay {
-  color: #ad5d4e;
-}
-
-.bg-clay {
-  background-color: #ad5d4e;
-}
-
-.text-sage {
-  color: #8a9a5b;
-}
-
-.border-sage {
-  border-color: #8a9a5b;
-}
-
-/* Section reveal-on-scroll animation */
-.reveal {
-  opacity: 0;
-  transform: translateY(2.5rem);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* ============================================================================
    "Command" theme — dark, field-ready. Scoped to the /tools app via the
-   .command-theme wrapper so the light marketing site is never affected.
+   .command-theme wrapper so the marketing world is never affected.
    ========================================================================== */
 .command-theme {
   color-scheme: dark;
@@ -105,4 +369,16 @@ body {
 /* Soft accent glow for hero numerals / focal stats */
 .text-glow-accent {
   text-shadow: 0 0 18px rgba(163, 230, 53, 0.35);
+}
+
+/* Full-bleed. Deliberately NOT the `margin-inline: calc(50% - 50vw)` trick:
+   the content column is asymmetric (the depth rail adds left padding only),
+   so that formula lands the band off-centre, and 100vw would also mis-measure
+   by the scrollbar. An absolutely positioned child with left/right pinned and
+   no `top` keeps its static vertical position while stretching to the nearest
+   positioned ancestor — the full-width water column. */
+.bleed {
+  position: absolute;
+  left: 0;
+  right: 0;
 }

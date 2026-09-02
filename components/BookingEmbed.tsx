@@ -11,10 +11,13 @@ export default function BookingEmbed() {
     (async () => {
       const cal = await getCalApi();
       cal("ui", {
-        theme: "light",
+        // The dive world is dark and the booking instrument sits inside it —
+        // a light widget here reads as a third-party panel dropped onto the
+        // page. Brand colour is the thermocline, like every other action.
+        theme: "dark",
         cssVarsPerTheme: {
-          light: { "cal-brand": "#8f4538" },
-          dark: { "cal-brand": "#8f4538" },
+          light: { "cal-brand": "#23D6E6" },
+          dark: { "cal-brand": "#23D6E6" },
         },
         hideEventTypeDetails: false,
         layout: "month_view",
@@ -23,7 +26,7 @@ export default function BookingEmbed() {
   }, []);
 
   return (
-    <div className="w-full overflow-hidden rounded-3xl border border-outline-variant bg-surface-container-lowest soil-shadow">
+    <div className="module w-full overflow-hidden">
       <Cal
         calLink={CAL_LINK}
         style={{ width: "100%", height: "100%", minHeight: "600px" }}

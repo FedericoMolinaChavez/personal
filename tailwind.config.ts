@@ -1,62 +1,66 @@
 import type { Config } from "tailwindcss";
 
+/**
+ * The marketing site runs the "Mesophotic Descent" world: a technical dive down
+ * a volcanic island wall. Ground colour deepens by dive stage, one thermocline
+ * cyan marks the active depth, and warm colour is the thing that drains with
+ * depth — restored only where the lamp falls.
+ *
+ * The `cmd` scale below belongs to the /tools app ("Command" theme) and is
+ * deliberately untouched by this world; the two never share a surface.
+ */
 const config: Config = {
   darkMode: "class",
-  content: [
-    "./app/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-  ],
+  content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        primary: "#8f4538",
-        "on-error-container": "#93000a",
-        "surface-container-highest": "#eae1d7",
-        "on-tertiary-fixed-variant": "#434936",
-        "secondary-fixed": "#d9eaa3",
-        "surface-container-low": "#fbf2e8",
-        "tertiary-container": "#707661",
-        "on-surface-variant": "#544340",
-        "inverse-on-surface": "#f8efe5",
-        "tertiary-fixed": "#dfe5cc",
-        "primary-container": "#ad5d4e",
-        "surface-tint": "#93493b",
-        "surface-container-high": "#f0e7dd",
-        "on-tertiary": "#ffffff",
-        outline: "#87726f",
-        "on-surface": "#1f1b15",
-        "surface-container": "#f6ece3",
-        "error-container": "#ffdad6",
-        "on-tertiary-container": "#f8fee4",
-        surface: "#fff8f3",
-        "on-secondary-fixed-variant": "#3e4c16",
-        secondary: "#56642b",
-        "secondary-fixed-dim": "#bdce89",
-        "on-secondary": "#ffffff",
-        "on-background": "#1f1b15",
-        "inverse-surface": "#343029",
-        "surface-dim": "#e1d9cf",
-        "on-primary-container": "#fffaf9",
-        "tertiary-fixed-dim": "#c3c9b1",
-        "on-secondary-fixed": "#161f00",
-        "secondary-container": "#d6e7a1",
-        "inverse-primary": "#ffb4a6",
-        "primary-fixed-dim": "#ffb4a6",
-        background: "#fff8f3",
-        tertiary: "#575d4a",
-        "surface-variant": "#eae1d7",
-        "primary-fixed": "#ffdad3",
-        "on-primary-fixed-variant": "#763226",
-        "on-primary-fixed": "#3c0702",
-        "on-tertiary-fixed": "#181d0e",
-        "surface-bright": "#fff8f3",
-        "on-error": "#ffffff",
-        "outline-variant": "#dac1bd",
-        error: "#ba1a1a",
-        "on-secondary-container": "#5a682f",
-        "on-primary": "#ffffff",
-        "surface-container-lowest": "#ffffff",
-        // "Command" theme — dark, field-ready. Scoped to /tools (see .command-theme).
+        // ---- Dive stages: the ground, deepening by depth -------------------
+        "sea-lit": "#0E3247", //  0m  sunlit tip
+        "sea-mid": "#081626", //  0–30m  midnight depth
+        "sea-cold": "#10243A", // 30m–thermocline  cold depth
+        "sea-meso": "#071A2E", // 40–200m  mesophotic blue
+        "sea-deep": "#04121F", // turnaround depth
+        abyss: "#02060D", // >200m  abyssal blue
+        "abyss-ink": "#050A14", // base
+
+        // ---- Signal ---------------------------------------------------------
+        thermocline: "#23D6E6", // the active-depth band, and every primary action
+        "thermocline-dim": "#16899A",
+        coral: "#FF6B4A", // the warm that drains; error, and restored colour
+        kelp: "#6FD79B", // ready / affirmative
+
+        // ---- Ink ------------------------------------------------------------
+        snow: "#F4F6FA", // marine snow — primary text and particles
+        "snow-dim": "#9FB6C4", // secondary text (8.3:1 on sea-meso)
+        "snow-faint": "#7994A6", // tertiary text (5.6:1 on sea-meso)
+        hairline: "#17334A", // 1px structure
+        "hairline-lit": "#26536F", // 1px structure, lit side
+
+        // ---- Legacy Material-3 names -----------------------------------------
+        // Still referenced by /scorecard, /terms, /success, /cancel and the
+        // booking embed. Remapped onto the dive system so those routes stay
+        // legible and on-world; the landing page uses the scale above.
+        surface: "#071A2E",
+        background: "#071A2E",
+        "surface-container-lowest": "#02060D",
+        "surface-container-low": "#04121F",
+        "surface-container": "#081626",
+        "surface-container-high": "#10243A",
+        "surface-container-highest": "#173248",
+        "on-surface": "#F4F6FA",
+        "on-background": "#F4F6FA",
+        "on-surface-variant": "#9FB6C4",
+        primary: "#23D6E6",
+        "on-primary": "#02060D",
+        "primary-container": "#10243A",
+        "on-primary-container": "#23D6E6",
+        "secondary-container": "#0E2A3E",
+        "on-secondary-container": "#F4F6FA",
+        "outline-variant": "#17334A",
+        error: "#FF6B4A",
+
+        // ---- /tools "Command" theme — untouched ------------------------------
         cmd: {
           bg: "#0B0F0A",
           surface: "#121711",
@@ -74,42 +78,65 @@ const config: Config = {
           "on-accent": "#0B0F0A",
         },
       },
+
+      // Instruments are machined, not rounded. 2px is the whole radius system.
       borderRadius: {
-        DEFAULT: "0.25rem",
-        lg: "0.5rem",
-        xl: "0.75rem",
+        DEFAULT: "2px",
+        lg: "2px",
+        xl: "3px",
         full: "9999px",
       },
+
       spacing: {
         gutter: "24px",
-        "container-max": "1280px",
         "margin-desktop": "40px",
         "margin-mobile": "20px",
-        unit: "8px",
+        rail: "208px",
       },
+
       maxWidth: {
         "container-max": "1280px",
+        measure: "68ch",
       },
+
       fontFamily: {
-        "label-md": ["var(--font-bricolage)", "sans-serif"],
-        "headline-lg": ["var(--font-bricolage)", "sans-serif"],
-        "label-sm": ["var(--font-bricolage)", "sans-serif"],
-        "body-lg": ["var(--font-bricolage)", "sans-serif"],
-        "headline-lg-mobile": ["var(--font-bricolage)", "sans-serif"],
-        "body-md": ["var(--font-bricolage)", "sans-serif"],
-        "headline-md": ["var(--font-bricolage)", "sans-serif"],
-        display: ["var(--font-bricolage)", "sans-serif"],
-        mono: ["var(--font-mono)", "ui-monospace", "SFMono-Regular", "monospace"],
+        // Display: expedition lettering, condensed and machined.
+        display: ["var(--font-saira)", "ui-sans-serif", "system-ui", "sans-serif"],
+        // Body: a quiet grotesk that stays out of the way.
+        body: ["var(--font-archivo)", "ui-sans-serif", "system-ui", "sans-serif"],
+        // Data: dive-computer readouts. Measurement only, never prose.
+        data: ["var(--font-martian)", "ui-monospace", "SFMono-Regular", "monospace"],
+        // Legacy aliases used by sibling marketing routes.
+        "label-md": ["var(--font-martian)", "ui-monospace", "monospace"],
+        "label-sm": ["var(--font-martian)", "ui-monospace", "monospace"],
+        "body-md": ["var(--font-archivo)", "sans-serif"],
+        "body-lg": ["var(--font-archivo)", "sans-serif"],
+        "headline-md": ["var(--font-saira)", "sans-serif"],
+        "headline-lg": ["var(--font-saira)", "sans-serif"],
+        mono: ["var(--font-martian)", "ui-monospace", "monospace"],
       },
+
       fontSize: {
-        "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" }],
-        "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700" }],
-        "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }],
-        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
-        "headline-lg-mobile": ["28px", { lineHeight: "36px", fontWeight: "700" }],
-        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
-        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
-        display: ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "800" }],
+        // Dive-computer readouts
+        readout: ["clamp(2.75rem, 6vw, 4.5rem)", { lineHeight: "0.9", letterSpacing: "-0.03em", fontWeight: "600" }],
+        "readout-sm": ["1.5rem", { lineHeight: "1", letterSpacing: "-0.02em", fontWeight: "600" }],
+        // Tracked-out instrument labels
+        label: ["0.6875rem", { lineHeight: "1.1", letterSpacing: "0.16em", fontWeight: "600" }],
+        "label-lg": ["0.8125rem", { lineHeight: "1.2", letterSpacing: "0.12em", fontWeight: "500" }],
+        // Display
+        hero: ["clamp(3rem, 9vw, 6rem)", { lineHeight: "0.92", letterSpacing: "-0.025em", fontWeight: "700" }],
+        stage: ["clamp(2rem, 5vw, 3.25rem)", { lineHeight: "1.0", letterSpacing: "-0.02em", fontWeight: "700" }],
+        // Prose
+        lede: ["clamp(1.0625rem, 1.6vw, 1.25rem)", { lineHeight: "1.6", fontWeight: "400" }],
+        prose: ["1.0625rem", { lineHeight: "1.65", fontWeight: "400" }],
+        // Legacy aliases
+        "label-md": ["0.75rem", { lineHeight: "1.2", letterSpacing: "0.12em", fontWeight: "600" }],
+        display: ["clamp(2rem, 5vw, 3.25rem)", { lineHeight: "1.0", letterSpacing: "-0.02em", fontWeight: "700" }],
+        "headline-lg": ["2rem", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+        "headline-lg-mobile": ["1.75rem", { lineHeight: "1.15", fontWeight: "700" }],
+        "headline-md": ["1.375rem", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600" }],
+        "body-md": ["1rem", { lineHeight: "1.6", fontWeight: "400" }],
+        "body-lg": ["1.125rem", { lineHeight: "1.6", fontWeight: "400" }],
       },
     },
   },

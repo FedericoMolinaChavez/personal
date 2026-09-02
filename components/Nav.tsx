@@ -1,46 +1,57 @@
 import Link from "next/link";
-import HireMeButton from "./HireMeButton";
+import ScheduleCallButton from "./ScheduleCallButton";
+import { ControlArrow, primaryControl } from "./dive/Instrument";
 
-// Absolute form ("/#work") so these resolve from any page, not just the
-// homepage where the ids actually live.
+/**
+ * Surface control. Absolute hrefs ("/#work") so these resolve from any route,
+ * not just the homepage where the stage anchors live.
+ */
 const links = [
-  { href: "/#work", label: "Work" },
-  { href: "/#approach", label: "Approach" },
-  { href: "/#expertise", label: "Expertise" },
-  { href: "/#offer", label: "Pricing" },
-  { href: "/#pitch", label: "Pitch Me" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/#break", label: "Failure" },
+  { href: "/#expertise", label: "Scope" },
+  { href: "/#work", label: "Log" },
+  { href: "/#offer", label: "Rates" },
+  { href: "/#pitch", label: "Pitch" },
   { href: "/tools", label: "Tools" },
 ];
 
 export default function Nav() {
   return (
-    <header className="w-full sticky top-0 z-50 bg-surface/80 backdrop-blur-md">
-      <nav className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center gap-4 h-20">
+    <header className="sticky top-0 z-50 w-full border-b border-hairline bg-sea-lit/80 backdrop-blur-md">
+      <nav className="mx-auto flex h-16 max-w-container-max items-center justify-between gap-4 px-margin-mobile md:px-margin-desktop">
         <Link
           href="/#top"
-          className="font-display text-[18px] sm:text-headline-md font-extrabold text-primary whitespace-nowrap"
+          className="flex items-baseline gap-2.5 whitespace-nowrap"
         >
-          Federico Molina
+          <span className="font-display text-[1.0625rem] font-bold uppercase tracking-[0.02em] text-snow">
+            Federico Molina
+          </span>
+          <span className="hidden items-center gap-2 font-data text-[0.5625rem] uppercase tracking-[0.16em] text-snow-faint sm:inline-flex">
+            <span aria-hidden="true" className="block h-1.5 w-1.5 bg-kelp" />
+            Fractional CTO · available
+          </span>
         </Link>
-        {/* Held back to lg: seven links plus the wordmark and CTA do not fit
+
+        {/* Held to lg: six links plus the wordmark and the control do not fit
             in the 768–1000px band. */}
-        <div className="hidden lg:flex items-center gap-6 xl:gap-8">
+        <div className="hidden items-center gap-7 lg:flex">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md"
+              className="font-data text-[0.625rem] uppercase tracking-[0.14em] text-snow-dim transition-colors duration-150 hover:text-thermocline"
             >
               {link.label}
             </Link>
           ))}
         </div>
-        <HireMeButton
-          label="Book a session"
-          disclosure={false}
-          className="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-md text-label-md whitespace-nowrap hover:scale-95 transition-all duration-100 soil-shadow cursor-pointer disabled:opacity-70"
-        />
+
+        <ScheduleCallButton
+          label="Book a call"
+          className={`${primaryControl} !gap-3 !py-2.5 !text-[0.625rem]`}
+        >
+          <ControlArrow />
+        </ScheduleCallButton>
       </nav>
     </header>
   );

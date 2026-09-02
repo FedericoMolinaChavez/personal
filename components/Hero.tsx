@@ -1,60 +1,103 @@
-import HireMeButton from "./HireMeButton";
 import ScheduleCallButton from "./ScheduleCallButton";
+import HireMeButton from "./HireMeButton";
+import {
+  ControlArrow,
+  primaryControl,
+  secondaryControl,
+} from "./dive/Instrument";
+import { ArrowDown } from "./dive/Icon";
 
+/**
+ * 00 SURFACE — enter water, check systems.
+ *
+ * The first viewport is the thesis: the whole practice stated as a depth
+ * problem, with the primary action lit and the descent already legible.
+ */
 export default function Hero() {
   return (
-    <section className="py-24 md:py-32 flex flex-col items-start gap-8 reveal">
-      <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-widest">
-        <span translate="no" className="material-symbols-outlined text-[14px]">bolt</span>
-        Available for new projects
-      </div>
-      <h1 className="font-display text-[56px] md:text-[84px] leading-[1.1] text-on-background max-w-4xl tracking-tighter">
-        Your agents work in the demo and{" "}
-        <span className="text-primary italic">break in production</span>.
-      </h1>
-      <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-        I&apos;m Federico — fractional CTO and AI systems architect. I work on
-        one thing: LLM and agent systems that shipped fast and now can&apos;t be
-        trusted. Orchestration, context and memory, token cost, the failure
-        modes that only appear under real traffic, and the security of the app
-        around them.
-      </p>
-      <div className="flex flex-wrap gap-4">
-        <HireMeButton
-          label="Book a $300 strategy session"
-          className="bg-primary text-on-primary px-8 py-3.5 rounded-full font-label-md text-label-md hover:scale-95 transition-transform cursor-pointer disabled:opacity-70"
-        />
-        <ScheduleCallButton
-          label="Or book a free 15-min call"
-          className="border border-outline-variant text-on-surface px-8 py-3.5 rounded-full font-label-md text-label-md hover:bg-surface-container transition-colors"
-        />
-      </div>
-      <div className="flex flex-wrap gap-8 md:gap-12 mt-4">
-        <div className="flex flex-col gap-1">
-          <span className="font-display text-headline-lg md:text-[40px] text-primary font-extrabold">
-            ~500K
-          </span>
-          <span className="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant max-w-[16ch]">
-            leads attributed / month via Attribute.ai
-          </span>
-        </div>
-        <div className="flex flex-col gap-1">
-          <span className="font-display text-headline-lg md:text-[40px] text-primary font-extrabold">
-            5
-          </span>
-          <span className="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant max-w-[18ch]">
-            products shipped across fintech, legal tech &amp; AI marketing
-          </span>
-        </div>
-        <div className="flex flex-col gap-1">
-          <span className="font-display text-headline-lg md:text-[40px] text-primary font-extrabold">
-            8
-          </span>
-          <span className="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant max-w-[18ch]">
-            years building and running production systems
-          </span>
+    <section
+      id="top"
+      className="relative flex min-h-[86vh] scroll-mt-16 flex-col justify-center py-20 md:py-28"
+    >
+      {/* Sunlight only exists up here. */}
+      <div
+        aria-hidden="true"
+        className="light-shafts pointer-events-none absolute inset-x-0 -top-16 h-[130%]"
+      />
+
+      <div className="relative">
+        <h1 className="max-w-[19ch] font-display text-hero uppercase text-snow">
+          Everything holds
+          <br />
+          in the shallows
+        </h1>
+
+        <p className="mt-8 max-w-measure font-body text-lede text-snow-dim">
+          Your agents pass the demo because a demo is one request, in daylight,
+          with a warm cache and nobody watching. Production is forty metres
+          down: concurrent traffic, cold context, a retry storm at 3am, and a
+          token bill that nobody has read since launch. I go down and find out
+          what actually broke.
+        </p>
+
+        <p className="mt-5 max-w-measure font-body text-prose text-snow-faint">
+          I&apos;m Federico — fractional CTO and AI systems architect. Eight
+          years on production systems, the last stretch almost entirely on LLM
+          and agent systems.
+        </p>
+
+        <div className="mt-11 flex flex-col items-start gap-x-5 gap-y-6 sm:flex-row sm:items-start">
+          <ScheduleCallButton
+            label="Book a 15-minute call"
+            className={primaryControl}
+          >
+            <ControlArrow />
+          </ScheduleCallButton>
+
+          <HireMeButton
+            label="Or buy 90 minutes — $300"
+            className={secondaryControl}
+          >
+            <ControlArrow />
+          </HireMeButton>
         </div>
       </div>
+
+      {/* One instrument line, not a stat grid. Three figures, all of them
+          literally true; the dive is the page's metaphor and never gets to
+          pose as a measured quantity next to them. */}
+      <dl className="relative mt-16 grid max-w-4xl grid-cols-1 gap-x-8 gap-y-5 border-t border-hairline pt-5 font-data text-[0.6875rem] uppercase tracking-[0.14em] sm:grid-cols-3">
+        {[
+          { v: "08", u: "yr", k: "building production systems" },
+          { v: "05", u: "", k: "products shipped — one shut down" },
+          { v: "500", u: "k/mo", k: "leads attributed via Attribute.ai" },
+        ].map((item) => (
+          <div key={item.k} className="flex items-baseline gap-2.5">
+            <dt className="sr-only">{item.k}</dt>
+            <dd className="flex items-baseline gap-2.5">
+              <span className="tabular shrink-0 text-[1.125rem] leading-none text-thermocline">
+                {item.v}
+                {item.u && (
+                  <span className="ml-0.5 text-[0.5rem] text-snow-faint">
+                    {item.u}
+                  </span>
+                )}
+              </span>
+              <span className="text-snow-faint" aria-hidden="true">
+                {item.k}
+              </span>
+            </dd>
+          </div>
+        ))}
+      </dl>
+
+      <a
+        href="#break"
+        className="relative mt-14 inline-flex items-center gap-3 self-start font-data text-[0.625rem] uppercase tracking-[0.16em] text-snow-faint transition-colors hover:text-thermocline"
+      >
+        <ArrowDown size={16} />
+        Descend to the thermocline
+      </a>
     </section>
   );
 }

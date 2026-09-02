@@ -1,21 +1,29 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, JetBrains_Mono } from "next/font/google";
+import { Saira_Condensed, Archivo, Martian_Mono } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-const bricolage = Bricolage_Grotesque({
-  variable: "--font-bricolage",
+// Display: expedition lettering — condensed, machined, set uppercase.
+const saira = Saira_Condensed({
+  variable: "--font-saira",
   subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
+  weight: ["500", "600", "700"],
   display: "swap",
 });
 
-// Monospace for the /tools "Command" theme (numerals + data). Unused by marketing.
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-mono",
+// Body: a quiet grotesk that stays out of the way of the instruments.
+const archivo = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  display: "swap",
+});
+
+// Data: dive-computer readouts, instrument labels and controls. Never prose.
+const martianMono = Martian_Mono({
+  variable: "--font-martian",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
@@ -122,20 +130,48 @@ const jsonLd = {
   ],
 };
 
+/**
+ * The direction contract for the marketing world. Emitted as a real HTML
+ * comment (first child of <body>) so it survives the production build and can
+ * be audited against the render. Grep the built output for the seed key.
+ */
+const DIRECTION_CONTRACT = `<!--
+THESIS: A fractional CTO practice as a technical dive down a volcanic island
+wall. It refuses the AI-consultancy arrangement of hero plus three icon cards:
+here every claim is pinned to the depth it happens at.
+
+OWN-WORLD: Abyssal ink blue deepening by dive stage, chalk-white marine snow,
+one thermocline cyan marking the active depth and carrying every primary
+action; condensed expedition display, quiet grotesk prose, dive-computer mono
+for readouts, labels and controls but never for prose; hairline-boxed modules, 2px radius, no rounded pills.
+
+STORY: Your agents pass in the shallows and fail under pressure. He names the
+failure precisely, prices the fix openly, and the visitor books a 15-minute
+call.
+
+FIRST VIEWPORT: Sunlit surface with light shafts and rising snow; the depth
+rail pinned left at 00 SURFACE; the headline set large across the column; a
+filled thermocline "Book a 15-minute call" beside a live depth and gas readout.
+
+FORM: Mesophotic Descent - dealt challenger, user-picked over the assigned
+Interlocking; my own grounded list ranked the accident report first.
+Seed 83700d5e.
+
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${bricolage.variable} ${jetbrainsMono.variable}`}>
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+    <html
+      lang="en"
+      className={`${saira.variable} ${archivo.variable} ${martianMono.variable}`}
+    >
+      <body className="bg-sea-meso text-snow font-body antialiased">
+        <div hidden dangerouslySetInnerHTML={{ __html: DIRECTION_CONTRACT }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

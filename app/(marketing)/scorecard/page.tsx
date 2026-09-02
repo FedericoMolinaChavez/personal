@@ -1,3 +1,4 @@
+import MaterialSymbols from "@/components/MaterialSymbols";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
@@ -13,13 +14,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "/scorecard" },
 };
 
-// Note: the `reveal` class is deliberately unused on this page. It sets
-// opacity: 0 and only ScrollReveal — mounted on the landing page alone — clears
-// it. /terms sets the same precedent for standalone pages.
+// This page inherits the dive palette through the remapped legacy tokens in
+// tailwind.config.ts; the landing page owns the full Mesophotic Descent world.
 
 export default function ScorecardPage() {
   return (
     <>
+      <MaterialSymbols />
       <span id="top" />
       <Nav />
       <main className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
