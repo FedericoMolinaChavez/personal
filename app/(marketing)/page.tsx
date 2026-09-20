@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Thermocline from "@/components/Thermocline";
@@ -9,6 +10,10 @@ import ReversePitch from "@/components/ReversePitch";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import DepthRail from "@/components/dive/DepthRail";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 /**
  * One dive, top to bottom. Sections are stages of the profile: down to

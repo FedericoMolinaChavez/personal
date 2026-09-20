@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
+/** Indexable marketing URLs only. /tools is noindex and must stay out. */
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {

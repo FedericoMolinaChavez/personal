@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import MaterialSymbols from "@/components/MaterialSymbols";
 import Link from "next/link";
 
@@ -6,6 +7,13 @@ import Link from "next/link";
  * and the DAL). Standalone Command-themed page (no AppShell here, since this
  * route is outside /tools). Supabase Auth UI is wired in a later step.
  */
+export const metadata: Metadata = {
+  title: "Sign in",
+  description: "Sign in to access Ag Tools.",
+  alternates: { canonical: "/sign-in" },
+  robots: { index: false, follow: false },
+};
+
 export default function SignInPage() {
   return (
     <>
