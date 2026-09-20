@@ -1,5 +1,7 @@
+import Link from "next/link";
 import ScheduleCallButton from "./ScheduleCallButton";
 import { ControlArrow, secondaryControl } from "./dive/Instrument";
+import { getPostPath } from "@/lib/blog/posts";
 
 /**
  * 18 THERMOCLINE — where the demo stops holding.
@@ -127,6 +129,16 @@ export default function Thermocline() {
           be doing, I will say so on the call rather than scope it.
         </p>
       </div>
+
+      <p className="mt-10 font-data text-[0.625rem] uppercase tracking-[0.14em] text-snow-faint">
+        From the depth ·{" "}
+        <Link
+          href={getPostPath("why-the-demo-passed-and-production-didnt")}
+          className="text-thermocline transition-colors hover:text-snow"
+        >
+          Why the demo passed and production didn&apos;t
+        </Link>
+      </p>
     </section>
   );
 }

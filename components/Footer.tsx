@@ -12,6 +12,7 @@ const links = [
   { label: "GitHub", href: "https://github.com/FedericoMolinaChavez" },
   { label: "Email", href: `mailto:${company.supportEmail}` },
   { label: "Scorecard", href: "/scorecard" },
+  { label: "Blog", href: "/blog" },
   { label: "Tools", href: "/tools" },
   { label: "Terms", href: "/terms" },
 ];
