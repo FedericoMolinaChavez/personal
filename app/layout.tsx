@@ -54,12 +54,10 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Federico Molina Chavez" }],
   creator: "Federico Molina Chavez",
-  alternates: {
-    canonical: "/",
-  },
+  // Canonical lives on each route (homepage, /scorecard, /terms, /tools, …).
+  // Do not pin "/" here — it would soft-duplicate every page that forgets to override.
   openGraph: {
     type: "website",
-    url: "/",
     siteName: "Federico Molina",
     title,
     description,
