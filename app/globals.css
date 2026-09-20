@@ -382,3 +382,31 @@ body::-webkit-scrollbar-thumb:hover {
   left: 0;
   right: 0;
 }
+
+/* ---- Long-form article prose (blog) -------------------------------------- */
+
+.article-prose h2 {
+  margin-top: 1.5rem;
+  font-family: var(--font-saira), ui-sans-serif, system-ui, sans-serif;
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--snow);
+}
+
+.article-prose a {
+  color: var(--thermocline);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--thermocline) 40%, transparent);
+  text-underline-offset: 4px;
+}
+
+.article-prose a:hover {
+  text-decoration-color: var(--thermocline);
+}
+
+.article-prose ol {
+  margin-top: 0.25rem;
+}
