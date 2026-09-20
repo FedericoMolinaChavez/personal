@@ -20,6 +20,7 @@ const toolsDescription =
 export const metadata: Metadata = {
   title: toolsTitle,
   description: toolsDescription,
+  keywords: ["ag tools", "agronomy", "spray records", "field dashboard"],
   alternates: { canonical: "/tools" },
   openGraph: {
     url: "/tools",
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
     description: toolsDescription,
   },
   twitter: {
+    card: "summary",
     title: toolsTitle,
     description: toolsDescription,
   },
