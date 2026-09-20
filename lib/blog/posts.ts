@@ -11,7 +11,7 @@ const posts: BlogPost[] = [
     description:
       "Six failure modes that let vibe-coded AI apps pass a demo and break under real traffic: retries, RAG drift, token spend, missing evals, agent non-convergence, and ordinary app security.",
     publishedAt: "2026-09-20",
-    readingMinutes: 9,
+    readingMinutes: 7,
     keywords: [
       "AI production failures",
       "agent idempotency",

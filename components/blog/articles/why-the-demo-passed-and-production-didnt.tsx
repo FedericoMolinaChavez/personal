@@ -43,6 +43,12 @@ export default function WhyDemoPassedArticle() {
         stops this after N attempts?&rdquo; from the code, production will
         invent the answer for you.
       </p>
+      <p>
+        In practice this shows up as a Tuesday incident after a quiet demo week:
+        one flaky dependency, exponential backoff without a budget, and a tool
+        that creates a row or fires a webhook on every attempt. The model did not
+        get worse. The loop lost its floor.
+      </p>
 
       <h2>TH-02 · Context and RAG packing drift</h2>
       <p className="text-on-background">
@@ -60,6 +66,12 @@ export default function WhyDemoPassedArticle() {
         average tokens of retrieved vs. unused context, and how often the cited
         source was actually in the top-k. If quality is only checked by reading
         a few chats, you will not see silent degradation until customers do.
+      </p>
+      <p>
+        Drift is slow. A chunking change, a new boilerplate system prompt, or a
+        denser corpus can push the same &ldquo;working&rdquo; pipeline into a
+        worse packing order without a single model upgrade. Treat the retriever
+        as a product surface with its own regression suite.
       </p>
 
       <h2>TH-03 · Unattributed token spend</h2>
@@ -79,6 +91,12 @@ export default function WhyDemoPassedArticle() {
         model got expensive&rdquo; is a story you tell yourself instead of a
         line item you can cut.
       </p>
+      <p>
+        Teams that fix this usually find one chat route or one agent tool path
+        owning most of the invoice. Until you can name that route, every
+        cost conversation stays abstract — and abstract cost conversations do
+        not get fixed.
+      </p>
 
       <h2>TH-04 · No eval set — happy-path-only testing</h2>
       <p className="text-on-background">
@@ -97,6 +115,12 @@ export default function WhyDemoPassedArticle() {
         are blocked when that rate drops. Manual happy-path clicks are not an
         eval suite. They are a demo rehearsal.
       </p>
+      <p>
+        Start small: golden questions with expected citations, forbidden tool
+        calls, and a few adversarial inputs. Wire the suite into CI so a prompt
+        edit that breaks three cases cannot merge because &ldquo;it looked fine
+        in chat.&rdquo;
+      </p>
 
       <h2>TH-05 · Multi-agent non-convergence</h2>
       <p className="text-on-background">
@@ -113,6 +137,11 @@ export default function WhyDemoPassedArticle() {
         writer for shared state, and a forced resolve path (human, rule, or
         designated agent) when agents disagree. If the system has no definition
         of &ldquo;done,&rdquo; it will not converge under load.
+      </p>
+      <p>
+        Multi-agent demos hide this because the operator stops the run when it
+        gets boring. Production has no operator with a finger on the stop
+        button — only a budget and a timeout you forgot to set.
       </p>
 
       <h2>TH-06 · An &ldquo;AI problem&rdquo; that is ordinary app security</h2>
