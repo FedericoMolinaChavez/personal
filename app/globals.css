@@ -410,3 +410,51 @@ body::-webkit-scrollbar-thumb:hover {
 .article-prose ol {
   margin-top: 0.25rem;
 }
+
+/* ============================================================================
+   Scorecard checklist — print / Save as PDF companion.
+   Hides chrome and CTAs; keeps the six pillars and tally usable on paper.
+   ========================================================================== */
+@media print {
+  .checklist-screen-only {
+    display: none !important;
+  }
+
+  .checklist-page {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .checklist-page article {
+    padding-top: 0;
+    padding-bottom: 0;
+    gap: 1.25rem;
+  }
+
+  .checklist-pillar {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    background: transparent !important;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    padding: 0.75rem 1rem !important;
+    gap: 0.75rem !important;
+  }
+
+  .checklist-tally {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    border-radius: 0;
+  }
+
+  .checklist-box {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+}
