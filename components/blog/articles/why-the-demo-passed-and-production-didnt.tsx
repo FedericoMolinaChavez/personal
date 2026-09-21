@@ -95,7 +95,12 @@ export default function WhyDemoPassedArticle() {
         What to measure: size of the eval set (even fifty cases beats zero),
         pass rate on main before merge, and whether prompt or retrieval changes
         are blocked when that rate drops. Manual happy-path clicks are not an
-        eval suite. They are a demo rehearsal.
+        eval suite. They are a demo rehearsal. For how to stand up that set
+        without a vanity dashboard, see{" "}
+        <Link href="/blog/evals-without-a-theater-set">
+          evals without a theater set
+        </Link>
+        .
       </p>
 
       <h2>TH-05 · Multi-agent non-convergence</h2>
