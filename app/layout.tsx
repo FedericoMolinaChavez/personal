@@ -95,9 +95,9 @@ const jsonLd = {
   makesOffer: [
     {
       "@type": "Offer",
-      name: "Technical Strategy Session (90 min)",
+      name: "Technical Strategy Session",
       description:
-        "A focused 90-minute working session on one technical decision, plus a written summary within 48 hours. Credited in full against any engagement booked within 30 days.",
+        "A written recommendation on one technical decision within 48 hours, including a focused working session. Credited in full against any engagement booked within 30 days.",
       price: process.env.SERVICE_PRICE_USD || "300",
       priceCurrency: "USD",
     },
@@ -105,15 +105,23 @@ const jsonLd = {
       "@type": "Offer",
       name: "AI Systems Architecture Audit",
       description:
-        "A two-week fixed-scope review of an existing AI or agent system: architecture and orchestration, context and memory handling, token cost, production failure modes, and security posture. Written report plus a prioritized 90-day roadmap.",
+        "A two-week fixed-scope review of an existing AI or agent system: architecture and orchestration, context and memory handling, token cost, production failure modes, and security posture. Actionable written report plus a prioritized 90-day roadmap the team can execute without further engagement.",
       price: "2500",
+      priceCurrency: "USD",
+    },
+    {
+      "@type": "Offer",
+      name: "Agent Reliability Sprint",
+      description:
+        "A roughly two-week one-time sprint: frozen eval set (~50 cases), three slices (golden questions, citation/tool constraints, adversarial inputs), CI gate that blocks merge on pass-rate drops, written baseline metrics, and a short walkthrough.",
+      price: "5000",
       priceCurrency: "USD",
     },
     {
       "@type": "Offer",
       name: "Fractional CTO — Monthly Retainer",
       description:
-        "Ongoing technical leadership at approximately 20 hours per month: architecture decisions, code and PR review, vendor and hiring evaluation, and hands-on implementation. Cancel with 30 days' notice.",
+        "Retained outcomes against scorecard gaps — eval CI, cost ceiling and kill switch, tool authz — reviewed monthly, plus architecture direction, code and PR review, vendor and hiring evaluation, and hands-on implementation. Approximately 20 hours per month; cancel with 30 days' notice.",
       price: "4000",
       priceCurrency: "USD",
       priceSpecification: {

@@ -30,12 +30,12 @@ const tiers: Tier[] = [
     name: "Technical strategy session",
     price: "300",
     unit: "USD",
-    cadence: "90 minutes · one-time",
+    cadence: "Written recommendation · 48h",
     summary:
-      "One focused working session on a single technical decision: architecture, stack selection, agent design, or a system that isn't behaving in production.",
+      "A written recommendation on one technical decision within 48 hours — architecture, stack selection, agent design, or a system that isn't behaving in production. The working session is how we pressure-test it; the deliverable is the decision in writing.",
     includes: [
-      "90-minute working session",
-      "Written summary with concrete recommendations within 48 hours",
+      "Written recommendation with concrete next steps within 48 hours",
+      "90-minute working session to pressure-test the decision",
       "Credited in full against any engagement booked within 30 days",
     ],
     note: "Book and pay now — no call required first.",
@@ -47,31 +47,48 @@ const tiers: Tier[] = [
     unit: "USD",
     cadence: "Two weeks · fixed scope",
     summary:
-      "A fixed-scope review of an existing AI or agent system, ending in a report you can hand to your team and act on without me.",
+      "A fixed-scope review of an existing AI or agent system, ending in an actionable report and a 90-day roadmap your team can execute without me.",
     includes: [
       "Architecture and orchestration review",
       "Context and memory handling, token cost breakdown",
       "Observed production failure modes",
       "Security posture of the surrounding application",
-      "Written report, prioritised 90-day roadmap, walkthrough call",
+      "Actionable written report, prioritised 90-day roadmap, walkthrough call",
     ],
     note: "No follow-on commitment. Scoped on a call, then invoiced.",
     featured: true,
   },
   {
+    name: "Agent reliability sprint",
+    price: "5,000",
+    unit: "USD",
+    cadence: "~2 weeks · one-time",
+    summary:
+      "A time-boxed sprint that freezes an eval set for your agent or classification path and ships a CI gate that blocks merge on pass-rate drops. Defined end — not an open retainer.",
+    includes: [
+      "Frozen eval set for the path under review (~50 cases beats zero)",
+      "Three slices: golden questions, citation/tool constraints, adversarial inputs",
+      "CI gate: pass-rate drop blocks merge",
+      "Written baseline metrics and a short walkthrough",
+    ],
+    note: "Scoped on a call, then invoiced.",
+    featured: false,
+  },
+  {
     name: "Fractional CTO",
     price: "4,000",
     unit: "USD / MO",
-    cadence: "≈20 hours · cancel with 30 days",
+    cadence: "Monthly retainer · cancel with 30 days",
     summary:
-      "Ongoing technical leadership for teams shipping AI systems, at roughly twenty hours a month.",
+      "Retained outcomes against the gaps your scorecard shows — eval CI, cost ceiling and kill switch, tool authz — reviewed monthly. Architecture direction, PR review, vendor and hiring judgment, and hands-on work where that is faster than delegating.",
     includes: [
+      "Scorecard gaps closed and reviewed monthly (eval CI, cost ceiling / kill switch, tool authz)",
       "Architecture decisions and technical direction",
       "Code and PR review",
       "Vendor and hiring evaluation",
       "Hands-on implementation where that's faster than delegating",
     ],
-    note: "Starts after a scoping call.",
+    note: "Starts after a scoping call. ≈20 hours/mo capacity.",
     featured: false,
   },
 ];
@@ -87,7 +104,7 @@ export default function Offer() {
         </div>
         <div className="lg:col-span-7">
           <p className="max-w-measure font-body text-lede text-snow-dim">
-            Three ways to work together, priced in USD, each with a defined
+            Four ways to work together, priced in USD, each with a defined
             scope and a defined end. No discovery call to find out what
             something costs — that is the whole point of putting the numbers
             here.
@@ -95,7 +112,7 @@ export default function Offer() {
         </div>
       </div>
 
-      <div className="mt-16 grid grid-cols-1 items-stretch gap-5 lg:grid-cols-3">
+      <div className="mt-16 grid grid-cols-1 items-stretch gap-5 md:grid-cols-2 xl:grid-cols-4">
         {tiers.map((tier) => (
           <article
             key={tier.name}
@@ -174,9 +191,9 @@ export default function Offer() {
 
       <div className="mt-10 flex max-w-measure flex-col gap-3">
         <p className="font-body text-[0.875rem] leading-relaxed text-snow-dim">
-          The audit and the retainer are scoped on a call and invoiced
-          afterwards — buying either cold, without a conversation about your
-          system first, works out badly for both of us.
+          The audit, the sprint, and the retainer are scoped on a call and
+          invoiced afterwards — buying any of them cold, without a conversation
+          about your system first, works out badly for both of us.
         </p>
         <p className="font-data text-[0.625rem] leading-relaxed tracking-[0.06em] text-snow-faint">
           All prices in USD. {paymentProcessorNotice} {tradingNameNotice} See

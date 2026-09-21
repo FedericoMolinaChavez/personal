@@ -235,6 +235,57 @@ export default function Projects() {
         </Lamp>
       </div>
 
+      {/* Named client proof — Cosmo only; no other client metrics invented. */}
+      <div className="mt-16 grid grid-cols-1 gap-x-16 gap-y-8 border-t border-hairline pt-10 lg:grid-cols-12">
+        <div className="lg:col-span-5">
+          <p className="font-data text-[0.5625rem] uppercase tracking-[0.14em] text-snow-faint">
+            Client work
+          </p>
+          <h3 className="mt-3 max-w-[16ch] font-display text-[1.75rem] uppercase leading-none text-snow md:text-[2rem]">
+            Cosmo
+          </h3>
+        </div>
+        <div className="lg:col-span-7">
+          <p className="max-w-measure font-body text-[0.9375rem] leading-relaxed text-snow-dim">
+            At{" "}
+            <a
+              href="https://simplycosmo.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-thermocline underline decoration-thermocline/40 hover:decoration-thermocline"
+            >
+              Cosmo
+            </a>
+            , classification moved from direct prompts to an agentic system.
+            Sustainable-expense classification accuracy went from roughly 70% to
+            roughly 95%.
+          </p>
+          <dl className="mt-8 flex flex-wrap items-baseline gap-x-4 gap-y-2 border-t border-hairline pt-5 font-data text-[0.6875rem] uppercase tracking-[0.14em]">
+            <div className="flex items-baseline gap-2.5">
+              <dt className="sr-only">
+                Sustainable-expense classification accuracy before
+              </dt>
+              <dd className="flex items-baseline gap-2">
+                <span className="tabular text-[1.125rem] leading-none text-snow-faint">
+                  ~70
+                  <span className="ml-0.5 text-[0.5rem]">%</span>
+                </span>
+                <span className="text-snow-faint" aria-hidden="true">
+                  →
+                </span>
+                <span className="tabular text-[1.125rem] leading-none text-thermocline">
+                  ~95
+                  <span className="ml-0.5 text-[0.5rem] text-snow-faint">%</span>
+                </span>
+              </dd>
+            </div>
+            <span className="text-snow-faint">
+              sustainable-expense classification accuracy
+            </span>
+          </dl>
+        </div>
+      </div>
+
       {/* ---- The dive log: who is actually down here --------------------- */}
       <div
         id="approach"
