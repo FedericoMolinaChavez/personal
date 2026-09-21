@@ -37,10 +37,16 @@ export default function ScorecardTeaser() {
               checklist I run inside a paid audit.
             </p>
 
-            <div className="mt-9">
+            <div className="mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
               <Link href="/scorecard" className={primaryControl}>
                 <span>Score my app</span>
                 <ControlArrow />
+              </Link>
+              <Link
+                href="/scorecard/checklist"
+                className="font-data text-[0.625rem] uppercase tracking-[0.14em] text-snow-dim transition-colors hover:text-thermocline"
+              >
+                Or print the checklist
               </Link>
             </div>
           </div>

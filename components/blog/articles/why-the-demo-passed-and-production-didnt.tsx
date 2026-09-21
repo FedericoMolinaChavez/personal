@@ -178,8 +178,11 @@ export default function WhyDemoPassedArticle() {
         <Link href="/scorecard">
           {`30-check production scorecard`}
         </Link>
-        . No email required to see a score — same dimensions I run inside a paid
-        audit.
+        , or print the{" "}
+        <Link href="/scorecard/checklist">offline checklist</Link> first if you
+        want to prep away from the screen. No email required to see a score —
+        same dimensions I run inside a paid audit. More writing lives in the{" "}
+        <Link href="/blog">blog index</Link>.
       </p>
       <p>
         If the scorecard confirms what you already suspected, book a free{" "}

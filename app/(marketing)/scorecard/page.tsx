@@ -57,6 +57,16 @@ export default function ScorecardPage() {
                 roadmap.
               </p>
             </div>
+            <p className="font-body-md text-body-md text-on-surface-variant">
+              Prefer paper first?{" "}
+              <Link
+                href="/scorecard/checklist"
+                className="text-primary hover:underline underline-offset-4"
+              >
+                Printable checklist
+              </Link>{" "}
+              — same {TOTAL_CHECKS} checks, then come back here to score.
+            </p>
           </header>
 
           <Scorecard />
