@@ -6,6 +6,23 @@ import type { BlogPost } from "./types";
  */
 const posts: BlogPost[] = [
   {
+    slug: "evals-without-a-theater-set",
+    title: "Evals without a theater set",
+    description:
+      "Manual demo clicks are not an eval suite. How to stand up a small, measurable set that catches regressions before customers do — without vanity dashboards or unmaintainable golden chats.",
+    publishedAt: "2026-09-21",
+    readingMinutes: 7,
+    keywords: [
+      "LLM evals",
+      "AI evaluation suite",
+      "prompt regression testing",
+      "RAG evaluation",
+      "CI for LLM apps",
+      "production AI quality",
+      "happy path testing",
+    ],
+  },
+  {
     slug: "why-the-demo-passed-and-production-didnt",
     title: "Why the demo passed and production didn’t",
     description:
