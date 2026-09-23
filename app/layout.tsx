@@ -28,6 +28,7 @@ const martianMono = Martian_Mono({
 });
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+const clarityProjectId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID;
 
 const title =
   "Federico Molina — Fractional CTO for AI & agent systems";
@@ -190,6 +191,13 @@ o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+
 o.onload=function(){window.trackingFunctions.onLoad({appId:"6a6c698af0c3b6001087e3bf"})},
 document.head.appendChild(o)}initApollo();`}
         </Script>
+        {process.env.NODE_ENV === "production" && clarityProjectId ? (
+          <Script
+            id="microsoft-clarity"
+            src={`https://www.clarity.ms/tag/${clarityProjectId}`}
+            strategy="afterInteractive"
+          />
+        ) : null}
       </body>
     </html>
   );
