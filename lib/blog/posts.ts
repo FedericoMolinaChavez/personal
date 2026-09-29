@@ -6,6 +6,23 @@ import type { BlogPost } from "./types";
  */
 const posts: BlogPost[] = [
   {
+    slug: "token-bills-while-you-sleep",
+    title: "The token bill that arrived while you slept",
+    description:
+      "Demo worked; overnight the agent kept calling the model. How unbound retries, missing caps, and unattributed routes turn into surprise LLM bills — and what to measure before you blame the model.",
+    publishedAt: "2026-09-29",
+    readingMinutes: 8,
+    keywords: [
+      "token cost",
+      "overnight spend",
+      "agent loop budget",
+      "LLM bill surprise",
+      "production AI cost control",
+      "LLM token spend",
+      "per-request token cap",
+    ],
+  },
+  {
     slug: "evals-without-a-theater-set",
     title: "Evals without a theater set",
     description:
@@ -22,6 +39,7 @@ const posts: BlogPost[] = [
       "happy path testing",
     ],
   },
+
   {
     slug: "why-the-demo-passed-and-production-didnt",
     title: "Why the demo passed and production didn’t",
