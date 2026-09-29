@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ArticleLayout from "@/components/blog/ArticleLayout";
 import EvalsWithoutTheaterSetArticle from "@/components/blog/articles/evals-without-a-theater-set";
+import TokenBillsWhileYouSleepArticle from "@/components/blog/articles/token-bills-while-you-sleep";
 import WhyDemoPassedArticle from "@/components/blog/articles/why-the-demo-passed-and-production-didnt";
 import { getAllPosts, getPostBySlug, getPostPath } from "@/lib/blog/posts";
 
@@ -9,6 +10,7 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 /** Body components keyed by slug. Add an entry when you ship a new post. */
 const articleBodies: Record<string, React.ComponentType> = {
+  "token-bills-while-you-sleep": TokenBillsWhileYouSleepArticle,
   "evals-without-a-theater-set": EvalsWithoutTheaterSetArticle,
   "why-the-demo-passed-and-production-didnt": WhyDemoPassedArticle,
 };
