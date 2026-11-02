@@ -27,7 +27,7 @@ env vars to make them live.
 | Variable | Purpose |
 | --- | --- |
 | `STRIPE_SECRET_KEY` | Stripe secret key (test: `sk_test_…`). Enables checkout. |
-| `SERVICE_NAME` | Product name shown at checkout (default: "Strategy Consultation"). |
+| `SERVICE_NAME` | Product name shown at checkout (default: "Build Plan & MVP Sprint"). |
 | `SERVICE_PRICE_USD` | Price in USD for the single service (default: `500`). |
 | `NEXT_PUBLIC_BASE_URL` | Base URL for Stripe success/cancel redirects. |
 | `NEXT_PUBLIC_CALCOM_LINK` | Cal.com event link, e.g. `yourhandle/consultation`. |
@@ -54,3 +54,28 @@ Create a free account at [cal.com](https://cal.com), add an event type, and set
 npm run build
 npm start
 ```
+
+## Consulting pages and conversion checks
+
+- `/`: homepage, service selection, entry build plan, custom enquiry and booking.
+- `/ai-systems-audit`: focused engineering-leader landing page.
+- `/fractional-cto`: founder-focused technical leadership page.
+- `/scorecard`: free 30-check self-assessment; optional selected-risk email draft.
+- `/success` and `/cancel`: verified payment status and recovery, distinct from calendar booking.
+
+The entry-offer price is shared by the offer component and checkout through
+`lib/marketing/offers.ts`. Audit and CTO fees are scoped on the initial call;
+adding a landing page does not create another purchasable Stripe service.
+When Cal.com is unconfigured, the booking section offers email instead.
+
+On Node 24, run the marketing and payment checks:
+
+```powershell
+node --test tests/marketing.test.mjs tests/payment.test.mjs tests/payment-webhook.test.mjs
+```
+
+With a local preview and Playwright available, run
+`node scripts/verify-marketing.mjs` (or pass an installed Playwright `index.mjs`
+path as the first argument). This checks desktop/mobile behavior with external
+provider requests blocked. See `docs/qa/website-implementation.md` for scope,
+screenshots, analytics semantics and remaining live acceptance checks.

@@ -1,75 +1,26 @@
 import HireMeButton from "./HireMeButton";
 import ScheduleCallButton from "./ScheduleCallButton";
-
-const steps = [
-  {
-    icon: "description",
-    title: "A written build plan",
-    body: "Scope, architecture, milestones, and a clear definition of done — delivered as a document you keep, whether or not we continue.",
-  },
-  {
-    icon: "groups",
-    title: "3 working sessions — or an MVP",
-    body: "Three focused sessions to pressure-test the idea and shape the roadmap. Starting from scratch? I'll build you a basic MVP instead.",
-  },
-  {
-    icon: "trending_up",
-    title: "A clear path forward",
-    body: "If you accept the plan, we keep building together at a full project quote or hourly rate. The $500 is your starting point, not a dead end.",
-  },
-];
+import { getBuildPlanOffer } from "@/lib/marketing/offers";
 
 export default function Offer() {
+  const offer = getBuildPlanOffer();
   return (
-    <section id="offer" className="py-32 scroll-mt-24 reveal">
-      <div className="flex flex-col gap-4 mb-16">
-        <span className="font-label-sm text-label-sm text-primary uppercase tracking-widest">
-          The Engagement
-        </span>
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-          <h2 className="font-display text-headline-lg md:text-[48px] text-on-background max-w-2xl">
-            Start with a plan, not a leap of faith.
-          </h2>
-          <div className="inline-flex items-baseline gap-2 self-start md:self-auto px-5 py-2 rounded-full bg-secondary-container text-on-secondary-container">
-            <span className="font-display text-headline-md font-extrabold">
-              $500
-            </span>
-            <span className="font-label-sm text-label-sm uppercase tracking-widest">
-              to begin
-            </span>
+    <section id="offer" className="py-20 md:py-28 scroll-mt-24 border-t border-outline-variant">
+      <div className="grid md:grid-cols-[1.2fr_1fr] gap-12 md:gap-20">
+        <div>
+          <h2 className="font-display text-4xl md:text-5xl mb-6">Start with a plan you can keep.</h2>
+          <p className="text-body-lg text-on-surface-variant max-w-xl">A focused starting engagement to turn an idea into a written build plan: scope, architecture, milestones and a definition of done.</p>
+          <p className="font-display text-4xl text-primary mt-8">{offer.formattedPrice} <span className="text-base font-normal text-on-surface-variant">USD to begin</span></p>
+          <div className="mt-8 flex flex-col items-start gap-4">
+            <HireMeButton label={`Start the ${offer.formattedPrice} build plan`} className="button-primary" />
+            <ScheduleCallButton href="#booking" service="build-plan" label="Agree the scope on a free call first" className="text-primary underline underline-offset-4 py-2" />
           </div>
         </div>
-        <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-          Before any big commitment, I map out exactly what we&apos;d build and
-          how. You walk away with a concrete plan either way — and an easy way
-          to keep going if it&apos;s the right fit.
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {steps.map((step) => (
-          <div
-            key={step.title}
-            className="p-10 bg-surface-container rounded-xl flex flex-col gap-4 hover:bg-surface-container-high transition-colors"
-          >
-            <span className="material-symbols-outlined text-[40px] text-primary">
-              {step.icon}
-            </span>
-            <h4 className="font-display text-headline-md">{step.title}</h4>
-            <p className="text-on-surface-variant">{step.body}</p>
-          </div>
-        ))}
-      </div>
-
-      <div className="mt-12 flex flex-col sm:flex-row items-center gap-4">
-        <HireMeButton
-          label="Book the $500 plan"
-          className="bg-primary text-on-primary px-10 py-4 rounded-full font-label-md text-label-md hover:scale-95 transition-transform cursor-pointer disabled:opacity-70"
-        />
-        <ScheduleCallButton
-          label="Talk it through first"
-          className="border border-outline-variant text-on-surface px-10 py-4 rounded-full font-label-md text-label-md hover:bg-surface-container transition-colors"
-        />
+        <div className="space-y-7">
+          <div><h3 className="font-display text-2xl mb-2">A written plan + working time</h3><p className="text-on-surface-variant">Three working sessions to shape the roadmap, or a basic MVP if you&apos;re starting from scratch. We agree the option and its boundaries before work begins.</p></div>
+          <div><h3 className="font-display text-2xl mb-2">A defined starting point</h3><p className="text-on-surface-variant">We agree session length, delivery dates, MVP features and exclusions together. A basic MVP is a limited first version; ongoing development, hosting and third-party services need a separate scope.</p></div>
+          <div><h3 className="font-display text-2xl mb-2">Your next step stays open</h3><p className="text-on-surface-variant">Keep the plan whether or not we continue. If we move into a larger project, this payment is credited toward that engagement. Further work is quoted separately.</p></div>
+        </div>
       </div>
     </section>
   );

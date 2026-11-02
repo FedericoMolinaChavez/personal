@@ -10,11 +10,11 @@ const bricolage = Bricolage_Grotesque({
   display: "swap",
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://federicomolina.com";
 
 const title = "CTO + AI — Fractional CTO & AI Developer for founders";
 const description =
-  "Tech strategist and AI-focused developer. I help founders navigate technical complexity to scale profitable products with a craftsman's touch.";
+  "Federico Molina Chavez helps founders make better technical decisions and engineering teams build AI systems they can operate with confidence. Explore fractional CTO support and AI systems audits.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -76,14 +76,6 @@ const jsonLd = {
   },
   areaServed: "Worldwide",
   serviceType: "Fractional CTO & AI development",
-  makesOffer: {
-    "@type": "Offer",
-    name: "Build Plan & MVP Sprint",
-    description:
-      "A written build plan plus 3 working sessions, or a basic MVP if starting from scratch. Credited toward a full project or hourly rate if we continue.",
-    price: process.env.SERVICE_PRICE_USD || "500",
-    priceCurrency: "USD",
-  },
 };
 
 export default function RootLayout({

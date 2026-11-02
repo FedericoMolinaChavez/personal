@@ -1,0 +1,13 @@
+# Website design documentation
+
+Recorded 2026-11-02 after the consulting extension and finish-review corrections.
+
+- `DESIGN.md` records the established marketing system from `tailwind.config.ts`, `app/globals.css`, the root font loader and shipped marketing components. It covers home, audit, fractional CTO, checklist, enquiry and booking patterns. It does not prescribe the unrelated agriculture tools.
+- `.impeccable/design.json` is a schema-version-2 extension sidecar: six framework-independent component previews, existing shadow/motion/breakpoint facts and matching narrative. Primitive tokens remain in DESIGN.md. Preview colors are resolved from the Tailwind theme; the font uses the root font custom property. Synthetic tonal ramps were deliberately omitted because the handoff requires shipped evidence rather than invented palette values.
+- Source was compared with normal captures `docs/qa/website/home-desktop.png`, `audit-mobile.png`, `scorecard-results-desktop.png` and `pitch-mobile.png`. No native browser UI was used and no capture or production raster was added or changed. Existing portrait assets remain untouched; the captures are QA artifacts.
+- Existing `Selected Work` and `Expertise` eyebrows remain in source. The craft floor explicitly bans headings prefaced by kickers/eyebrows, so that device is identified as inherited drift and excluded from future heading guidance. Functional field labels and category metadata are separate observed uses. No implementation was repaired in this documentation pass.
+- Material Symbols is the existing Google icon library, loaded by the root layout. Its ligature names are not Unicode/emoji substitutes. Its actual use is described without introducing a second icon system.
+- Source comments still call ScrollReveal a fade/slide animation; the stylesheet leaves reveal content opaque. DESIGN.md records the stylesheet's actual behavior. The unused architectural-input/clay/sage helpers and configured-but-unused theme tokens were not promoted into the reusable system.
+- The direction brief and PRODUCT.md informed scope and identity only; planned page strategy, unverified measurements, external provider behavior and one-off visual values were not converted into system rules. No DESIGN.md existed before this pass. No creative workshop or replacement brand was introduced.
+
+Validation: parsed the sidecar as JSON, checked canonical section order and primitive references, and compared preview values with source. Documentation-only changes do not require another application build. Parent implementation validation and finish-review disposition remain in their owning QA records; this note does not establish deployment or live provider acceptance.

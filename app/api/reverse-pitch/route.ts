@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { verifyTurnstile } from "@/lib/turnstile";
+import { sanitizeAttribution } from "@/lib/marketing/attribution";
 
 type Payload = {
   name?: string;
@@ -9,6 +10,7 @@ type Payload = {
   project?: string;
   budget?: string;
   timeline?: string;
+  attribution?: unknown;
   // Anti-bot
   token?: string; // Turnstile response token
   website?: string; // honeypot — must stay empty for humans
@@ -38,6 +40,10 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
   }
 
+  if (!payload || typeof payload !== "object" || Array.isArray(payload)) {
+    return NextResponse.json({ error: "Invalid enquiry. Please check the form and try again." }, { status: 400 });
+  }
+
   // Honeypot: bots fill hidden fields. Pretend success so they don't retry,
   // but never deliver the message.
   if (clean(payload.website)) {
@@ -53,7 +59,7 @@ export async function POST(request: Request) {
 
   if (!name || !email || !project || !budget) {
     return NextResponse.json(
-      { error: "Please fill in your name, email, what you need, and a price." },
+      { error: "Please fill in your name, email, what you need, and an estimated budget range." },
       { status: 400 },
     );
   }
@@ -80,7 +86,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         error:
-          "Submissions aren't configured yet. Add RESEND_API_KEY to enable this form.",
+          "The enquiry form is unavailable right now. Please email Federico directly at federicomolinachavez@gmail.com.",
       },
       { status: 501 },
     );
@@ -91,19 +97,20 @@ export async function POST(request: Request) {
     ["Name", name],
     ["Email", email],
     ["Company", company || "—"],
-    ["Proposed price", budget],
+    ["Estimated budget range", budget],
     ["Timeline", timeline || "—"],
+    ...Object.entries(sanitizeAttribution(payload.attribution)),
   ];
 
   try {
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL ?? "notifications@thenomadhub.xyz",
       to: process.env.CONTACT_EMAIL ?? "federicomolinachavez@gmail.com",
       replyTo: email,
-      subject: `New pitch: ${name}${company ? ` (${company})` : ""} — ${budget}`,
+      subject: `Custom engagement: ${name}${company ? ` (${company})` : ""} — ${budget}`,
       html: `
-        <h2>You got pitched 👋</h2>
-        <p>Someone wants to hire you and proposed their own terms.</p>
+        <h2>New custom engagement enquiry</h2>
+        <p>A visitor shared their desired outcome and estimated budget.</p>
         <ul>
           ${rows
             .map(
@@ -117,10 +124,11 @@ export async function POST(request: Request) {
         <p style="color:#888">Reply directly to this email to reach ${escapeHtml(name)}.</p>
       `,
     });
+    if (result.error) throw new Error("Email delivery was not accepted.");
   } catch (err) {
-    const message = err instanceof Error ? err.message : "Unknown error";
+    console.error("Custom engagement delivery failed", err instanceof Error ? err.name : "Unknown error");
     return NextResponse.json(
-      { error: `Could not send your pitch: ${message}` },
+      { error: "Your enquiry could not be sent. Please try again or email Federico directly at federicomolinachavez@gmail.com." },
       { status: 500 },
     );
   }

@@ -8,14 +8,16 @@ import ReversePitch from "@/components/ReversePitch";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
     <>
       <span id="top" />
       <Nav />
-      <main className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      <main id="main-content" className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <Hero />
+        <Services />
         <Projects />
         <Approach />
         <Expertise />

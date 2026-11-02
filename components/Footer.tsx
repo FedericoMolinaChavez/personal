@@ -1,8 +1,8 @@
 const socials = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/federico-molina-chavez/" },
   { label: "GitHub", href: "https://github.com/FedericoMolinaChavez" },
-  { label: "Read.cv", href: "#" },
   { label: "Email", href: "mailto:federicomolinachavez@gmail.com" },
+  { label: "Tools", href: "/tools" },
 ];
 
 export default function Footer() {
@@ -18,7 +18,7 @@ export default function Footer() {
             with intentionality.
           </p>
         </div>
-        <div className="flex gap-8">
+        <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
           {socials.map((s) => (
             <a
               key={s.label}

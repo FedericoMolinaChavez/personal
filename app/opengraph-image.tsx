@@ -45,9 +45,9 @@ export default function OpengraphImage() {
               flexWrap: "wrap",
             }}
           >
-            I turn your idea into a&nbsp;
-            <span style={{ color: "#8f4538", fontStyle: "italic" }}>product</span>
-            &nbsp;your users pay for.
+            A clearer path from&nbsp;
+            <span style={{ color: "#8f4538", fontStyle: "italic" }}>AI ambition</span>
+            &nbsp;to a working product.
           </div>
           <div style={{ fontSize: 30, color: "#544340", maxWidth: 880 }}>
             Fractional CTO &amp; AI Developer for founders.

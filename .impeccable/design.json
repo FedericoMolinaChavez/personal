@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-02T11:41:45.525162+00:00",
+  "title": "Design System: CTO + AI",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Primary clay"
+      },
+      "secondary": {
+        "role": "secondary",
+        "displayName": "Deep sage"
+      },
+      "secondary-container": {
+        "role": "secondary",
+        "displayName": "Pale sage"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Warm ivory"
+      },
+      "on-surface": {
+        "role": "neutral",
+        "displayName": "Dark brown ink"
+      },
+      "on-surface-variant": {
+        "role": "neutral",
+        "displayName": "Muted brown ink"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Opening headline",
+        "purpose": "Mobile home and service headline; responsive steps described in DESIGN.md."
+      },
+      "headline": {
+        "displayName": "Section heading",
+        "purpose": "Service, offer and booking sections."
+      }
+    },
+    "shadows": [
+      {
+        "name": "soil-shadow",
+        "value": "0 20px 40px -10px rgba(74, 69, 62, 0.08)",
+        "purpose": "Existing approach container and portrait."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-transition",
+        "value": "150ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Tailwind default color and transform transitions used by shared actions."
+      },
+      {
+        "name": "project-panel-transition",
+        "value": "500ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Project panel hover scale to 0.98."
+      },
+      {
+        "name": "footer-color-transition",
+        "value": "200ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Footer link color changes."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Shared filled consulting action.",
+      "html": "<button class=\"ds-primary\">Book a scoping call</button>",
+      "css": ".ds-primary{font-family:var(--font-bricolage),sans-serif;display:inline-flex;min-height:48px;align-items:center;justify-content:center;border:0;border-radius:9999px;background:#8f4538;color:#fff;padding:12px 24px;font-size:14px;font-weight:600;line-height:20px;letter-spacing:.02em;text-align:center;transition:background-color 150ms cubic-bezier(.4,0,.2,1)}.ds-primary:hover{background:#763226}.ds-primary:focus-visible{outline:2px solid #8f4538;outline-offset:4px;}.ds-primary:disabled{cursor:wait;opacity:.6} @media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined engagement alternative.",
+      "html": "<button class=\"ds-secondary\">Find the right engagement</button>",
+      "css": ".ds-secondary{font-family:var(--font-bricolage),sans-serif;display:inline-flex;min-height:48px;align-items:center;justify-content:center;border:1px solid #dac1bd;border-radius:9999px;background:transparent;color:#8f4538;padding:12px 24px;font-size:14px;line-height:20px;font-weight:600;letter-spacing:.02em;transition:background-color 150ms cubic-bezier(.4,0,.2,1)}.ds-secondary:hover{background:#f6ece3}.ds-secondary:focus-visible{outline:2px solid #8f4538;outline-offset:4px;} @media(prefers-reduced-motion:reduce){.ds-secondary{transition:none}}"
+    },
+    {
+      "name": "Enquiry field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Functional label, readable placeholder and clay focus ring.",
+      "html": "<label class=\"ds-field-label\">YOUR NAME *<input class=\"ds-field\" required autocomplete=\"name\" placeholder=\"Jane Founder\"></label>",
+      "css": ".ds-field-label{font-family:var(--font-bricolage),sans-serif;display:flex;flex-direction:column;gap:8px;font-size:12px;line-height:16px;font-weight:600;letter-spacing:.1em;color:#544340}.ds-field{font-family:var(--font-bricolage),sans-serif;background:#fbf2e8;color:#1f1b15;border:1px solid #dac1bd;border-radius:12px;padding:12px 16px;font-size:16px;line-height:24px;font-weight:400;letter-spacing:normal;transition:border-color 150ms cubic-bezier(.4,0,.2,1)}.ds-field::placeholder{color:#544340;opacity:1}.ds-field:focus{outline:none;border-color:#8f4538;box-shadow:0 0 0 1px #8f4538} @media(prefers-reduced-motion:reduce){.ds-field{transition:none}}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Opaque warm header with wordmark and link hover.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Example navigation\"><a class=\"ds-wordmark\" href=\"#home\">CTO + AI</a><a class=\"ds-nav-link\" href=\"#work\">Selected work</a></nav>",
+      "css": ".ds-nav{font-family:var(--font-bricolage),sans-serif;display:flex;min-height:80px;align-items:center;justify-content:space-between;gap:24px;background:#fff8f3;border-bottom:1px solid #dac1bd;padding:0 20px}.ds-wordmark{font-size:24px;line-height:32px;font-weight:800;color:#8f4538;text-decoration:none}.ds-nav-link{font-size:14px;line-height:20px;font-weight:600;letter-spacing:.02em;color:#1f1b15;text-decoration:none}.ds-nav-link:hover{color:#8f4538}.ds-nav a:focus-visible{outline:2px solid #8f4538;outline-offset:4px;}"
+    },
+    {
+      "name": "Answer option",
+      "kind": "chip",
+      "refersTo": "answer-option-selected",
+      "description": "Native checklist radio with pale-sage selected fill.",
+      "html": "<div class=\"ds-options\"><label class=\"ds-option\"><input type=\"radio\" name=\"ds-answer\" checked>Not sure</label><label class=\"ds-option\"><input type=\"radio\" name=\"ds-answer\">Confirmed</label></div>",
+      "css": ".ds-options{display:flex;flex-wrap:wrap;gap:8px}.ds-option{font-family:var(--font-bricolage),sans-serif;display:flex;align-items:center;gap:8px;min-height:44px;border:1px solid #dac1bd;border-radius:9999px;padding:0 12px;cursor:pointer;font-size:14px;line-height:20px;color:#1f1b15}.ds-option:has(:checked){background:#d6e7a1}.ds-option input{accent-color:#8f4538}.ds-option input:focus-visible{outline:2px solid #8f4538;outline-offset:4px;}"
+    },
+    {
+      "name": "Inset summary",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Flat rounded warm panel used by service and checklist summaries.",
+      "html": "<aside class=\"ds-panel\"><h2 class=\"ds-panel-title\">Your review so far.</h2><p class=\"ds-panel-copy\">Checks confirmed, gaps and unknowns remain separate.</p></aside>",
+      "css": ".ds-panel{font-family:var(--font-bricolage),sans-serif;border-radius:12px;background:#f6ece3;padding:24px;color:#1f1b15}.ds-panel-title{font-size:30px;line-height:36px;font-weight:400;margin:0 0 20px}.ds-panel-copy{font-size:16px;line-height:24px;color:#544340;margin:0}@media(min-width:768px){.ds-panel{padding:32px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The established warm consulting studio",
+    "overview": "The established warm consulting studio pairs an ivory ground with earthy clay actions, muted sage accents and open, left-aligned typography. Bricolage Grotesque carries both the conversational headline and the practical interface. Large open sections alternate with softly rounded inset panels rather than a continuous grid of boxed content.\n\nThis records the implemented consulting website, including its service pages and production checklist. The existing identity is the authority; the separate agriculture tools are outside this document's scope. The world description is inherited from the approved surface brief, not a new identity proposal.",
+    "keyCharacteristics": [
+      "Warm tonal surfaces and dark brown text.",
+      "Large, regular-weight opening headlines with compact, heavier interface labels.",
+      "Pill actions, rounded panels and thin dividers.",
+      "Stacked mobile reading order with wider-screen split layouts."
+    ],
+    "rules": [
+      {
+        "name": "Clay Action",
+        "body": "Use primary clay for the main filled action and actionable text; use the darker primary variant for the shared filled button hover.",
+        "section": "colors"
+      },
+      {
+        "name": "One Family",
+        "body": "Use Bricolage Grotesque for display, body and interface text; hierarchy comes from size, spacing and weight.",
+        "section": "typography"
+      },
+      {
+        "name": "Tonal Separation",
+        "body": "Separate ordinary content with warm surface steps and thin dividers; reserve the existing diffuse shadow for the approach feature and portrait.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do reuse the shared filled and outlined pill actions for the consulting flows.",
+      "Do retain visible focus, readable placeholders, native controls and explicit loading, error and confirmation text.",
+      "Do stack split layouts and allow action groups to wrap on narrow screens.",
+      "Do use the established ivory, clay and sage roles before adding another color."
+    ],
+    "donts": [
+      "Don't use the pale outline color as running text; the build uses the darker surface-variant text role.",
+      "Don't make checklist selection color carry the answer alone; retain the native control and written label.",
+      "Don't copy the existing decorative section eyebrows into new sections."
+    ]
+  }
+}

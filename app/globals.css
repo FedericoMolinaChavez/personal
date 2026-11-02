@@ -53,12 +53,31 @@ body {
 
 /* Section reveal-on-scroll animation */
 .reveal {
-  opacity: 0;
-  transform: translateY(2.5rem);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  opacity: 1;
 }
 
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@layer components {
+  .button-primary {
+    @apply inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-6 py-3 text-center text-label-md text-on-primary transition-colors hover:bg-on-primary-fixed-variant disabled:cursor-wait disabled:opacity-60;
+  }
+  .button-secondary {
+    @apply inline-flex min-h-12 items-center justify-center rounded-full border border-outline-variant px-6 py-3 text-center text-label-md text-primary transition-colors hover:bg-surface-container;
+  }
+}
+
+:focus-visible { outline: 2px solid #8f4538; outline-offset: 4px; }
+h1, h2, h3 { text-wrap: balance; }
+input, textarea, select { caret-color: #8f4538; }
+html { scrollbar-color: #87726f #fff8f3; }
+.skip-link { position: fixed; top: -100px; left: 20px; z-index: 100; background: #fff8f3; color: #8f4538; padding: 12px 20px; }
+.skip-link:focus { top: 12px; }
+summary { cursor: pointer; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
 }

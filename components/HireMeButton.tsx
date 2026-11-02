@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { track } from "@vercel/analytics";
+import { getAttribution } from "@/lib/marketing/attribution";
 
 type Props = {
   className?: string;
@@ -10,17 +11,20 @@ type Props = {
 
 export default function HireMeButton({
   className = "",
-  label = "Hire Me",
+  label = "Start the build plan",
 }: Props) {
   const [loading, setLoading] = useState(false);
   const [note, setNote] = useState<string | null>(null);
 
   async function handleClick() {
-    track("hire_me_click");
+    track("hire_me_click", { ...getAttribution(), service: "build-plan" });
     setLoading(true);
     setNote(null);
     try {
-      const res = await fetch("/api/checkout", { method: "POST" });
+      const res = await fetch("/api/checkout", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ service: "build-plan", attribution: getAttribution() }),
+      });
       const data = await res.json();
       if (res.ok && data.url) {
         window.location.href = data.url;
@@ -47,7 +51,7 @@ export default function HireMeButton({
         {loading ? "Redirecting…" : label}
       </button>
       {note && (
-        <span className="font-label-sm text-label-sm text-on-surface-variant max-w-xs">
+        <span role="alert" className="font-label-sm text-label-sm text-on-surface-variant max-w-xs">
           {note}
         </span>
       )}
